@@ -134,7 +134,7 @@
             // txtUserName
             // 
             this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUserName.Location = new System.Drawing.Point(254, 127);
+            this.txtUserName.Location = new System.Drawing.Point(253, 124);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(202, 20);
             this.txtUserName.TabIndex = 14;
@@ -196,7 +196,7 @@
             this.Controls.Add(this.label4);
             this.Name = "frmNewuser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmNewuser";
+            this.Text = "New User Registration";
             this.Load += new System.EventHandler(this.frmNewuser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

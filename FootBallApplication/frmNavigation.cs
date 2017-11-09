@@ -119,6 +119,7 @@ namespace FootBallApplication
             //panel6.Visible = false;
 
             pnlregistration.Visible = false;
+            lblviewnav.Visible = true;
        
 
             panel7.Visible = true;
@@ -440,6 +441,27 @@ namespace FootBallApplication
         }
 
         private void pnlregistration_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblviewnav_Click(object sender, EventArgs e)
+        {
+            pnlregistration.Visible = true;
+            lblviewnav.Visible = false;
+
+
+            panel7.Visible = false;
+            panel8.Visible = false;
+            lstTour.Visible = false;
+            dgNavigation.Visible = false;
+
+            lblback.Visible = false;
+            lblstart.Visible = false;
+            pnlball.Visible = false;
+        }
+
+        private void matchRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }

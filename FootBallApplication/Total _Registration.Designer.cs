@@ -121,7 +121,7 @@
             this.lblchoose3.BackColor = System.Drawing.Color.Transparent;
             this.lblchoose3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblchoose3.ForeColor = System.Drawing.Color.Black;
-            this.lblchoose3.Location = new System.Drawing.Point(218, 370);
+            this.lblchoose3.Location = new System.Drawing.Point(216, 359);
             this.lblchoose3.Name = "lblchoose3";
             this.lblchoose3.Size = new System.Drawing.Size(49, 13);
             this.lblchoose3.TabIndex = 144;
@@ -133,7 +133,7 @@
             this.lblchoose4.AutoSize = true;
             this.lblchoose4.BackColor = System.Drawing.Color.Transparent;
             this.lblchoose4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblchoose4.ForeColor = System.Drawing.Color.Khaki;
+            this.lblchoose4.ForeColor = System.Drawing.Color.Black;
             this.lblchoose4.Location = new System.Drawing.Point(208, 341);
             this.lblchoose4.Name = "lblchoose4";
             this.lblchoose4.Size = new System.Drawing.Size(49, 13);
@@ -169,14 +169,15 @@
             // 
             // cmbCategory
             // 
+            this.cmbCategory.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Items.AddRange(new object[] {
             "DOMESTIC",
             "INTERNATIONAL"});
             this.cmbCategory.Location = new System.Drawing.Point(30, 157);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(180, 21);
-            this.cmbCategory.TabIndex = 140;
+            this.cmbCategory.Size = new System.Drawing.Size(180, 23);
+            this.cmbCategory.TabIndex = 1;
             // 
             // monthCalendar1
             // 
@@ -231,9 +232,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(27, 240);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 15);
+            this.label6.Size = new System.Drawing.Size(66, 15);
             this.label6.TabIndex = 135;
-            this.label6.Text = "EndDate";
+            this.label6.Text = "End Date";
             // 
             // label2
             // 
@@ -243,9 +244,9 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(30, 188);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
+            this.label2.Size = new System.Drawing.Size(71, 15);
             this.label2.TabIndex = 134;
-            this.label2.Text = "StartDate";
+            this.label2.Text = "Start Date";
             // 
             // label7
             // 
@@ -276,43 +277,48 @@
             this.txtVideoPath.Location = new System.Drawing.Point(21, 340);
             this.txtVideoPath.Name = "txtVideoPath";
             this.txtVideoPath.Size = new System.Drawing.Size(180, 22);
-            this.txtVideoPath.TabIndex = 131;
+            this.txtVideoPath.TabIndex = 5;
             // 
             // txtDBPath
             // 
+            this.txtDBPath.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDBPath.Location = new System.Drawing.Point(30, 371);
             this.txtDBPath.Name = "txtDBPath";
-            this.txtDBPath.Size = new System.Drawing.Size(180, 20);
-            this.txtDBPath.TabIndex = 130;
+            this.txtDBPath.Size = new System.Drawing.Size(180, 23);
+            this.txtDBPath.TabIndex = 5;
             this.txtDBPath.Visible = false;
             // 
             // txtEnd
             // 
+            this.txtEnd.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEnd.Location = new System.Drawing.Point(29, 258);
             this.txtEnd.Name = "txtEnd";
-            this.txtEnd.Size = new System.Drawing.Size(180, 20);
-            this.txtEnd.TabIndex = 127;
+            this.txtEnd.Size = new System.Drawing.Size(180, 23);
+            this.txtEnd.TabIndex = 3;
             // 
             // txtCountry
             // 
+            this.txtCountry.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCountry.Location = new System.Drawing.Point(29, 316);
             this.txtCountry.Name = "txtCountry";
-            this.txtCountry.Size = new System.Drawing.Size(180, 20);
-            this.txtCountry.TabIndex = 129;
+            this.txtCountry.Size = new System.Drawing.Size(180, 23);
+            this.txtCountry.TabIndex = 4;
             // 
             // txtDate
             // 
+            this.txtDate.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.Location = new System.Drawing.Point(33, 206);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(180, 20);
-            this.txtDate.TabIndex = 128;
+            this.txtDate.Size = new System.Drawing.Size(180, 23);
+            this.txtDate.TabIndex = 2;
             // 
             // txtTourName
             // 
+            this.txtTourName.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTourName.Location = new System.Drawing.Point(30, 108);
             this.txtTourName.Name = "txtTourName";
-            this.txtTourName.Size = new System.Drawing.Size(180, 20);
-            this.txtTourName.TabIndex = 126;
+            this.txtTourName.Size = new System.Drawing.Size(180, 23);
+            this.txtTourName.TabIndex = 0;
             this.txtTourName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTourName_MouseClick);
             this.txtTourName.TextChanged += new System.EventHandler(this.txtTourName_TextChanged);
             // 
@@ -340,31 +346,35 @@
             // 
             // txtManager
             // 
+            this.txtManager.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtManager.Location = new System.Drawing.Point(367, 383);
             this.txtManager.Name = "txtManager";
-            this.txtManager.Size = new System.Drawing.Size(177, 20);
-            this.txtManager.TabIndex = 154;
+            this.txtManager.Size = new System.Drawing.Size(177, 23);
+            this.txtManager.TabIndex = 12;
             // 
             // txtCoach
             // 
+            this.txtCoach.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCoach.Location = new System.Drawing.Point(367, 313);
             this.txtCoach.Name = "txtCoach";
-            this.txtCoach.Size = new System.Drawing.Size(177, 20);
-            this.txtCoach.TabIndex = 153;
+            this.txtCoach.Size = new System.Drawing.Size(177, 23);
+            this.txtCoach.TabIndex = 11;
             // 
             // txtTeamFlag
             // 
+            this.txtTeamFlag.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTeamFlag.Location = new System.Drawing.Point(367, 245);
             this.txtTeamFlag.Name = "txtTeamFlag";
-            this.txtTeamFlag.Size = new System.Drawing.Size(177, 20);
-            this.txtTeamFlag.TabIndex = 152;
+            this.txtTeamFlag.Size = new System.Drawing.Size(177, 23);
+            this.txtTeamFlag.TabIndex = 10;
             // 
             // txtTeamName
             // 
+            this.txtTeamName.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTeamName.Location = new System.Drawing.Point(367, 181);
             this.txtTeamName.Name = "txtTeamName";
-            this.txtTeamName.Size = new System.Drawing.Size(177, 20);
-            this.txtTeamName.TabIndex = 151;
+            this.txtTeamName.Size = new System.Drawing.Size(177, 23);
+            this.txtTeamName.TabIndex = 9;
             // 
             // label8
             // 
@@ -416,12 +426,13 @@
             // 
             // cmbTour
             // 
+            this.cmbTour.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTour.ForeColor = System.Drawing.Color.Black;
             this.cmbTour.FormattingEnabled = true;
             this.cmbTour.Location = new System.Drawing.Point(367, 107);
             this.cmbTour.Name = "cmbTour";
-            this.cmbTour.Size = new System.Drawing.Size(177, 21);
-            this.cmbTour.TabIndex = 146;
+            this.cmbTour.Size = new System.Drawing.Size(177, 23);
+            this.cmbTour.TabIndex = 8;
             this.cmbTour.SelectedIndexChanged += new System.EventHandler(this.cmbTour_SelectedIndexChanged);
             // 
             // label12
@@ -461,10 +472,11 @@
             // txtPlayerImg
             // 
             this.txtPlayerImg.BackColor = System.Drawing.Color.White;
+            this.txtPlayerImg.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlayerImg.Location = new System.Drawing.Point(723, 424);
             this.txtPlayerImg.Name = "txtPlayerImg";
-            this.txtPlayerImg.Size = new System.Drawing.Size(181, 20);
-            this.txtPlayerImg.TabIndex = 221;
+            this.txtPlayerImg.Size = new System.Drawing.Size(181, 23);
+            this.txtPlayerImg.TabIndex = 20;
             // 
             // label14
             // 
@@ -493,11 +505,11 @@
             // TxtJersey
             // 
             this.TxtJersey.BackColor = System.Drawing.Color.White;
-            this.TxtJersey.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtJersey.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtJersey.Location = new System.Drawing.Point(723, 356);
             this.TxtJersey.Name = "TxtJersey";
-            this.TxtJersey.Size = new System.Drawing.Size(181, 22);
-            this.TxtJersey.TabIndex = 214;
+            this.TxtJersey.Size = new System.Drawing.Size(181, 23);
+            this.TxtJersey.TabIndex = 19;
             // 
             // label20
             // 
@@ -514,7 +526,7 @@
             // cmbPosition
             // 
             this.cmbPosition.BackColor = System.Drawing.Color.White;
-            this.cmbPosition.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPosition.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPosition.FormattingEnabled = true;
             this.cmbPosition.Items.AddRange(new object[] {
             "Goalkeeper",
@@ -523,8 +535,8 @@
             "Striker"});
             this.cmbPosition.Location = new System.Drawing.Point(723, 288);
             this.cmbPosition.Name = "cmbPosition";
-            this.cmbPosition.Size = new System.Drawing.Size(181, 22);
-            this.cmbPosition.TabIndex = 213;
+            this.cmbPosition.Size = new System.Drawing.Size(181, 23);
+            this.cmbPosition.TabIndex = 18;
             // 
             // label19
             // 
@@ -534,18 +546,18 @@
             this.label19.ForeColor = System.Drawing.Color.Black;
             this.label19.Location = new System.Drawing.Point(720, 201);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(47, 15);
+            this.label19.Size = new System.Drawing.Size(89, 15);
             this.label19.TabIndex = 217;
-            this.label19.Text = "Player";
+            this.label19.Text = "Player Name";
             // 
             // TxtPlayer
             // 
             this.TxtPlayer.BackColor = System.Drawing.Color.White;
-            this.TxtPlayer.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPlayer.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtPlayer.Location = new System.Drawing.Point(723, 222);
             this.TxtPlayer.Name = "TxtPlayer";
-            this.TxtPlayer.Size = new System.Drawing.Size(181, 22);
-            this.TxtPlayer.TabIndex = 212;
+            this.TxtPlayer.Size = new System.Drawing.Size(181, 23);
+            this.TxtPlayer.TabIndex = 17;
             // 
             // label18
             // 
@@ -555,30 +567,30 @@
             this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(720, 141);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(43, 15);
+            this.label18.Size = new System.Drawing.Size(85, 15);
             this.label18.TabIndex = 216;
-            this.label18.Text = "Team";
+            this.label18.Text = "Team Name";
             // 
             // cmbTeam
             // 
             this.cmbTeam.BackColor = System.Drawing.Color.White;
-            this.cmbTeam.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTeam.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTeam.FormattingEnabled = true;
             this.cmbTeam.Location = new System.Drawing.Point(723, 159);
             this.cmbTeam.Name = "cmbTeam";
-            this.cmbTeam.Size = new System.Drawing.Size(181, 22);
-            this.cmbTeam.TabIndex = 211;
+            this.cmbTeam.Size = new System.Drawing.Size(181, 23);
+            this.cmbTeam.TabIndex = 16;
             this.cmbTeam.SelectedIndexChanged += new System.EventHandler(this.cmbTeam_SelectedIndexChanged);
             // 
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(723, 106);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(181, 22);
-            this.comboBox1.TabIndex = 210;
+            this.comboBox1.Size = new System.Drawing.Size(181, 23);
+            this.comboBox1.TabIndex = 15;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label15
@@ -589,9 +601,9 @@
             this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(720, 88);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(84, 15);
+            this.label15.Size = new System.Drawing.Size(126, 15);
             this.label15.TabIndex = 215;
-            this.label15.Text = "Tournament";
+            this.label15.Text = "Tournament Name";
             // 
             // monthCalendar2
             // 
@@ -610,7 +622,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(42, 41);
             this.panel1.TabIndex = 226;
-            this.panel1.Visible = false;
             // 
             // btnSave
             // 
@@ -621,7 +632,7 @@
             this.btnSave.Location = new System.Drawing.Point(355, 503);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 25);
-            this.btnSave.TabIndex = 225;
+            this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Create";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -647,6 +658,7 @@
             this.groupBox2.Controls.Add(this.txtVideoPath);
             this.groupBox2.Controls.Add(this.lblchoose4);
             this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.lblchoose3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(6, 31);
@@ -677,7 +689,7 @@
             this.button3.Location = new System.Drawing.Point(194, 503);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 25);
-            this.button3.TabIndex = 232;
+            this.button3.TabIndex = 24;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -691,7 +703,7 @@
             this.btnView.Location = new System.Drawing.Point(105, 504);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(75, 23);
-            this.btnView.TabIndex = 231;
+            this.btnView.TabIndex = 7;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = false;
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
@@ -705,7 +717,7 @@
             this.button1.Location = new System.Drawing.Point(16, 504);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 25);
-            this.button1.TabIndex = 230;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Create";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -719,7 +731,7 @@
             this.button2.Location = new System.Drawing.Point(532, 503);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 25);
-            this.button2.TabIndex = 234;
+            this.button2.TabIndex = 25;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -733,7 +745,7 @@
             this.button4.Location = new System.Drawing.Point(442, 504);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 233;
+            this.button4.TabIndex = 14;
             this.button4.Text = "View";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -747,7 +759,7 @@
             this.button5.Location = new System.Drawing.Point(815, 501);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 237;
+            this.button5.TabIndex = 22;
             this.button5.Text = "View";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -761,7 +773,7 @@
             this.button6.Location = new System.Drawing.Point(907, 500);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 25);
-            this.button6.TabIndex = 235;
+            this.button6.TabIndex = 26;
             this.button6.Text = "Delete";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -775,7 +787,7 @@
             this.button7.Location = new System.Drawing.Point(720, 500);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 25);
-            this.button7.TabIndex = 236;
+            this.button7.TabIndex = 21;
             this.button7.Text = "Create";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
@@ -793,7 +805,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(42, 41);
             this.panel2.TabIndex = 226;
-            this.panel2.Visible = false;
             // 
             // panel3
             // 
@@ -804,7 +815,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(42, 41);
             this.panel3.TabIndex = 226;
-            this.panel3.Visible = false;
             // 
             // panel4
             // 
@@ -815,7 +825,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(42, 41);
             this.panel4.TabIndex = 226;
-            this.panel4.Visible = false;
             // 
             // panel5
             // 
@@ -826,7 +835,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(42, 41);
             this.panel5.TabIndex = 226;
-            this.panel5.Visible = false;
             // 
             // panel6
             // 
@@ -837,7 +845,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(42, 41);
             this.panel6.TabIndex = 226;
-            this.panel6.Visible = false;
             // 
             // panel7
             // 
@@ -848,7 +855,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(42, 41);
             this.panel7.TabIndex = 226;
-            this.panel7.Visible = false;
             // 
             // panel8
             // 
@@ -859,7 +865,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(42, 41);
             this.panel8.TabIndex = 226;
-            this.panel8.Visible = false;
             // 
             // panel9
             // 
@@ -870,7 +875,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(42, 41);
             this.panel9.TabIndex = 226;
-            this.panel9.Visible = false;
             // 
             // panel10
             // 
@@ -881,7 +885,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(42, 41);
             this.panel10.TabIndex = 226;
-            this.panel10.Visible = false;
             // 
             // panel11
             // 
@@ -892,7 +895,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(42, 41);
             this.panel11.TabIndex = 226;
-            this.panel11.Visible = false;
             // 
             // panel12
             // 
@@ -903,7 +905,6 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(42, 41);
             this.panel12.TabIndex = 226;
-            this.panel12.Visible = false;
             // 
             // panel13
             // 
@@ -914,7 +915,6 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(42, 41);
             this.panel13.TabIndex = 226;
-            this.panel13.Visible = false;
             // 
             // panel14
             // 
@@ -925,7 +925,6 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(42, 41);
             this.panel14.TabIndex = 226;
-            this.panel14.Visible = false;
             // 
             // panel15
             // 
@@ -936,7 +935,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(42, 41);
             this.panel15.TabIndex = 226;
-            this.panel15.Visible = false;
             // 
             // panel16
             // 
@@ -947,7 +945,6 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(42, 41);
             this.panel16.TabIndex = 226;
-            this.panel16.Visible = false;
             // 
             // gvTeam
             // 
@@ -1008,7 +1005,7 @@
             this.lblstart.Location = new System.Drawing.Point(874, 549);
             this.lblstart.Name = "lblstart";
             this.lblstart.Size = new System.Drawing.Size(117, 15);
-            this.lblstart.TabIndex = 241;
+            this.lblstart.TabIndex = 23;
             this.lblstart.Text = "Go To Navigation";
             this.lblstart.Click += new System.EventHandler(this.lblstart_Click);
             // 
@@ -1086,7 +1083,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.cmbTour);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.lblchoose3);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
@@ -1106,7 +1102,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "Total__Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Total__Registration";
+            this.Text = "Tournament Registration";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Total__Registration_FormClosing);
             this.Load += new System.EventHandler(this.Total__Registration_Load);
             this.groupBox2.ResumeLayout(false);

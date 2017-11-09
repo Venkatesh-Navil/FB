@@ -28,11 +28,13 @@ namespace FootBallApplication
         bool TeamB = false;
         string TA, TB, Raidteam;
         int a;
+        string finalteama, finalteamb;
         public frmSquad_Registration()
         {
             InitializeComponent();
         }
         clssquadRegistration objSquard = new clssquadRegistration();
+        clsNavigation objNavigation = new clsNavigation();
         DataTable dt = new DataTable();
         private void frmSquad_Registration_Load(object sender, EventArgs e)
         {
@@ -269,6 +271,7 @@ namespace FootBallApplication
             {
                 chkp12.Visible = true;
                 chkp12.Text= dt.Rows[11][0].ToString();
+                chkp12.Checked = true;
 
 
             }
@@ -278,6 +281,9 @@ namespace FootBallApplication
                 chkp13.Visible = true;
                 chkp12.Text = dt.Rows[11][0].ToString();
                 chkp13.Text = dt.Rows[12][0].ToString();
+
+                chkp12.Checked = true;
+                chkp13.Checked = true;
 
 
             }
@@ -289,6 +295,11 @@ namespace FootBallApplication
                 chkp13.Text = dt.Rows[12][0].ToString();
                 chkp14.Visible = true;
                 chkp14.Text = dt.Rows[13][0].ToString();
+
+                chkp12.Checked = true;
+                chkp13.Checked = true;
+                chkp14.Checked = true;
+               
 
 
             }
@@ -302,6 +313,11 @@ namespace FootBallApplication
                 chkp14.Text = dt.Rows[13][0].ToString();
                 chkp15.Visible = true;
                 chkp15.Text = dt.Rows[14][0].ToString();
+
+                chkp12.Checked = true;
+                chkp13.Checked = true;
+                chkp14.Checked = true;
+                chkp15.Checked = true;
 
 
             }
@@ -318,6 +334,13 @@ namespace FootBallApplication
 
                 chkp16.Visible = true;
                 chkp16.Text = dt.Rows[15][0].ToString();
+
+                chkp12.Checked = true;
+                chkp13.Checked = true;
+                chkp14.Checked = true;
+                chkp15.Checked = true;
+                chkp16.Checked = true;
+                
 
 
             }
@@ -336,6 +359,13 @@ namespace FootBallApplication
                 chkp16.Text = dt.Rows[15][0].ToString();
                 chkp17.Visible = true;
                 chkp17.Text = dt.Rows[16][0].ToString();
+
+                chkp12.Checked = true;
+                chkp13.Checked = true;
+                chkp14.Checked = true;
+                chkp15.Checked = true;
+                chkp16.Checked = true;
+                chkp17.Checked = true;
 
 
             }
@@ -356,6 +386,15 @@ namespace FootBallApplication
                 chkp17.Text = dt.Rows[16][0].ToString();
                 chkp18.Visible = true;
                 chkp18.Text = dt.Rows[17][0].ToString();
+
+                chkp12.Checked = true;
+                chkp13.Checked = true;
+                chkp14.Checked = true;
+                chkp15.Checked = true;
+                chkp16.Checked = true;
+                chkp17.Checked = true;
+                chkp18.Checked = true;
+                chkp13.Checked = true;
 
 
             }
@@ -378,6 +417,15 @@ namespace FootBallApplication
                 chkp18.Text = dt.Rows[17][0].ToString();
                 chkp19.Visible = true;
                 chkp19.Text = dt.Rows[18][0].ToString();
+
+                chkp12.Checked = true;
+                chkp13.Checked = true;
+                chkp14.Checked = true;
+                chkp15.Checked = true;
+                chkp16.Checked = true;
+                chkp17.Checked = true;
+                chkp18.Checked = true;
+                chkp19.Checked = true;
 
 
             }
@@ -404,6 +452,17 @@ namespace FootBallApplication
                 chkp20.Text = dt.Rows[19][0].ToString();
 
 
+                chkp12.Checked = true;
+                chkp13.Checked = true;
+                chkp14.Checked = true;
+                chkp15.Checked = true;
+                chkp16.Checked = true;
+                chkp17.Checked = true;
+                chkp18.Checked = true;
+                chkp19.Checked = true;
+                chkp20.Checked = true;
+
+
             }
             if (dt.Rows.Count == 21)
             {
@@ -428,6 +487,17 @@ namespace FootBallApplication
                 chkp20.Text = dt.Rows[19][0].ToString();
                 chkp21.Visible = true;
                 chkp21.Text = dt.Rows[20][0].ToString();
+
+                chkp12.Checked = true;
+                chkp13.Checked = true;
+                chkp14.Checked = true;
+                chkp15.Checked = true;
+                chkp16.Checked = true;
+                chkp17.Checked = true;
+                chkp18.Checked = true;
+                chkp19.Checked = true;
+                chkp20.Checked = true;
+                chkp21.Checked = true;
 
 
             }
@@ -458,8 +528,39 @@ namespace FootBallApplication
                 chkp22.Visible = true;
                 chkp22.Text = dt.Rows[21][0].ToString();
 
+                chkp12.Checked = true;
+                chkp13.Checked = true;
+                chkp14.Checked = true;
+                chkp15.Checked = true;
+                chkp16.Checked = true;
+                chkp17.Checked = true;
+                chkp18.Checked = true;
+                chkp19.Checked = true;
+                chkp20.Checked = true;
+                chkp21.Checked = true;
+                chkp22.Checked = true;
+
+
+
+
 
             }
+        }
+        private void checkboxcheck()
+        {
+            chkp1.Checked = true;
+            chkp2.Checked = true;
+            chkp3.Checked = true;
+            chkp4.Checked = true;
+            chkp5.Checked = true;
+            chkp6.Checked = true;
+            chkp7.Checked = true;
+
+            chkp8.Checked = true;
+            chkp9.Checked = true; 
+            chkp10.Checked = true;
+            chkp11.Checked = true;
+           
         }
         private void reset()
         {
@@ -487,6 +588,9 @@ namespace FootBallApplication
         }
         private void cmbTeams_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+            button2.Visible = true;
+
             chkp1.Visible = true;
             chkp2.Visible = true;
             chkp3.Visible = true;
@@ -501,7 +605,14 @@ namespace FootBallApplication
 
             label4.Visible = true;
             label12.Visible = true;
+
+
+
             reset();
+            checkboxcheck();
+
+            DataTable dtteams = new DataTable();
+            dtteams = objNavigation.Loadteams(comboBox1.Text);
 
 
             dt = new DataTable();
@@ -535,18 +646,67 @@ namespace FootBallApplication
 
                 objSquard.AutoLoad(Convert.ToString(clsGlobalValues.mid), clsGlobalValues.Tournament);
             }
-            if (cmbTeams.SelectedItem.ToString() == dataGridView1.Rows[0].Cells[1].Value.ToString())
+
+
+
+            if (dataGridView1.Rows[0].Cells[1].Value != null)
             {
-                TeamA = true;
-                TeamB = false;
+                if (cmbTeams.SelectedItem.ToString() == dataGridView1.Rows[0].Cells[1].Value.ToString())
+                {
+                    TeamA = true;
+                    TeamB = false;
+                    finalteama = dataGridView1.Rows[0].Cells[1].Value.ToString();
+                }
+               
+
             }
-            else if (cmbTeams.SelectedItem.ToString() == dataGridView1.Rows[0].Cells[2].Value.ToString())
+            else
             {
-                TeamB = true;
-                TeamA = false;
+                for (int i = 0; i < dtteams.Rows.Count; i++)
+                {
+
+                    if (cmbTeams.SelectedItem.ToString() == dtteams.Rows[i][0].ToString())
+                    {
+                        TeamA = true;
+                        TeamB = false;
+                        finalteama = dtteams.Rows[i][0].ToString();
+                        break;
+                    }
+                    
+
+                }
             }
-            
+            if (dataGridView1.Rows[0].Cells[2].Value != null)
+            {
+               
+                 if (cmbTeams.SelectedItem.ToString() == dataGridView1.Rows[0].Cells[2].Value.ToString())
+                {
+                    TeamB = true;
+                    TeamA = false;
+                    finalteamb = dataGridView1.Rows[0].Cells[2].Value.ToString();
+                }
+
+            }
+            else
+            {
+                for (int i = 0; i < dtteams.Rows.Count; i++)
+                {
+
+                     if (cmbTeams.SelectedItem.ToString() == dtteams.Rows[i][1].ToString())
+                    {
+                        TeamB = true;
+                        TeamA = false;
+                        finalteamb = dtteams.Rows[i][1].ToString();
+
+                        break;
+                    }
+
+                }
+            }
+
         }
+            
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -1359,6 +1519,7 @@ namespace FootBallApplication
                     {
                         cmbCaptonA.Items.Add(team1.Rows[i][0].ToString());
                     }
+                    
                     //team1 = new DataTable();
                     //team1.Columns.Add("Players", typeof(string));
                     //for (int l = 0; l < lstRight.Items.Count; l++)
@@ -1401,20 +1562,20 @@ namespace FootBallApplication
         private void lblstart_Click(object sender, EventArgs e)
         {
 
-            if (cmbTossWonTeam.Text != "")
-            {
+            //if (cmbTossWonTeam.Text != "")
+            //{
                 string raidteam = GetRaidTeam();
-                objSquard.Insert_player(team1, team2, sub1, sub2, clsGlobalValues.Tournament, clsGlobalValues.mid, dataGridView1.Rows[0].Cells[1].Value.ToString(), dataGridView1.Rows[0].Cells[2].Value.ToString(), cmbTossWonTeam.Text, cmbDecision.Text, cmbCaptonA.Text, cmbCaptonB.Text, cmbUmpire1.Text, cmbUmpire2.Text, cmbRefree.Text, "", raidteam);
-                this.Hide();
+                objSquard.Insert_player(team1, team2, sub1, sub2, clsGlobalValues.Tournament, clsGlobalValues.mid, finalteama, finalteamb, cmbTossWonTeam.Text, cmbDecision.Text, cmbCaptonA.Text, cmbCaptonB.Text, cmbUmpire1.Text, cmbUmpire2.Text, cmbRefree.Text, "", raidteam);
+              this.Hide();
                 frmpositions frm = new frmpositions();
-                frm.Show();
+               frm.Show();
                
 
-            }
-            else
-            {
-                MessageBox.Show("Error");
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Error");
+            //}
             
            
         }
@@ -1422,25 +1583,25 @@ namespace FootBallApplication
         private string GetRaidTeam()
         {
 
-            if (cmbTossWonTeam.SelectedIndex != -1 && cmbDecision.SelectedIndex != -1)
-            {
+           // if (cmbTossWonTeam.SelectedIndex != -1 && cmbDecision.SelectedIndex != -1)
+            //{
                 //dt = new DataTable();
                 //dt = objSquard.LoadTeams(clsGlobalValues.mid, clsGlobalValues.Tournament);
 
                //
-                    TA = cmbTossWonTeam.Items[0].ToString();
-                    TB = cmbTossWonTeam.Items[1].ToString();
-                    if ((cmbTossWonTeam.SelectedItem.ToString() == TA && cmbDecision.SelectedItem.ToString() == "Kick") || (cmbTossWonTeam.SelectedItem.ToString() == TB && cmbDecision.SelectedItem.ToString() == "Side"))
-                    {
-                        Raidteam = TA;
-                    }
-                    else
-                    {
-                        Raidteam = TB;
-                    }
+                    //TA = cmbTossWonTeam.Items[0].ToString();
+                    //TB = cmbTossWonTeam.Items[1].ToString();
+                    //if ((cmbTossWonTeam.SelectedItem.ToString() == TA && cmbDecision.SelectedItem.ToString() == "Kick") || (cmbTossWonTeam.SelectedItem.ToString() == TB && cmbDecision.SelectedItem.ToString() == "Side"))
+                    //{
+                    //    Raidteam = TA;
+                    //}
+                    //else
+                    //{
+                    //    Raidteam = TB;
+                    //}
                 
-            }
-            return Raidteam;
+           // }
+            return "";
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -1453,6 +1614,9 @@ namespace FootBallApplication
             {
                 cmbTeams.Items.Add(dt.Rows[i][0].ToString());
             }
+            cmbTeams.Text = cmbTeams.Items[0].ToString();
+            lblcapA.Text = cmbTeams.Items[0].ToString()+" Captain";
+            lblcapB.Text = cmbTeams.Items[1].ToString()+" Captain";
         }
     }
 }

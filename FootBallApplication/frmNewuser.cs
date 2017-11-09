@@ -37,7 +37,7 @@ namespace FootBallApplication
 
 
                 label1.Text = "Enter your registered username";
-                txtUserName.Location = new Point(256, 88);
+                txtUserName.Location = new Point(253, 124);
                 //Newuser.ActiveForm.Text = "Forgot Password";
 
 
@@ -45,7 +45,7 @@ namespace FootBallApplication
             else
             {
 
-                txtUserName.Location = new Point(169, 85);
+                txtUserName.Location = new Point(167, 124);
             }
         }
 

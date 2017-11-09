@@ -38,11 +38,11 @@
             this.gvTeam.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.gvTeam.BackgroundColor = System.Drawing.Color.Khaki;
             this.gvTeam.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gvTeam.Location = new System.Drawing.Point(0, 1);
+            this.gvTeam.Location = new System.Drawing.Point(25, 55);
             this.gvTeam.Name = "gvTeam";
             this.gvTeam.RowHeadersVisible = false;
             this.gvTeam.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvTeam.Size = new System.Drawing.Size(554, 208);
+            this.gvTeam.Size = new System.Drawing.Size(631, 253);
             this.gvTeam.TabIndex = 32;
             this.gvTeam.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvTeam_CellClick);
             // 
@@ -50,9 +50,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 209);
+            this.BackgroundImage = global::FootBallApplication.Properties.Resources.NewMainPage;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(681, 404);
             this.Controls.Add(this.gvTeam);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmGrid";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGrid";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmGrid_FormClosing);
             this.Load += new System.EventHandler(this.frmGrid_Load);

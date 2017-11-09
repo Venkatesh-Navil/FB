@@ -213,9 +213,9 @@ namespace FootBallApplication
 
         private void frmGrid_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Hide();
-            Total__Registration tot = new Total__Registration();
-            tot.Show();
+            //this.Close();
+           // Total__Registration tot = new Total__Registration();
+            //tot.Show();
         }
     }
 }

@@ -156,6 +156,7 @@ namespace FootBallApplication
         private void button1_Click(object sender, EventArgs e)
         {
             dgMatch.Visible = true;
+            panel8.Visible = true;
             dtTeam = new DataTable();
             dtTeam = objMatch.LoadMatches(clsGlobalValues.Tournament);
             if (dtTeam.Rows.Count > 0)

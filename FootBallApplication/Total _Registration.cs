@@ -401,7 +401,7 @@ namespace FootBallApplication
             //}
             if (cmbTour.Text != "")
             {
-                this.Hide();
+                //this.Hide();
                 int id = 2;
                 frmGrid frm = new frmGrid(cmbTour.Text, txtTeamName.Text, id);
                 frm.Show();
@@ -469,7 +469,7 @@ namespace FootBallApplication
             if(comboBox1.Text!="")
             {
             int id = 3;
-            this.Hide();
+            //this.Hide();
             frmGrid frm = new frmGrid(comboBox1.Text,cmbTeam.Text,id);
             frm.Show();
             }
@@ -569,7 +569,7 @@ namespace FootBallApplication
 
         private void btnView_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             //gvTeam.Visible=false;
             //dgPlayerRegistration.Visible=false;
             //gvTour.Visible=true;

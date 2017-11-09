@@ -44,5 +44,13 @@ namespace BAL
             dt = sqlhelper.ExecuteDatatable(FootballConnection, CommandType.Text, query);
             return dt;
         }
+        public DataTable Loadteams(string strTour)
+        {
+            dt = new DataTable();
+            FootballConnection = clsAut.GetConnection();
+            query = "select distinct Team_A,Team_B from Match_Registration where Tournament_Name='" + strTour + "' ";
+            dt = sqlhelper.ExecuteDatatable(FootballConnection, CommandType.Text, query);
+            return dt;
+        }
     }
 }
