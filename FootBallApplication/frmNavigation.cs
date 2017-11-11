@@ -463,7 +463,143 @@ namespace FootBallApplication
 
         private void matchRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Close();
+            Total__Registration tot = new Total__Registration();
+            tot.Show();
+        }
 
+        private void goToTournamentRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Total__Registration tot = new Total__Registration();
+            tot.Show();
+        }
+
+        private void goToTeamRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Total__Registration tot = new Total__Registration();
+            tot.Show();
+        }
+
+        private void goToPlayerRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Total__Registration tot = new Total__Registration();
+            tot.Show();
+        }
+
+        private void viewReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmReports rep = new frmReports();
+            rep.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void goToMatchRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmMatch_Registration mat = new frmMatch_Registration();
+            mat.Show();
+
+        }
+
+        private void goToSquadRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmSquad_Registration squ = new frmSquad_Registration();
+            squ.Show();
+        }
+
+        private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmReports rep = new frmReports();
+            rep.Show();
+        }
+
+        private void matchRegistrationToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmMatch_Registration tot = new frmMatch_Registration();
+            tot.Show();
+        }
+
+        private void tournamentRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Total__Registration tot = new Total__Registration();
+            tot.Show();
+        }
+
+        private void notesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                System.Diagnostics.Process.Start(@"notepad.exe");
+            }
+            catch
+            {
+
+            }
+                //.diagnostics.process.start(@"notepad.exe");
+        }
+
+        private void calculatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                System.Diagnostics.Process.Start(@"calc.exe");
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void calenderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           /// System.Diagnostics.Process.Start(@"calendar.exe");
+        }
+
+        private void browserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                System.Diagnostics.Process.Start(@"chrome.exe", "http://www.google.com");
+            }
+            catch
+            {
+
+            }
+           
+        }
+
+        private void snippingToolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process snippingToolProcess = new System.Diagnostics.Process();
+            snippingToolProcess.EnableRaisingEvents = true;
+            if (!Environment.Is64BitProcess)
+            {
+                snippingToolProcess.StartInfo.FileName = "C:\\Windows\\sysnative\\SnippingTool.exe";
+                snippingToolProcess.Start();
+            }
+            else
+            {
+                snippingToolProcess.StartInfo.FileName = "C:\\Windows\\system32\\SnippingTool.exe";
+                snippingToolProcess.Start();
+            }
         }
     }
 }

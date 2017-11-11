@@ -41,22 +41,21 @@
             this.goToTeamRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goToPlayerRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goToTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goToMatchRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goToSquadRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewAllTournamentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matchRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matchRegistrationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tournamentRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editPlayerImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calenderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.browserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.browserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.snippingToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblPrevious = new System.Windows.Forms.Label();
             this.lblCurrent = new System.Windows.Forms.Label();
             this.lblExit = new System.Windows.Forms.Label();
@@ -186,9 +185,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.createNewToolStripMenuItem,
-            this.toolsToolStripMenuItem,
-            this.viewToolStripMenuItem});
+            this.viewToolStripMenuItem,
+            this.toolsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(961, 24);
@@ -203,8 +201,9 @@
             this.goToTeamRegistrationToolStripMenuItem,
             this.goToPlayerRegistrationToolStripMenuItem,
             this.goToTransactionToolStripMenuItem,
+            this.goToMatchRegistrationToolStripMenuItem,
+            this.goToSquadRegistrationToolStripMenuItem,
             this.viewReportsToolStripMenuItem,
-            this.viewAllTournamentsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -213,21 +212,27 @@
             // 
             // goToTournamentRegistrationToolStripMenuItem
             // 
+            this.goToTournamentRegistrationToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.tour;
             this.goToTournamentRegistrationToolStripMenuItem.Name = "goToTournamentRegistrationToolStripMenuItem";
             this.goToTournamentRegistrationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.goToTournamentRegistrationToolStripMenuItem.Text = "Go to Tournament Registration";
+            this.goToTournamentRegistrationToolStripMenuItem.Click += new System.EventHandler(this.goToTournamentRegistrationToolStripMenuItem_Click);
             // 
             // goToTeamRegistrationToolStripMenuItem
             // 
+            this.goToTeamRegistrationToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.team;
             this.goToTeamRegistrationToolStripMenuItem.Name = "goToTeamRegistrationToolStripMenuItem";
             this.goToTeamRegistrationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.goToTeamRegistrationToolStripMenuItem.Text = "Go to Team Registration";
+            this.goToTeamRegistrationToolStripMenuItem.Click += new System.EventHandler(this.goToTeamRegistrationToolStripMenuItem_Click);
             // 
             // goToPlayerRegistrationToolStripMenuItem
             // 
+            this.goToPlayerRegistrationToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.player;
             this.goToPlayerRegistrationToolStripMenuItem.Name = "goToPlayerRegistrationToolStripMenuItem";
             this.goToPlayerRegistrationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.goToPlayerRegistrationToolStripMenuItem.Text = "Go to Player Registration";
+            this.goToPlayerRegistrationToolStripMenuItem.Click += new System.EventHandler(this.goToPlayerRegistrationToolStripMenuItem_Click);
             // 
             // goToTransactionToolStripMenuItem
             // 
@@ -235,102 +240,67 @@
             this.goToTransactionToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.goToTransactionToolStripMenuItem.Text = "Go to Transaction";
             // 
+            // goToMatchRegistrationToolStripMenuItem
+            // 
+            this.goToMatchRegistrationToolStripMenuItem.Name = "goToMatchRegistrationToolStripMenuItem";
+            this.goToMatchRegistrationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.goToMatchRegistrationToolStripMenuItem.Text = "Go to Match Registration";
+            this.goToMatchRegistrationToolStripMenuItem.Click += new System.EventHandler(this.goToMatchRegistrationToolStripMenuItem_Click);
+            // 
+            // goToSquadRegistrationToolStripMenuItem
+            // 
+            this.goToSquadRegistrationToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.team;
+            this.goToSquadRegistrationToolStripMenuItem.Name = "goToSquadRegistrationToolStripMenuItem";
+            this.goToSquadRegistrationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.goToSquadRegistrationToolStripMenuItem.Text = "Go to Squad Registration";
+            this.goToSquadRegistrationToolStripMenuItem.Click += new System.EventHandler(this.goToSquadRegistrationToolStripMenuItem_Click);
+            // 
             // viewReportsToolStripMenuItem
             // 
             this.viewReportsToolStripMenuItem.Name = "viewReportsToolStripMenuItem";
             this.viewReportsToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.viewReportsToolStripMenuItem.Text = "View Reports";
-            // 
-            // viewAllTournamentsToolStripMenuItem
-            // 
-            this.viewAllTournamentsToolStripMenuItem.Name = "viewAllTournamentsToolStripMenuItem";
-            this.viewAllTournamentsToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
-            this.viewAllTournamentsToolStripMenuItem.Text = "View All Tournaments";
+            this.viewReportsToolStripMenuItem.Click += new System.EventHandler(this.viewReportsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.matchRegistrationToolStripMenuItem,
             this.matchRegistrationToolStripMenuItem1,
-            this.tournamentRegistrationToolStripMenuItem,
-            this.editPlayerImageToolStripMenuItem});
+            this.tournamentRegistrationToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // matchRegistrationToolStripMenuItem
             // 
+            this.matchRegistrationToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.player;
             this.matchRegistrationToolStripMenuItem.Name = "matchRegistrationToolStripMenuItem";
-            this.matchRegistrationToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.matchRegistrationToolStripMenuItem.Text = "Edit Player Registration";
+            this.matchRegistrationToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.matchRegistrationToolStripMenuItem.Text = "Edit Player";
             this.matchRegistrationToolStripMenuItem.Click += new System.EventHandler(this.matchRegistrationToolStripMenuItem_Click);
             // 
             // matchRegistrationToolStripMenuItem1
             // 
             this.matchRegistrationToolStripMenuItem1.Name = "matchRegistrationToolStripMenuItem1";
-            this.matchRegistrationToolStripMenuItem1.Size = new System.Drawing.Size(228, 22);
-            this.matchRegistrationToolStripMenuItem1.Text = "Edit Match Registration";
+            this.matchRegistrationToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
+            this.matchRegistrationToolStripMenuItem1.Text = "Edit Match";
+            this.matchRegistrationToolStripMenuItem1.Click += new System.EventHandler(this.matchRegistrationToolStripMenuItem1_Click);
             // 
             // tournamentRegistrationToolStripMenuItem
             // 
+            this.tournamentRegistrationToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.tour;
             this.tournamentRegistrationToolStripMenuItem.Name = "tournamentRegistrationToolStripMenuItem";
-            this.tournamentRegistrationToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.tournamentRegistrationToolStripMenuItem.Text = "Edit Tournament Registration";
-            // 
-            // editPlayerImageToolStripMenuItem
-            // 
-            this.editPlayerImageToolStripMenuItem.Name = "editPlayerImageToolStripMenuItem";
-            this.editPlayerImageToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.editPlayerImageToolStripMenuItem.Text = "Edit Player Image";
-            // 
-            // createNewToolStripMenuItem
-            // 
-            this.createNewToolStripMenuItem.Name = "createNewToolStripMenuItem";
-            this.createNewToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
-            this.createNewToolStripMenuItem.Text = "Create New";
-            this.createNewToolStripMenuItem.Visible = false;
-            this.createNewToolStripMenuItem.Click += new System.EventHandler(this.createNewToolStripMenuItem_Click);
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calculatorToolStripMenuItem,
-            this.calenderToolStripMenuItem,
-            this.notesToolStripMenuItem,
-            this.browserToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.toolsToolStripMenuItem.Text = "Tools";
-            // 
-            // calculatorToolStripMenuItem
-            // 
-            this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.calculatorToolStripMenuItem.Text = "Calculator";
-            // 
-            // calenderToolStripMenuItem
-            // 
-            this.calenderToolStripMenuItem.Name = "calenderToolStripMenuItem";
-            this.calenderToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.calenderToolStripMenuItem.Text = "Calender";
-            // 
-            // notesToolStripMenuItem
-            // 
-            this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.notesToolStripMenuItem.Text = "Notepad";
-            // 
-            // browserToolStripMenuItem
-            // 
-            this.browserToolStripMenuItem.Name = "browserToolStripMenuItem";
-            this.browserToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.browserToolStripMenuItem.Text = "Google";
+            this.tournamentRegistrationToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.tournamentRegistrationToolStripMenuItem.Text = "Edit Tournament";
+            this.tournamentRegistrationToolStripMenuItem.Click += new System.EventHandler(this.tournamentRegistrationToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -343,8 +313,52 @@
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.reportsToolStripMenuItem.Text = "Reports";
+            this.reportsToolStripMenuItem.Click += new System.EventHandler(this.reportsToolStripMenuItem_Click);
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calculatorToolStripMenuItem,
+            this.notesToolStripMenuItem,
+            this.browserToolStripMenuItem,
+            this.snippingToolToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // calculatorToolStripMenuItem
+            // 
+            this.calculatorToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.Wwalczyszyn_Android_Style_Honeycomb_Calculator;
+            this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.calculatorToolStripMenuItem.Text = "Calculator";
+            this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
+            // 
+            // notesToolStripMenuItem
+            // 
+            this.notesToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.faviconnotepad;
+            this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.notesToolStripMenuItem.Text = "Notepad";
+            this.notesToolStripMenuItem.Click += new System.EventHandler(this.notesToolStripMenuItem_Click);
+            // 
+            // browserToolStripMenuItem
+            // 
+            this.browserToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.favicon;
+            this.browserToolStripMenuItem.Name = "browserToolStripMenuItem";
+            this.browserToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.browserToolStripMenuItem.Text = "Google";
+            this.browserToolStripMenuItem.Click += new System.EventHandler(this.browserToolStripMenuItem_Click);
+            // 
+            // snippingToolToolStripMenuItem
+            // 
+            this.snippingToolToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.snip;
+            this.snippingToolToolStripMenuItem.Name = "snippingToolToolStripMenuItem";
+            this.snippingToolToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.snippingToolToolStripMenuItem.Text = "Snipping Tool";
+            this.snippingToolToolStripMenuItem.Click += new System.EventHandler(this.snippingToolToolStripMenuItem_Click);
             // 
             // lblPrevious
             // 
@@ -843,9 +857,7 @@
         private System.Windows.Forms.ToolStripMenuItem goToPlayerRegistrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem goToTransactionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewReportsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewAllTournamentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createNewToolStripMenuItem;
         private System.Windows.Forms.Label lblPrevious;
         private System.Windows.Forms.Label lblCurrent;
         private System.Windows.Forms.Label lblExit;
@@ -885,13 +897,14 @@
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculatorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calenderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem notesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matchRegistrationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matchRegistrationToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tournamentRegistrationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editPlayerImageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem browserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goToMatchRegistrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goToSquadRegistrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem snippingToolToolStripMenuItem;
     }
 }

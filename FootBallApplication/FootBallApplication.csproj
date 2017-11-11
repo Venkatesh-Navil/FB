@@ -366,6 +366,12 @@
     <None Include="Resources\hfjdg6.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\team.ico" />
+    <None Include="Resources\tour.ico" />
+    <None Include="Resources\player.ico" />
+    <None Include="Resources\Wwalczyszyn-Android-Style-Honeycomb-Calculator.ico" />
+    <None Include="Resources\snip.ico" />
+    <None Include="Resources\Loginnfb.jpg" />
     <None Include="Resources\NewMainPage.jpg" />
     <None Include="Resources\NewLoginPage.jpg" />
     <None Include="Resources\PSI-login-page.png" />
@@ -373,6 +379,8 @@
     <None Include="Resources\fb ground.jpg" />
     <Content Include="football.ico" />
     <None Include="Resources\fbback.jpg" />
+    <None Include="Resources\favicon.ico" />
+    <None Include="Resources\faviconnotepad.ico" />
     <Content Include="Resources\Ground - Transaction page.jpg" />
     <None Include="Resources\Ground - Transaction page1.jpg" />
   </ItemGroup>

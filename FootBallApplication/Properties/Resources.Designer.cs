@@ -133,6 +133,26 @@ namespace FootBallApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap favicon {
+            get {
+                object obj = ResourceManager.GetObject("favicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap faviconnotepad {
+            get {
+                object obj = ResourceManager.GetObject("faviconnotepad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fb_ground {
             get {
                 object obj = ResourceManager.GetObject("fb ground", resourceCulture);
@@ -283,6 +303,16 @@ namespace FootBallApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Loginnfb {
+            get {
+                object obj = ResourceManager.GetObject("Loginnfb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NewLoginPage {
             get {
                 object obj = ResourceManager.GetObject("NewLoginPage", resourceCulture);
@@ -296,6 +326,16 @@ namespace FootBallApplication.Properties {
         internal static System.Drawing.Bitmap NewMainPage {
             get {
                 object obj = ResourceManager.GetObject("NewMainPage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap player {
+            get {
+                object obj = ResourceManager.GetObject("player", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,6 +383,36 @@ namespace FootBallApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap snip {
+            get {
+                object obj = ResourceManager.GetObject("snip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap team {
+            get {
+                object obj = ResourceManager.GetObject("team", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tour {
+            get {
+                object obj = ResourceManager.GetObject("tour", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ven {
             get {
                 object obj = ResourceManager.GetObject("ven", resourceCulture);
@@ -366,6 +436,16 @@ namespace FootBallApplication.Properties {
         internal static System.Drawing.Bitmap verde_hacia_abajo_del_icono_de_flecha_14276 {
             get {
                 object obj = ResourceManager.GetObject("verde-hacia-abajo-del-icono-de-flecha-14276", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wwalczyszyn_Android_Style_Honeycomb_Calculator {
+            get {
+                object obj = ResourceManager.GetObject("Wwalczyszyn-Android-Style-Honeycomb-Calculator", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

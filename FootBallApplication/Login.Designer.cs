@@ -85,19 +85,20 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(450, 148);
+            this.label4.Location = new System.Drawing.Point(458, 138);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(196, 55);
+            this.label4.Size = new System.Drawing.Size(111, 37);
             this.label4.TabIndex = 3;
             this.label4.Text = "KICKME";
+            this.label4.Visible = false;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pnllogin
             // 
             this.pnllogin.BackColor = System.Drawing.Color.Transparent;
-            this.pnllogin.Location = new System.Drawing.Point(263, 422);
+            this.pnllogin.Location = new System.Drawing.Point(28, 13);
             this.pnllogin.Name = "pnllogin";
             this.pnllogin.Size = new System.Drawing.Size(111, 28);
             this.pnllogin.TabIndex = 4;
@@ -159,10 +160,11 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::FootBallApplication.Properties.Resources.ven;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(402, 149);
+            this.panel1.Location = new System.Drawing.Point(424, 140);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(50, 46);
+            this.panel1.Size = new System.Drawing.Size(35, 35);
             this.panel1.TabIndex = 7;
+            this.panel1.Visible = false;
             // 
             // lblforgotpassword
             // 
@@ -208,7 +210,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FootBallApplication.Properties.Resources.NewLoginPage;
+            this.BackgroundImage = global::FootBallApplication.Properties.Resources.Loginnfb;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(680, 475);
             this.Controls.Add(this.lblforgotpassword);
