@@ -1519,6 +1519,14 @@ namespace FootBallApplication
                     {
                         cmbCaptonA.Items.Add(team1.Rows[i][0].ToString());
                     }
+                    chkselectionA.Checked = true;
+
+                    if (chkselectionB.Checked == false)
+                    {
+
+
+                        cmbTeams.Text = cmbTeams.Items[1].ToString();
+                    }
                     
                     //team1 = new DataTable();
                     //team1.Columns.Add("Players", typeof(string));
@@ -1542,6 +1550,12 @@ namespace FootBallApplication
                     {
                         cmbCaptonB.Items.Add(team2.Rows[i][0].ToString());
                     }
+                    chkselectionB.Checked = true;
+
+                    if (chkselectionB.Checked == false)
+                    {
+                        cmbTeams.Text = cmbTeams.Items[0].ToString();
+                    }
                     //team2 = new DataTable();
                     //team2.Columns.Add("Players", typeof(string));
                     //for (int l = 0; l < lstRight.Items.Count; l++)
@@ -1563,12 +1577,21 @@ namespace FootBallApplication
         {
 
             //if (cmbTossWonTeam.Text != "")
-            //{
+            //{if
+            if (chkselectionA.Checked == true && chkselectionB.Checked == true)
+            {
+
+
                 string raidteam = GetRaidTeam();
                 objSquard.Insert_player(team1, team2, sub1, sub2, clsGlobalValues.Tournament, clsGlobalValues.mid, finalteama, finalteamb, cmbTossWonTeam.Text, cmbDecision.Text, cmbCaptonA.Text, cmbCaptonB.Text, cmbUmpire1.Text, cmbUmpire2.Text, cmbRefree.Text, "", raidteam);
-              this.Hide();
+                this.Hide();
                 frmpositions frm = new frmpositions();
-               frm.Show();
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Registration Failed !");
+            }
                
 
             //}
@@ -1617,6 +1640,7 @@ namespace FootBallApplication
             cmbTeams.Text = cmbTeams.Items[0].ToString();
             lblcapA.Text = cmbTeams.Items[0].ToString()+" Captain";
             lblcapB.Text = cmbTeams.Items[1].ToString()+" Captain";
+            clsGlobalValues.Tournament = comboBox1.Text;
         }
     }
 }

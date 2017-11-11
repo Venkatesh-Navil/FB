@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmpositions));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblposition = new System.Windows.Forms.Label();
             this.lblteam = new System.Windows.Forms.Label();
             this.cmbteam = new System.Windows.Forms.ComboBox();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.lblstart = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.cmbpo1 = new System.Windows.Forms.ComboBox();
@@ -83,6 +81,10 @@
             this.chkp10 = new System.Windows.Forms.CheckBox();
             this.chkp11 = new System.Windows.Forms.CheckBox();
             this.chkp2 = new System.Windows.Forms.CheckBox();
+            this.btnsavepos = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.chkselectionA = new System.Windows.Forms.CheckBox();
+            this.chkselectionB = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -137,11 +139,11 @@
             // 
             this.lblposition.AutoSize = true;
             this.lblposition.BackColor = System.Drawing.Color.Transparent;
-            this.lblposition.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblposition.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblposition.ForeColor = System.Drawing.Color.Black;
-            this.lblposition.Location = new System.Drawing.Point(385, 96);
+            this.lblposition.Location = new System.Drawing.Point(376, 95);
             this.lblposition.Name = "lblposition";
-            this.lblposition.Size = new System.Drawing.Size(79, 19);
+            this.lblposition.Size = new System.Drawing.Size(72, 18);
             this.lblposition.TabIndex = 244;
             this.lblposition.Text = "Formation";
             // 
@@ -149,11 +151,11 @@
             // 
             this.lblteam.AutoSize = true;
             this.lblteam.BackColor = System.Drawing.Color.Transparent;
-            this.lblteam.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblteam.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblteam.ForeColor = System.Drawing.Color.Black;
-            this.lblteam.Location = new System.Drawing.Point(165, 94);
+            this.lblteam.Location = new System.Drawing.Point(179, 94);
             this.lblteam.Name = "lblteam";
-            this.lblteam.Size = new System.Drawing.Size(45, 19);
+            this.lblteam.Size = new System.Drawing.Size(41, 18);
             this.lblteam.TabIndex = 259;
             this.lblteam.Text = "Team";
             // 
@@ -166,23 +168,14 @@
             this.cmbteam.TabIndex = 243;
             this.cmbteam.SelectedIndexChanged += new System.EventHandler(this.cmbteam_SelectedIndexChanged);
             // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Location = new System.Drawing.Point(627, 609);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(41, 24);
-            this.panel7.TabIndex = 290;
-            // 
             // lblstart
             // 
             this.lblstart.AutoSize = true;
             this.lblstart.BackColor = System.Drawing.Color.Transparent;
+            this.lblstart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblstart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblstart.ForeColor = System.Drawing.Color.Black;
-            this.lblstart.Location = new System.Drawing.Point(671, 613);
+            this.lblstart.Location = new System.Drawing.Point(676, 612);
             this.lblstart.Name = "lblstart";
             this.lblstart.Size = new System.Drawing.Size(119, 15);
             this.lblstart.TabIndex = 289;
@@ -193,7 +186,7 @@
             // 
             this.btnSave.BackColor = System.Drawing.Color.Khaki;
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(371, 588);
+            this.btnSave.Location = new System.Drawing.Point(26, 441);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 292;
@@ -305,11 +298,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(478, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 19);
+            this.label2.Size = new System.Drawing.Size(65, 18);
             this.label2.TabIndex = 244;
             this.label2.Text = "Attribute";
             this.label2.Visible = false;
@@ -320,9 +313,9 @@
             this.btnback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnback.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnback.ForeColor = System.Drawing.Color.Black;
-            this.btnback.Location = new System.Drawing.Point(21, 23);
+            this.btnback.Location = new System.Drawing.Point(5, 5);
             this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(71, 23);
+            this.btnback.Size = new System.Drawing.Size(75, 24);
             this.btnback.TabIndex = 294;
             this.btnback.Text = "Back";
             this.btnback.UseVisualStyleBackColor = false;
@@ -332,11 +325,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(225, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 19);
+            this.label1.Size = new System.Drawing.Size(47, 18);
             this.label1.TabIndex = 259;
             this.label1.Text = "Player";
             this.label1.Visible = false;
@@ -346,6 +339,7 @@
             this.p1.AutoSize = true;
             this.p1.BackColor = System.Drawing.Color.Transparent;
             this.p1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p1.ForeColor = System.Drawing.Color.Black;
             this.p1.Location = new System.Drawing.Point(231, 188);
             this.p1.Name = "p1";
             this.p1.Size = new System.Drawing.Size(0, 18);
@@ -356,6 +350,7 @@
             this.p2.AutoSize = true;
             this.p2.BackColor = System.Drawing.Color.Transparent;
             this.p2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p2.ForeColor = System.Drawing.Color.Black;
             this.p2.Location = new System.Drawing.Point(231, 225);
             this.p2.Name = "p2";
             this.p2.Size = new System.Drawing.Size(0, 18);
@@ -366,6 +361,7 @@
             this.p3.AutoSize = true;
             this.p3.BackColor = System.Drawing.Color.Transparent;
             this.p3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p3.ForeColor = System.Drawing.Color.Black;
             this.p3.Location = new System.Drawing.Point(231, 263);
             this.p3.Name = "p3";
             this.p3.Size = new System.Drawing.Size(0, 18);
@@ -376,6 +372,7 @@
             this.p4.AutoSize = true;
             this.p4.BackColor = System.Drawing.Color.Transparent;
             this.p4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p4.ForeColor = System.Drawing.Color.Black;
             this.p4.Location = new System.Drawing.Point(231, 299);
             this.p4.Name = "p4";
             this.p4.Size = new System.Drawing.Size(0, 18);
@@ -386,6 +383,7 @@
             this.p5.AutoSize = true;
             this.p5.BackColor = System.Drawing.Color.Transparent;
             this.p5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p5.ForeColor = System.Drawing.Color.Black;
             this.p5.Location = new System.Drawing.Point(231, 335);
             this.p5.Name = "p5";
             this.p5.Size = new System.Drawing.Size(0, 18);
@@ -396,6 +394,7 @@
             this.p6.AutoSize = true;
             this.p6.BackColor = System.Drawing.Color.Transparent;
             this.p6.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p6.ForeColor = System.Drawing.Color.Black;
             this.p6.Location = new System.Drawing.Point(231, 371);
             this.p6.Name = "p6";
             this.p6.Size = new System.Drawing.Size(0, 18);
@@ -406,6 +405,7 @@
             this.p7.AutoSize = true;
             this.p7.BackColor = System.Drawing.Color.Transparent;
             this.p7.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p7.ForeColor = System.Drawing.Color.Black;
             this.p7.Location = new System.Drawing.Point(231, 403);
             this.p7.Name = "p7";
             this.p7.Size = new System.Drawing.Size(0, 18);
@@ -416,6 +416,7 @@
             this.p8.AutoSize = true;
             this.p8.BackColor = System.Drawing.Color.Transparent;
             this.p8.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p8.ForeColor = System.Drawing.Color.Black;
             this.p8.Location = new System.Drawing.Point(231, 437);
             this.p8.Name = "p8";
             this.p8.Size = new System.Drawing.Size(0, 18);
@@ -426,6 +427,7 @@
             this.p9.AutoSize = true;
             this.p9.BackColor = System.Drawing.Color.Transparent;
             this.p9.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p9.ForeColor = System.Drawing.Color.Black;
             this.p9.Location = new System.Drawing.Point(231, 466);
             this.p9.Name = "p9";
             this.p9.Size = new System.Drawing.Size(0, 18);
@@ -436,6 +438,7 @@
             this.p10.AutoSize = true;
             this.p10.BackColor = System.Drawing.Color.Transparent;
             this.p10.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p10.ForeColor = System.Drawing.Color.Black;
             this.p10.Location = new System.Drawing.Point(229, 507);
             this.p10.Name = "p10";
             this.p10.Size = new System.Drawing.Size(0, 18);
@@ -446,6 +449,7 @@
             this.p11.AutoSize = true;
             this.p11.BackColor = System.Drawing.Color.Transparent;
             this.p11.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.p11.ForeColor = System.Drawing.Color.Black;
             this.p11.Location = new System.Drawing.Point(231, 543);
             this.p11.Name = "p11";
             this.p11.Size = new System.Drawing.Size(0, 18);
@@ -600,7 +604,7 @@
             this.chkp1.BackColor = System.Drawing.Color.Transparent;
             this.chkp1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp1.ForeColor = System.Drawing.Color.White;
-            this.chkp1.Location = new System.Drawing.Point(693, 187);
+            this.chkp1.Location = new System.Drawing.Point(692, 79);
             this.chkp1.Name = "chkp1";
             this.chkp1.Size = new System.Drawing.Size(15, 14);
             this.chkp1.TabIndex = 295;
@@ -613,7 +617,7 @@
             this.chkp3.BackColor = System.Drawing.Color.Transparent;
             this.chkp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp3.ForeColor = System.Drawing.Color.White;
-            this.chkp3.Location = new System.Drawing.Point(693, 267);
+            this.chkp3.Location = new System.Drawing.Point(692, 159);
             this.chkp3.Name = "chkp3";
             this.chkp3.Size = new System.Drawing.Size(15, 14);
             this.chkp3.TabIndex = 295;
@@ -626,7 +630,7 @@
             this.chkp4.BackColor = System.Drawing.Color.Transparent;
             this.chkp4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp4.ForeColor = System.Drawing.Color.White;
-            this.chkp4.Location = new System.Drawing.Point(693, 303);
+            this.chkp4.Location = new System.Drawing.Point(692, 195);
             this.chkp4.Name = "chkp4";
             this.chkp4.Size = new System.Drawing.Size(15, 14);
             this.chkp4.TabIndex = 295;
@@ -639,7 +643,7 @@
             this.chkp5.BackColor = System.Drawing.Color.Transparent;
             this.chkp5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp5.ForeColor = System.Drawing.Color.White;
-            this.chkp5.Location = new System.Drawing.Point(693, 339);
+            this.chkp5.Location = new System.Drawing.Point(692, 231);
             this.chkp5.Name = "chkp5";
             this.chkp5.Size = new System.Drawing.Size(15, 14);
             this.chkp5.TabIndex = 295;
@@ -652,7 +656,7 @@
             this.chkp6.BackColor = System.Drawing.Color.Transparent;
             this.chkp6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp6.ForeColor = System.Drawing.Color.White;
-            this.chkp6.Location = new System.Drawing.Point(693, 375);
+            this.chkp6.Location = new System.Drawing.Point(692, 267);
             this.chkp6.Name = "chkp6";
             this.chkp6.Size = new System.Drawing.Size(15, 14);
             this.chkp6.TabIndex = 295;
@@ -665,7 +669,7 @@
             this.chkp7.BackColor = System.Drawing.Color.Transparent;
             this.chkp7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp7.ForeColor = System.Drawing.Color.White;
-            this.chkp7.Location = new System.Drawing.Point(693, 407);
+            this.chkp7.Location = new System.Drawing.Point(692, 299);
             this.chkp7.Name = "chkp7";
             this.chkp7.Size = new System.Drawing.Size(15, 14);
             this.chkp7.TabIndex = 295;
@@ -678,7 +682,7 @@
             this.chkp8.BackColor = System.Drawing.Color.Transparent;
             this.chkp8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp8.ForeColor = System.Drawing.Color.White;
-            this.chkp8.Location = new System.Drawing.Point(693, 441);
+            this.chkp8.Location = new System.Drawing.Point(692, 333);
             this.chkp8.Name = "chkp8";
             this.chkp8.Size = new System.Drawing.Size(15, 14);
             this.chkp8.TabIndex = 295;
@@ -691,7 +695,7 @@
             this.chkp9.BackColor = System.Drawing.Color.Transparent;
             this.chkp9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp9.ForeColor = System.Drawing.Color.White;
-            this.chkp9.Location = new System.Drawing.Point(693, 477);
+            this.chkp9.Location = new System.Drawing.Point(692, 369);
             this.chkp9.Name = "chkp9";
             this.chkp9.Size = new System.Drawing.Size(15, 14);
             this.chkp9.TabIndex = 295;
@@ -704,7 +708,7 @@
             this.chkp10.BackColor = System.Drawing.Color.Transparent;
             this.chkp10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp10.ForeColor = System.Drawing.Color.White;
-            this.chkp10.Location = new System.Drawing.Point(693, 514);
+            this.chkp10.Location = new System.Drawing.Point(692, 406);
             this.chkp10.Name = "chkp10";
             this.chkp10.Size = new System.Drawing.Size(15, 14);
             this.chkp10.TabIndex = 295;
@@ -717,7 +721,7 @@
             this.chkp11.BackColor = System.Drawing.Color.Transparent;
             this.chkp11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp11.ForeColor = System.Drawing.Color.White;
-            this.chkp11.Location = new System.Drawing.Point(693, 543);
+            this.chkp11.Location = new System.Drawing.Point(692, 435);
             this.chkp11.Name = "chkp11";
             this.chkp11.Size = new System.Drawing.Size(15, 14);
             this.chkp11.TabIndex = 295;
@@ -730,20 +734,72 @@
             this.chkp2.BackColor = System.Drawing.Color.Transparent;
             this.chkp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkp2.ForeColor = System.Drawing.Color.White;
-            this.chkp2.Location = new System.Drawing.Point(693, 229);
+            this.chkp2.Location = new System.Drawing.Point(692, 121);
             this.chkp2.Name = "chkp2";
             this.chkp2.Size = new System.Drawing.Size(15, 14);
             this.chkp2.TabIndex = 295;
             this.chkp2.UseVisualStyleBackColor = false;
             this.chkp2.Visible = false;
             // 
+            // btnsavepos
+            // 
+            this.btnsavepos.BackColor = System.Drawing.Color.Transparent;
+            this.btnsavepos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsavepos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsavepos.ForeColor = System.Drawing.Color.Black;
+            this.btnsavepos.Location = new System.Drawing.Point(335, 595);
+            this.btnsavepos.Name = "btnsavepos";
+            this.btnsavepos.Size = new System.Drawing.Size(112, 29);
+            this.btnsavepos.TabIndex = 297;
+            this.btnsavepos.Text = "Save";
+            this.btnsavepos.UseVisualStyleBackColor = false;
+            this.btnsavepos.Click += new System.EventHandler(this.btnsavepos_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.BackgroundImage = global::FootBallApplication.Properties.Resources.ven;
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel7.Location = new System.Drawing.Point(638, 602);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(37, 37);
+            this.panel7.TabIndex = 298;
+            // 
+            // chkselectionA
+            // 
+            this.chkselectionA.AutoSize = true;
+            this.chkselectionA.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkselectionA.ForeColor = System.Drawing.Color.Black;
+            this.chkselectionA.Location = new System.Drawing.Point(638, 486);
+            this.chkselectionA.Name = "chkselectionA";
+            this.chkselectionA.Size = new System.Drawing.Size(69, 22);
+            this.chkselectionA.TabIndex = 299;
+            this.chkselectionA.Text = "TeamA";
+            this.chkselectionA.UseVisualStyleBackColor = true;
+            // 
+            // chkselectionB
+            // 
+            this.chkselectionB.AutoSize = true;
+            this.chkselectionB.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkselectionB.ForeColor = System.Drawing.Color.Black;
+            this.chkselectionB.Location = new System.Drawing.Point(638, 529);
+            this.chkselectionB.Name = "chkselectionB";
+            this.chkselectionB.Size = new System.Drawing.Size(68, 22);
+            this.chkselectionB.TabIndex = 299;
+            this.chkselectionB.Text = "TeamB";
+            this.chkselectionB.UseVisualStyleBackColor = true;
+            // 
             // frmpositions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FootBallApplication.Properties.Resources.NewMainPage;
+            this.BackgroundImage = global::FootBallApplication.Properties.Resources.fbback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(815, 648);
+            this.Controls.Add(this.chkselectionB);
+            this.Controls.Add(this.chkselectionA);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.btnsavepos);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.p11);
             this.Controls.Add(this.label12);
@@ -790,7 +846,6 @@
             this.Controls.Add(this.cmbpo2);
             this.Controls.Add(this.cmbpo1);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.lblstart);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
@@ -799,9 +854,13 @@
             this.Controls.Add(this.lblteam);
             this.Controls.Add(this.cmbteam);
             this.ForeColor = System.Drawing.Color.Khaki;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(831, 687);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(831, 687);
             this.Name = "frmpositions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmpositions";
+            this.Text = "Position";
             this.Load += new System.EventHandler(this.frmpositions_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -813,7 +872,6 @@
         private System.Windows.Forms.Label lblposition;
         private System.Windows.Forms.Label lblteam;
         private System.Windows.Forms.ComboBox cmbteam;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label lblstart;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox cmbpo1;
@@ -863,5 +921,9 @@
         private System.Windows.Forms.CheckBox chkp10;
         private System.Windows.Forms.CheckBox chkp11;
         private System.Windows.Forms.CheckBox chkp2;
+        private System.Windows.Forms.Button btnsavepos;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.CheckBox chkselectionA;
+        private System.Windows.Forms.CheckBox chkselectionB;
     }
 }

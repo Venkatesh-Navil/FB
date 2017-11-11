@@ -372,6 +372,7 @@
     <None Include="Resources\record.png" />
     <None Include="Resources\fb ground.jpg" />
     <Content Include="football.ico" />
+    <None Include="Resources\fbback.jpg" />
     <Content Include="Resources\Ground - Transaction page.jpg" />
     <None Include="Resources\Ground - Transaction page1.jpg" />
   </ItemGroup>

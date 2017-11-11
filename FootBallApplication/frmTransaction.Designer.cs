@@ -138,11 +138,34 @@
             this.pnlpitch = new System.Windows.Forms.Panel();
             this.lstSub = new System.Windows.Forms.ListBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goToTournamentRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goToTeamRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goToPlayerRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goToTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewAllTournamentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matchRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matchRegistrationToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tournamentRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editPlayerImageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calenderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.browserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel3.SuspendLayout();
             this.pnlpitch.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblteamB
@@ -150,7 +173,7 @@
             this.lblteamB.AutoSize = true;
             this.lblteamB.BackColor = System.Drawing.Color.Transparent;
             this.lblteamB.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblteamB.ForeColor = System.Drawing.Color.White;
+            this.lblteamB.ForeColor = System.Drawing.Color.Black;
             this.lblteamB.Location = new System.Drawing.Point(202, 178);
             this.lblteamB.Name = "lblteamB";
             this.lblteamB.Size = new System.Drawing.Size(90, 19);
@@ -162,7 +185,7 @@
             this.lblteamA.AutoSize = true;
             this.lblteamA.BackColor = System.Drawing.Color.Transparent;
             this.lblteamA.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblteamA.ForeColor = System.Drawing.Color.White;
+            this.lblteamA.ForeColor = System.Drawing.Color.Black;
             this.lblteamA.Location = new System.Drawing.Point(16, 178);
             this.lblteamA.Name = "lblteamA";
             this.lblteamA.Size = new System.Drawing.Size(56, 19);
@@ -174,7 +197,7 @@
             this.lblscoreA.AutoSize = true;
             this.lblscoreA.BackColor = System.Drawing.Color.Transparent;
             this.lblscoreA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblscoreA.ForeColor = System.Drawing.Color.White;
+            this.lblscoreA.ForeColor = System.Drawing.Color.Black;
             this.lblscoreA.Location = new System.Drawing.Point(2, 4);
             this.lblscoreA.Name = "lblscoreA";
             this.lblscoreA.Size = new System.Drawing.Size(15, 15);
@@ -187,7 +210,7 @@
             this.lblscoreB.AutoSize = true;
             this.lblscoreB.BackColor = System.Drawing.Color.Transparent;
             this.lblscoreB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblscoreB.ForeColor = System.Drawing.Color.White;
+            this.lblscoreB.ForeColor = System.Drawing.Color.Black;
             this.lblscoreB.Location = new System.Drawing.Point(52, 4);
             this.lblscoreB.Name = "lblscoreB";
             this.lblscoreB.Size = new System.Drawing.Size(15, 15);
@@ -199,7 +222,7 @@
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(28, 4);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(12, 16);
@@ -222,11 +245,11 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(33, 53);
+            this.label18.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(18, 85);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(41, 15);
+            this.label18.Size = new System.Drawing.Size(40, 18);
             this.label18.TabIndex = 8;
             this.label18.Text = "Date ";
             // 
@@ -234,11 +257,11 @@
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(32, 80);
+            this.label21.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(17, 112);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(51, 15);
+            this.label21.Size = new System.Drawing.Size(51, 18);
             this.label21.TabIndex = 8;
             this.label21.Text = "Venue ";
             // 
@@ -246,18 +269,18 @@
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(32, 25);
+            this.label24.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(17, 57);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(84, 15);
+            this.label24.Size = new System.Drawing.Size(83, 18);
             this.label24.TabIndex = 8;
             this.label24.Text = "Tournament";
             // 
             // btngkA
             // 
             this.btngkA.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btngkA.Location = new System.Drawing.Point(361, 330);
+            this.btngkA.Location = new System.Drawing.Point(365, 336);
             this.btngkA.Name = "btngkA";
             this.btngkA.Size = new System.Drawing.Size(48, 23);
             this.btngkA.TabIndex = 14;
@@ -268,7 +291,7 @@
             // btngkB
             // 
             this.btngkB.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btngkB.Location = new System.Drawing.Point(805, 644);
+            this.btngkB.Location = new System.Drawing.Point(809, 650);
             this.btngkB.Name = "btngkB";
             this.btngkB.Size = new System.Drawing.Size(55, 23);
             this.btngkB.TabIndex = 14;
@@ -304,7 +327,7 @@
             this.panel23.Controls.Add(this.label47);
             this.panel23.Controls.Add(this.label48);
             this.panel23.ForeColor = System.Drawing.Color.Aquamarine;
-            this.panel23.Location = new System.Drawing.Point(2, 362);
+            this.panel23.Location = new System.Drawing.Point(6, 368);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(357, 294);
             this.panel23.TabIndex = 9;
@@ -644,7 +667,7 @@
             this.panel24.Controls.Add(this.label22);
             this.panel24.Controls.Add(this.label19);
             this.panel24.ForeColor = System.Drawing.Color.Aquamarine;
-            this.panel24.Location = new System.Drawing.Point(868, 362);
+            this.panel24.Location = new System.Drawing.Point(872, 368);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(243, 294);
             this.panel24.TabIndex = 10;
@@ -972,11 +995,11 @@
             // 
             this.lblvenue.AutoSize = true;
             this.lblvenue.BackColor = System.Drawing.Color.Transparent;
-            this.lblvenue.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblvenue.ForeColor = System.Drawing.Color.Khaki;
-            this.lblvenue.Location = new System.Drawing.Point(137, 80);
+            this.lblvenue.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblvenue.ForeColor = System.Drawing.Color.Black;
+            this.lblvenue.Location = new System.Drawing.Point(122, 112);
             this.lblvenue.Name = "lblvenue";
-            this.lblvenue.Size = new System.Drawing.Size(61, 19);
+            this.lblvenue.Size = new System.Drawing.Size(59, 18);
             this.lblvenue.TabIndex = 9;
             this.lblvenue.Text = "Chennai";
             // 
@@ -984,11 +1007,11 @@
             // 
             this.lbldate.AutoSize = true;
             this.lbldate.BackColor = System.Drawing.Color.Transparent;
-            this.lbldate.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldate.ForeColor = System.Drawing.Color.Khaki;
-            this.lbldate.Location = new System.Drawing.Point(136, 51);
+            this.lbldate.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldate.ForeColor = System.Drawing.Color.Black;
+            this.lbldate.Location = new System.Drawing.Point(121, 83);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(83, 19);
+            this.lbldate.Size = new System.Drawing.Size(74, 18);
             this.lbldate.TabIndex = 9;
             this.lbldate.Text = "12-10-2016";
             // 
@@ -996,11 +1019,11 @@
             // 
             this.lbltour.AutoSize = true;
             this.lbltour.BackColor = System.Drawing.Color.Transparent;
-            this.lbltour.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltour.ForeColor = System.Drawing.Color.Khaki;
-            this.lbltour.Location = new System.Drawing.Point(136, 23);
+            this.lbltour.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltour.ForeColor = System.Drawing.Color.Black;
+            this.lbltour.Location = new System.Drawing.Point(121, 55);
             this.lbltour.Name = "lbltour";
-            this.lbltour.Size = new System.Drawing.Size(166, 19);
+            this.lbltour.Size = new System.Drawing.Size(155, 18);
             this.lbltour.TabIndex = 9;
             this.lbltour.Text = "Indian Premiere League";
             // 
@@ -1009,7 +1032,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Khaki;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(87, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 19);
@@ -1020,7 +1043,7 @@
             // 
             this.btntma1.BackColor = System.Drawing.Color.White;
             this.btntma1.ForeColor = System.Drawing.Color.Black;
-            this.btntma1.Location = new System.Drawing.Point(415, 330);
+            this.btntma1.Location = new System.Drawing.Point(419, 336);
             this.btntma1.Name = "btntma1";
             this.btntma1.Size = new System.Drawing.Size(38, 23);
             this.btntma1.TabIndex = 14;
@@ -1032,7 +1055,7 @@
             // 
             this.btntma2.BackColor = System.Drawing.Color.White;
             this.btntma2.ForeColor = System.Drawing.Color.Black;
-            this.btntma2.Location = new System.Drawing.Point(459, 330);
+            this.btntma2.Location = new System.Drawing.Point(463, 336);
             this.btntma2.Name = "btntma2";
             this.btntma2.Size = new System.Drawing.Size(38, 23);
             this.btntma2.TabIndex = 14;
@@ -1044,7 +1067,7 @@
             // 
             this.btntma3.BackColor = System.Drawing.Color.White;
             this.btntma3.ForeColor = System.Drawing.Color.Black;
-            this.btntma3.Location = new System.Drawing.Point(503, 330);
+            this.btntma3.Location = new System.Drawing.Point(507, 336);
             this.btntma3.Name = "btntma3";
             this.btntma3.Size = new System.Drawing.Size(38, 23);
             this.btntma3.TabIndex = 14;
@@ -1056,7 +1079,7 @@
             // 
             this.btntma4.BackColor = System.Drawing.Color.White;
             this.btntma4.ForeColor = System.Drawing.Color.Black;
-            this.btntma4.Location = new System.Drawing.Point(547, 330);
+            this.btntma4.Location = new System.Drawing.Point(551, 336);
             this.btntma4.Name = "btntma4";
             this.btntma4.Size = new System.Drawing.Size(38, 23);
             this.btntma4.TabIndex = 14;
@@ -1068,7 +1091,7 @@
             // 
             this.btntma7.BackColor = System.Drawing.Color.White;
             this.btntma7.ForeColor = System.Drawing.Color.Black;
-            this.btntma7.Location = new System.Drawing.Point(679, 330);
+            this.btntma7.Location = new System.Drawing.Point(683, 336);
             this.btntma7.Name = "btntma7";
             this.btntma7.Size = new System.Drawing.Size(38, 23);
             this.btntma7.TabIndex = 14;
@@ -1080,7 +1103,7 @@
             // 
             this.btntma6.BackColor = System.Drawing.Color.White;
             this.btntma6.ForeColor = System.Drawing.Color.Black;
-            this.btntma6.Location = new System.Drawing.Point(635, 330);
+            this.btntma6.Location = new System.Drawing.Point(639, 336);
             this.btntma6.Name = "btntma6";
             this.btntma6.Size = new System.Drawing.Size(38, 23);
             this.btntma6.TabIndex = 14;
@@ -1092,7 +1115,7 @@
             // 
             this.btntma8.BackColor = System.Drawing.Color.White;
             this.btntma8.ForeColor = System.Drawing.Color.Black;
-            this.btntma8.Location = new System.Drawing.Point(723, 330);
+            this.btntma8.Location = new System.Drawing.Point(727, 336);
             this.btntma8.Name = "btntma8";
             this.btntma8.Size = new System.Drawing.Size(38, 23);
             this.btntma8.TabIndex = 14;
@@ -1104,7 +1127,7 @@
             // 
             this.btntma9.BackColor = System.Drawing.Color.White;
             this.btntma9.ForeColor = System.Drawing.Color.Black;
-            this.btntma9.Location = new System.Drawing.Point(767, 330);
+            this.btntma9.Location = new System.Drawing.Point(771, 336);
             this.btntma9.Name = "btntma9";
             this.btntma9.Size = new System.Drawing.Size(38, 23);
             this.btntma9.TabIndex = 14;
@@ -1116,7 +1139,7 @@
             // 
             this.btntma10.BackColor = System.Drawing.Color.White;
             this.btntma10.ForeColor = System.Drawing.Color.Black;
-            this.btntma10.Location = new System.Drawing.Point(815, 330);
+            this.btntma10.Location = new System.Drawing.Point(819, 336);
             this.btntma10.Name = "btntma10";
             this.btntma10.Size = new System.Drawing.Size(38, 23);
             this.btntma10.TabIndex = 14;
@@ -1128,7 +1151,7 @@
             // 
             this.btntmb1.BackColor = System.Drawing.Color.White;
             this.btntmb1.ForeColor = System.Drawing.Color.Black;
-            this.btntmb1.Location = new System.Drawing.Point(361, 644);
+            this.btntmb1.Location = new System.Drawing.Point(365, 650);
             this.btntmb1.Name = "btntmb1";
             this.btntmb1.Size = new System.Drawing.Size(38, 23);
             this.btntmb1.TabIndex = 14;
@@ -1140,7 +1163,7 @@
             // 
             this.btntmb2.BackColor = System.Drawing.Color.White;
             this.btntmb2.ForeColor = System.Drawing.Color.Black;
-            this.btntmb2.Location = new System.Drawing.Point(405, 644);
+            this.btntmb2.Location = new System.Drawing.Point(409, 650);
             this.btntmb2.Name = "btntmb2";
             this.btntmb2.Size = new System.Drawing.Size(38, 23);
             this.btntmb2.TabIndex = 14;
@@ -1152,7 +1175,7 @@
             // 
             this.btntmb3.BackColor = System.Drawing.Color.White;
             this.btntmb3.ForeColor = System.Drawing.Color.Black;
-            this.btntmb3.Location = new System.Drawing.Point(449, 644);
+            this.btntmb3.Location = new System.Drawing.Point(453, 650);
             this.btntmb3.Name = "btntmb3";
             this.btntmb3.Size = new System.Drawing.Size(38, 23);
             this.btntmb3.TabIndex = 14;
@@ -1164,7 +1187,7 @@
             // 
             this.btntmb4.BackColor = System.Drawing.Color.White;
             this.btntmb4.ForeColor = System.Drawing.Color.Black;
-            this.btntmb4.Location = new System.Drawing.Point(493, 644);
+            this.btntmb4.Location = new System.Drawing.Point(497, 650);
             this.btntmb4.Name = "btntmb4";
             this.btntmb4.Size = new System.Drawing.Size(38, 23);
             this.btntmb4.TabIndex = 14;
@@ -1176,7 +1199,7 @@
             // 
             this.btntmb7.BackColor = System.Drawing.Color.White;
             this.btntmb7.ForeColor = System.Drawing.Color.Black;
-            this.btntmb7.Location = new System.Drawing.Point(625, 644);
+            this.btntmb7.Location = new System.Drawing.Point(629, 650);
             this.btntmb7.Name = "btntmb7";
             this.btntmb7.Size = new System.Drawing.Size(38, 23);
             this.btntmb7.TabIndex = 14;
@@ -1188,7 +1211,7 @@
             // 
             this.btntmb8.BackColor = System.Drawing.Color.White;
             this.btntmb8.ForeColor = System.Drawing.Color.Black;
-            this.btntmb8.Location = new System.Drawing.Point(669, 644);
+            this.btntmb8.Location = new System.Drawing.Point(673, 650);
             this.btntmb8.Name = "btntmb8";
             this.btntmb8.Size = new System.Drawing.Size(38, 23);
             this.btntmb8.TabIndex = 14;
@@ -1200,7 +1223,7 @@
             // 
             this.btntmb9.BackColor = System.Drawing.Color.White;
             this.btntmb9.ForeColor = System.Drawing.Color.Black;
-            this.btntmb9.Location = new System.Drawing.Point(713, 644);
+            this.btntmb9.Location = new System.Drawing.Point(717, 650);
             this.btntmb9.Name = "btntmb9";
             this.btntmb9.Size = new System.Drawing.Size(38, 23);
             this.btntmb9.TabIndex = 14;
@@ -1212,7 +1235,7 @@
             // 
             this.btntmb10.BackColor = System.Drawing.Color.White;
             this.btntmb10.ForeColor = System.Drawing.Color.Black;
-            this.btntmb10.Location = new System.Drawing.Point(761, 644);
+            this.btntmb10.Location = new System.Drawing.Point(765, 650);
             this.btntmb10.Name = "btntmb10";
             this.btntmb10.Size = new System.Drawing.Size(38, 23);
             this.btntmb10.TabIndex = 14;
@@ -1224,7 +1247,7 @@
             // 
             this.btntmb6.BackColor = System.Drawing.Color.White;
             this.btntmb6.ForeColor = System.Drawing.Color.Black;
-            this.btntmb6.Location = new System.Drawing.Point(581, 644);
+            this.btntmb6.Location = new System.Drawing.Point(585, 650);
             this.btntmb6.Name = "btntmb6";
             this.btntmb6.Size = new System.Drawing.Size(38, 23);
             this.btntmb6.TabIndex = 14;
@@ -1236,7 +1259,7 @@
             // 
             this.btntma5.BackColor = System.Drawing.Color.White;
             this.btntma5.ForeColor = System.Drawing.Color.Black;
-            this.btntma5.Location = new System.Drawing.Point(591, 330);
+            this.btntma5.Location = new System.Drawing.Point(595, 336);
             this.btntma5.Name = "btntma5";
             this.btntma5.Size = new System.Drawing.Size(38, 23);
             this.btntma5.TabIndex = 14;
@@ -1248,7 +1271,7 @@
             // 
             this.btntmb5.BackColor = System.Drawing.Color.White;
             this.btntmb5.ForeColor = System.Drawing.Color.Black;
-            this.btntmb5.Location = new System.Drawing.Point(537, 644);
+            this.btntmb5.Location = new System.Drawing.Point(541, 650);
             this.btntmb5.Name = "btntmb5";
             this.btntmb5.Size = new System.Drawing.Size(38, 23);
             this.btntmb5.TabIndex = 14;
@@ -1259,7 +1282,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(141, 340);
+            this.panel1.Location = new System.Drawing.Point(145, 346);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(16, 30);
             this.panel1.TabIndex = 15;
@@ -1269,11 +1292,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Orange;
-            this.label8.Location = new System.Drawing.Point(119, 27);
+            this.label8.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(104, 59);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(11, 15);
+            this.label8.Size = new System.Drawing.Size(12, 18);
             this.label8.TabIndex = 8;
             this.label8.Text = ":";
             // 
@@ -1281,11 +1304,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Orange;
-            this.label6.Location = new System.Drawing.Point(119, 82);
+            this.label6.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(104, 114);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(11, 15);
+            this.label6.Size = new System.Drawing.Size(12, 18);
             this.label6.TabIndex = 8;
             this.label6.Text = ":";
             // 
@@ -1293,18 +1316,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Orange;
-            this.label3.Location = new System.Drawing.Point(119, 55);
+            this.label3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(104, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(11, 15);
+            this.label3.Size = new System.Drawing.Size(12, 18);
             this.label3.TabIndex = 8;
             this.label3.Text = ":";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(26, 341);
+            this.panel2.Location = new System.Drawing.Point(30, 347);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(36, 15);
             this.panel2.TabIndex = 15;
@@ -1314,11 +1337,11 @@
             // 
             this.lblclear.AutoSize = true;
             this.lblclear.BackColor = System.Drawing.Color.Transparent;
-            this.lblclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblclear.ForeColor = System.Drawing.Color.Khaki;
+            this.lblclear.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblclear.ForeColor = System.Drawing.Color.Black;
             this.lblclear.Location = new System.Drawing.Point(922, 105);
             this.lblclear.Name = "lblclear";
-            this.lblclear.Size = new System.Drawing.Size(41, 15);
+            this.lblclear.Size = new System.Drawing.Size(40, 18);
             this.lblclear.TabIndex = 17;
             this.lblclear.Text = "Clear";
             this.lblclear.Click += new System.EventHandler(this.lblclear_Click);
@@ -1327,11 +1350,11 @@
             // 
             this.lbllogout.AutoSize = true;
             this.lbllogout.BackColor = System.Drawing.Color.Transparent;
-            this.lbllogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbllogout.ForeColor = System.Drawing.Color.Khaki;
-            this.lbllogout.Location = new System.Drawing.Point(1046, 11);
+            this.lbllogout.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbllogout.ForeColor = System.Drawing.Color.White;
+            this.lbllogout.Location = new System.Drawing.Point(1046, 21);
             this.lbllogout.Name = "lbllogout";
-            this.lbllogout.Size = new System.Drawing.Size(57, 15);
+            this.lbllogout.Size = new System.Drawing.Size(55, 18);
             this.lbllogout.TabIndex = 18;
             this.lbllogout.Text = "Log Out";
             this.lbllogout.Click += new System.EventHandler(this.lbllogout_Click);
@@ -1340,11 +1363,11 @@
             // 
             this.chkSub.AutoSize = true;
             this.chkSub.BackColor = System.Drawing.Color.Transparent;
-            this.chkSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSub.ForeColor = System.Drawing.Color.Khaki;
+            this.chkSub.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSub.ForeColor = System.Drawing.Color.Black;
             this.chkSub.Location = new System.Drawing.Point(924, 132);
             this.chkSub.Name = "chkSub";
-            this.chkSub.Size = new System.Drawing.Size(109, 19);
+            this.chkSub.Size = new System.Drawing.Size(109, 22);
             this.chkSub.TabIndex = 19;
             this.chkSub.Text = "Substitutions";
             this.chkSub.UseVisualStyleBackColor = false;
@@ -1364,11 +1387,11 @@
             // 
             this.lblundo.AutoSize = true;
             this.lblundo.BackColor = System.Drawing.Color.Transparent;
-            this.lblundo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblundo.ForeColor = System.Drawing.Color.Khaki;
+            this.lblundo.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblundo.ForeColor = System.Drawing.Color.Black;
             this.lblundo.Location = new System.Drawing.Point(922, 80);
             this.lblundo.Name = "lblundo";
-            this.lblundo.Size = new System.Drawing.Size(108, 13);
+            this.lblundo.Size = new System.Drawing.Size(115, 18);
             this.lblundo.TabIndex = 21;
             this.lblundo.Text = "Undo Transaction";
             this.lblundo.Click += new System.EventHandler(this.lblundo_Click);
@@ -1383,7 +1406,7 @@
             this.panel3.Controls.Add(this.btnDevice);
             this.panel3.Controls.Add(this.btnrecord);
             this.panel3.Controls.Add(this.videoSourcePlayer1);
-            this.panel3.Location = new System.Drawing.Point(346, 5);
+            this.panel3.Location = new System.Drawing.Point(350, 11);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(529, 319);
             this.panel3.TabIndex = 22;
@@ -1466,7 +1489,7 @@
             this.pnlpitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlpitch.Controls.Add(this.lstSub);
             this.pnlpitch.ForeColor = System.Drawing.Color.Aquamarine;
-            this.pnlpitch.Location = new System.Drawing.Point(361, 359);
+            this.pnlpitch.Location = new System.Drawing.Point(365, 365);
             this.pnlpitch.Name = "pnlpitch";
             this.pnlpitch.Size = new System.Drawing.Size(505, 280);
             this.pnlpitch.TabIndex = 0;
@@ -1489,20 +1512,185 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(82, 340);
+            this.panel4.Location = new System.Drawing.Point(86, 346);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(21, 16);
             this.panel4.TabIndex = 23;
             this.panel4.Visible = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.createNewToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.viewToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1115, 24);
+            this.menuStrip1.TabIndex = 24;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.goToTournamentRegistrationToolStripMenuItem,
+            this.goToTeamRegistrationToolStripMenuItem,
+            this.goToPlayerRegistrationToolStripMenuItem,
+            this.goToTransactionToolStripMenuItem,
+            this.viewReportsToolStripMenuItem,
+            this.viewAllTournamentsToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // goToTournamentRegistrationToolStripMenuItem
+            // 
+            this.goToTournamentRegistrationToolStripMenuItem.Name = "goToTournamentRegistrationToolStripMenuItem";
+            this.goToTournamentRegistrationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.goToTournamentRegistrationToolStripMenuItem.Text = "Go to Tournament Registration";
+            // 
+            // goToTeamRegistrationToolStripMenuItem
+            // 
+            this.goToTeamRegistrationToolStripMenuItem.Name = "goToTeamRegistrationToolStripMenuItem";
+            this.goToTeamRegistrationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.goToTeamRegistrationToolStripMenuItem.Text = "Go to Team Registration";
+            // 
+            // goToPlayerRegistrationToolStripMenuItem
+            // 
+            this.goToPlayerRegistrationToolStripMenuItem.Name = "goToPlayerRegistrationToolStripMenuItem";
+            this.goToPlayerRegistrationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.goToPlayerRegistrationToolStripMenuItem.Text = "Go to Player Registration";
+            // 
+            // goToTransactionToolStripMenuItem
+            // 
+            this.goToTransactionToolStripMenuItem.Name = "goToTransactionToolStripMenuItem";
+            this.goToTransactionToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.goToTransactionToolStripMenuItem.Text = "Go to Transaction";
+            // 
+            // viewReportsToolStripMenuItem
+            // 
+            this.viewReportsToolStripMenuItem.Name = "viewReportsToolStripMenuItem";
+            this.viewReportsToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.viewReportsToolStripMenuItem.Text = "View Reports";
+            // 
+            // viewAllTournamentsToolStripMenuItem
+            // 
+            this.viewAllTournamentsToolStripMenuItem.Name = "viewAllTournamentsToolStripMenuItem";
+            this.viewAllTournamentsToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.viewAllTournamentsToolStripMenuItem.Text = "View All Tournaments";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.matchRegistrationToolStripMenuItem,
+            this.matchRegistrationToolStripMenuItem1,
+            this.tournamentRegistrationToolStripMenuItem,
+            this.editPlayerImageToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // matchRegistrationToolStripMenuItem
+            // 
+            this.matchRegistrationToolStripMenuItem.Name = "matchRegistrationToolStripMenuItem";
+            this.matchRegistrationToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.matchRegistrationToolStripMenuItem.Text = "Edit Player Registration";
+            // 
+            // matchRegistrationToolStripMenuItem1
+            // 
+            this.matchRegistrationToolStripMenuItem1.Name = "matchRegistrationToolStripMenuItem1";
+            this.matchRegistrationToolStripMenuItem1.Size = new System.Drawing.Size(228, 22);
+            this.matchRegistrationToolStripMenuItem1.Text = "Edit Match Registration";
+            // 
+            // tournamentRegistrationToolStripMenuItem
+            // 
+            this.tournamentRegistrationToolStripMenuItem.Name = "tournamentRegistrationToolStripMenuItem";
+            this.tournamentRegistrationToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.tournamentRegistrationToolStripMenuItem.Text = "Edit Tournament Registration";
+            // 
+            // editPlayerImageToolStripMenuItem
+            // 
+            this.editPlayerImageToolStripMenuItem.Name = "editPlayerImageToolStripMenuItem";
+            this.editPlayerImageToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.editPlayerImageToolStripMenuItem.Text = "Edit Player Image";
+            // 
+            // createNewToolStripMenuItem
+            // 
+            this.createNewToolStripMenuItem.Name = "createNewToolStripMenuItem";
+            this.createNewToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.createNewToolStripMenuItem.Text = "Create New";
+            this.createNewToolStripMenuItem.Visible = false;
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calculatorToolStripMenuItem,
+            this.calenderToolStripMenuItem,
+            this.notesToolStripMenuItem,
+            this.browserToolStripMenuItem});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // calculatorToolStripMenuItem
+            // 
+            this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.calculatorToolStripMenuItem.Text = "Calculator";
+            // 
+            // calenderToolStripMenuItem
+            // 
+            this.calenderToolStripMenuItem.Name = "calenderToolStripMenuItem";
+            this.calenderToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.calenderToolStripMenuItem.Text = "Calender";
+            // 
+            // notesToolStripMenuItem
+            // 
+            this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.notesToolStripMenuItem.Text = "Notepad";
+            // 
+            // browserToolStripMenuItem
+            // 
+            this.browserToolStripMenuItem.Name = "browserToolStripMenuItem";
+            this.browserToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.browserToolStripMenuItem.Text = "Google";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reportsToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
+            // reportsToolStripMenuItem
+            // 
+            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.reportsToolStripMenuItem.Text = "Reports";
             // 
             // frmTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::FootBallApplication.Properties.Resources.hfjdg1;
+            this.BackgroundImage = global::FootBallApplication.Properties.Resources.fbback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1115, 672);
+            this.ClientSize = new System.Drawing.Size(1115, 680);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.lblundo);
             this.Controls.Add(this.lblclear);
             this.Controls.Add(this.lblteamA);
@@ -1551,7 +1739,6 @@
             this.Controls.Add(this.panel23);
             this.Controls.Add(this.pnlpitch);
             this.ForeColor = System.Drawing.Color.White;
-            this.MaximumSize = new System.Drawing.Size(1131, 711);
             this.MinimumSize = new System.Drawing.Size(1131, 711);
             this.Name = "frmTransaction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1565,6 +1752,8 @@
             this.panel24.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.pnlpitch.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1682,5 +1871,27 @@
         private System.Windows.Forms.Panel pnlrecording;
         private System.Windows.Forms.Button btnpause;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goToTournamentRegistrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goToTeamRegistrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goToPlayerRegistrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goToTransactionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewReportsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewAllTournamentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matchRegistrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matchRegistrationToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem tournamentRegistrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editPlayerImageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createNewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculatorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calenderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem browserToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
     }
 }

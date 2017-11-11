@@ -143,6 +143,16 @@ namespace FootBallApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fbback {
+            get {
+                object obj = ResourceManager.GetObject("fbback", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ground___Transaction_page {
             get {
                 object obj = ResourceManager.GetObject("Ground - Transaction page", resourceCulture);

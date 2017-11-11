@@ -121,6 +121,7 @@
             this.dgNavigation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgNavigation.BackgroundColor = System.Drawing.Color.Khaki;
             this.dgNavigation.ColumnHeadersVisible = false;
+            this.dgNavigation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgNavigation.GridColor = System.Drawing.Color.Gray;
             this.dgNavigation.Location = new System.Drawing.Point(323, 166);
             this.dgNavigation.Name = "dgNavigation";
@@ -158,6 +159,7 @@
             // lstTour
             // 
             this.lstTour.BackColor = System.Drawing.Color.Khaki;
+            this.lstTour.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lstTour.FormattingEnabled = true;
             this.lstTour.Location = new System.Drawing.Point(146, 166);
             this.lstTour.Name = "lstTour";
@@ -348,6 +350,7 @@
             // 
             this.lblPrevious.AutoSize = true;
             this.lblPrevious.BackColor = System.Drawing.Color.Transparent;
+            this.lblPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrevious.ForeColor = System.Drawing.Color.Black;
             this.lblPrevious.Location = new System.Drawing.Point(59, 141);
@@ -361,6 +364,7 @@
             // 
             this.lblCurrent.AutoSize = true;
             this.lblCurrent.BackColor = System.Drawing.Color.Transparent;
+            this.lblCurrent.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCurrent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrent.ForeColor = System.Drawing.Color.Black;
             this.lblCurrent.Location = new System.Drawing.Point(59, 218);
@@ -388,6 +392,7 @@
             // 
             this.lblHelp.AutoSize = true;
             this.lblHelp.BackColor = System.Drawing.Color.Transparent;
+            this.lblHelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHelp.ForeColor = System.Drawing.Color.Black;
             this.lblHelp.Location = new System.Drawing.Point(59, 378);
@@ -401,6 +406,7 @@
             // 
             this.lblAbout.AutoSize = true;
             this.lblAbout.BackColor = System.Drawing.Color.Transparent;
+            this.lblAbout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAbout.ForeColor = System.Drawing.Color.Black;
             this.lblAbout.Location = new System.Drawing.Point(59, 301);
@@ -415,41 +421,44 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(37, 75);
+            this.panel1.Location = new System.Drawing.Point(56, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(41, 37);
+            this.panel1.Size = new System.Drawing.Size(27, 23);
             this.panel1.TabIndex = 13;
             // 
             // lbltour
             // 
             this.lbltour.AutoSize = true;
             this.lbltour.BackColor = System.Drawing.Color.Transparent;
+            this.lbltour.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbltour.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltour.ForeColor = System.Drawing.Color.Black;
             this.lbltour.Location = new System.Drawing.Point(88, 14);
             this.lbltour.Name = "lbltour";
-            this.lbltour.Size = new System.Drawing.Size(247, 20);
+            this.lbltour.Size = new System.Drawing.Size(208, 20);
             this.lbltour.TabIndex = 12;
-            this.lbltour.Text = "New Tournament Registration";
+            this.lbltour.Text = "Tournament Registration";
             this.lbltour.Click += new System.EventHandler(this.lbltour_Click);
             // 
             // lblteam
             // 
             this.lblteam.AutoSize = true;
             this.lblteam.BackColor = System.Drawing.Color.Transparent;
+            this.lblteam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblteam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblteam.ForeColor = System.Drawing.Color.Black;
             this.lblteam.Location = new System.Drawing.Point(89, 83);
             this.lblteam.Name = "lblteam";
-            this.lblteam.Size = new System.Drawing.Size(194, 20);
+            this.lblteam.Size = new System.Drawing.Size(155, 20);
             this.lblteam.TabIndex = 12;
-            this.lblteam.Text = "New Team Registrstion";
+            this.lblteam.Text = "Team Registrstion";
             this.lblteam.Click += new System.EventHandler(this.lblteam_Click);
             // 
             // lblreports
             // 
             this.lblreports.AutoSize = true;
             this.lblreports.BackColor = System.Drawing.Color.Transparent;
+            this.lblreports.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblreports.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblreports.ForeColor = System.Drawing.Color.Black;
             this.lblreports.Location = new System.Drawing.Point(89, 367);
@@ -463,26 +472,28 @@
             // 
             this.lblmatch.AutoSize = true;
             this.lblmatch.BackColor = System.Drawing.Color.Transparent;
+            this.lblmatch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblmatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblmatch.ForeColor = System.Drawing.Color.Black;
             this.lblmatch.Location = new System.Drawing.Point(89, 227);
             this.lblmatch.Name = "lblmatch";
-            this.lblmatch.Size = new System.Drawing.Size(200, 20);
+            this.lblmatch.Size = new System.Drawing.Size(161, 20);
             this.lblmatch.TabIndex = 12;
-            this.lblmatch.Text = "New Match Registration";
+            this.lblmatch.Text = "Match Registration";
             this.lblmatch.Click += new System.EventHandler(this.lblmatch_Click);
             // 
             // lblplayer
             // 
             this.lblplayer.AutoSize = true;
             this.lblplayer.BackColor = System.Drawing.Color.Transparent;
+            this.lblplayer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblplayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblplayer.ForeColor = System.Drawing.Color.Black;
             this.lblplayer.Location = new System.Drawing.Point(89, 153);
             this.lblplayer.Name = "lblplayer";
-            this.lblplayer.Size = new System.Drawing.Size(200, 20);
+            this.lblplayer.Size = new System.Drawing.Size(161, 20);
             this.lblplayer.TabIndex = 12;
-            this.lblplayer.Text = "New Player Registration";
+            this.lblplayer.Text = "Player Registration";
             this.lblplayer.Click += new System.EventHandler(this.lblplayer_Click);
             // 
             // panel2
@@ -490,9 +501,9 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(36, 3);
+            this.panel2.Location = new System.Drawing.Point(56, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(41, 32);
+            this.panel2.Size = new System.Drawing.Size(27, 23);
             this.panel2.TabIndex = 13;
             // 
             // panel3
@@ -500,9 +511,9 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Location = new System.Drawing.Point(37, 218);
+            this.panel3.Location = new System.Drawing.Point(56, 227);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(41, 38);
+            this.panel3.Size = new System.Drawing.Size(27, 23);
             this.panel3.TabIndex = 13;
             // 
             // panel4
@@ -510,9 +521,9 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(37, 144);
+            this.panel4.Location = new System.Drawing.Point(56, 152);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(41, 38);
+            this.panel4.Size = new System.Drawing.Size(27, 23);
             this.panel4.TabIndex = 13;
             // 
             // panel5
@@ -520,9 +531,9 @@
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Location = new System.Drawing.Point(36, 352);
+            this.panel5.Location = new System.Drawing.Point(56, 364);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(41, 35);
+            this.panel5.Size = new System.Drawing.Size(27, 23);
             this.panel5.TabIndex = 13;
             // 
             // pnlball
@@ -530,7 +541,7 @@
             this.pnlball.BackColor = System.Drawing.Color.Transparent;
             this.pnlball.BackgroundImage = global::FootBallApplication.Properties.Resources.ven;
             this.pnlball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlball.Location = new System.Drawing.Point(752, 588);
+            this.pnlball.Location = new System.Drawing.Point(773, 589);
             this.pnlball.Name = "pnlball";
             this.pnlball.Size = new System.Drawing.Size(39, 36);
             this.pnlball.TabIndex = 14;
@@ -542,9 +553,10 @@
             // 
             this.lblstart.AutoSize = true;
             this.lblstart.BackColor = System.Drawing.Color.Transparent;
+            this.lblstart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblstart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblstart.ForeColor = System.Drawing.Color.Black;
-            this.lblstart.Location = new System.Drawing.Point(794, 600);
+            this.lblstart.Location = new System.Drawing.Point(815, 601);
             this.lblstart.Name = "lblstart";
             this.lblstart.Size = new System.Drawing.Size(87, 15);
             this.lblstart.TabIndex = 15;
@@ -557,22 +569,23 @@
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Location = new System.Drawing.Point(36, 287);
+            this.panel6.Location = new System.Drawing.Point(56, 300);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(41, 38);
+            this.panel6.Size = new System.Drawing.Size(27, 23);
             this.panel6.TabIndex = 17;
             // 
             // lblSquad
             // 
             this.lblSquad.AutoSize = true;
             this.lblSquad.BackColor = System.Drawing.Color.Transparent;
+            this.lblSquad.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblSquad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSquad.ForeColor = System.Drawing.Color.Black;
             this.lblSquad.Location = new System.Drawing.Point(88, 300);
             this.lblSquad.Name = "lblSquad";
-            this.lblSquad.Size = new System.Drawing.Size(203, 20);
+            this.lblSquad.Size = new System.Drawing.Size(164, 20);
             this.lblSquad.TabIndex = 16;
-            this.lblSquad.Text = "New Squad Registration";
+            this.lblSquad.Text = "Squad Registration";
             this.lblSquad.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel7
@@ -767,7 +780,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FootBallApplication.Properties.Resources.NewMainPage;
+            this.BackgroundImage = global::FootBallApplication.Properties.Resources.fbback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(961, 634);
             this.Controls.Add(this.pnlregistration);
@@ -793,6 +806,10 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.lblviewnav);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(977, 673);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(977, 673);
             this.Name = "frmNavigation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Navigation";

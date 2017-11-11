@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSquad_Registration));
             this.count1 = new System.Windows.Forms.Label();
             this.count = new System.Windows.Forms.Label();
             this.cmbUmpire2 = new System.Windows.Forms.ComboBox();
@@ -88,6 +87,8 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.label12 = new System.Windows.Forms.Label();
             this.pnlhide = new System.Windows.Forms.Panel();
+            this.chkselectionA = new System.Windows.Forms.CheckBox();
+            this.chkselectionB = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlhide.SuspendLayout();
             this.SuspendLayout();
@@ -284,9 +285,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(19, 16);
+            this.button1.Location = new System.Drawing.Point(7, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 28);
+            this.button1.Size = new System.Drawing.Size(76, 24);
             this.button1.TabIndex = 231;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
@@ -442,9 +443,10 @@
             // 
             this.lblstart.AutoSize = true;
             this.lblstart.BackColor = System.Drawing.Color.Transparent;
+            this.lblstart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblstart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblstart.ForeColor = System.Drawing.Color.Black;
-            this.lblstart.Location = new System.Drawing.Point(728, 553);
+            this.lblstart.Location = new System.Drawing.Point(741, 553);
             this.lblstart.Name = "lblstart";
             this.lblstart.Size = new System.Drawing.Size(119, 15);
             this.lblstart.TabIndex = 237;
@@ -481,11 +483,11 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.BackgroundImage = global::FootBallApplication.Properties.Resources.ven;
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Location = new System.Drawing.Point(684, 549);
+            this.panel7.Location = new System.Drawing.Point(702, 544);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(41, 24);
+            this.panel7.Size = new System.Drawing.Size(37, 37);
             this.panel7.TabIndex = 238;
             // 
             // chkp2
@@ -841,13 +843,35 @@
             this.pnlhide.Size = new System.Drawing.Size(520, 391);
             this.pnlhide.TabIndex = 319;
             // 
+            // chkselectionA
+            // 
+            this.chkselectionA.AutoSize = true;
+            this.chkselectionA.ForeColor = System.Drawing.Color.DarkGreen;
+            this.chkselectionA.Location = new System.Drawing.Point(555, 442);
+            this.chkselectionA.Name = "chkselectionA";
+            this.chkselectionA.Size = new System.Drawing.Size(15, 14);
+            this.chkselectionA.TabIndex = 320;
+            this.chkselectionA.UseVisualStyleBackColor = true;
+            // 
+            // chkselectionB
+            // 
+            this.chkselectionB.AutoSize = true;
+            this.chkselectionB.ForeColor = System.Drawing.Color.DarkGreen;
+            this.chkselectionB.Location = new System.Drawing.Point(555, 493);
+            this.chkselectionB.Name = "chkselectionB";
+            this.chkselectionB.Size = new System.Drawing.Size(15, 14);
+            this.chkselectionB.TabIndex = 320;
+            this.chkselectionB.UseVisualStyleBackColor = true;
+            // 
             // frmSquad_Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FootBallApplication.Properties.Resources.NewMainPage;
+            this.BackgroundImage = global::FootBallApplication.Properties.Resources.fbback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 588);
+            this.Controls.Add(this.chkselectionB);
+            this.Controls.Add(this.chkselectionA);
             this.Controls.Add(this.pnlhide);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.lblstart);
@@ -959,5 +983,7 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel pnlhide;
+        private System.Windows.Forms.CheckBox chkselectionA;
+        private System.Windows.Forms.CheckBox chkselectionB;
     }
 }

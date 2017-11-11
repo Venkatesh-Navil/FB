@@ -35,7 +35,7 @@ namespace BAL
        {
            Connection = clsAut.GetConnection();
            
-                query = "select distinct Player_Name from Players where Match_Id=" + intMid + " and Tournament_Name='" + strTour + "' and Player_Team='" + strTeam + "' and player_status!=1 ";
+                query = "select distinct Player_Name,player_attribute from Players where Match_Id=" + intMid + " and Tournament_Name='" + strTour + "' and Player_Team='" + strTeam + "' and player_status!=1 ";
             
                 dt = new DataTable();
            dt = sqlhelper.ExecuteDatatable(Connection, CommandType.Text, query);
