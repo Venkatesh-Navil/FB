@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNewuser));
             this.lblgoto = new System.Windows.Forms.Label();
             this.btncancel = new System.Windows.Forms.Button();
             this.btnsubmit = new System.Windows.Forms.Button();
@@ -194,9 +195,13 @@
             this.Controls.Add(this.btnpwd);
             this.Controls.Add(this.lblpassword);
             this.Controls.Add(this.label4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(497, 381);
+            this.MinimumSize = new System.Drawing.Size(497, 381);
             this.Name = "frmNewuser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "New User Registration";
+            this.Text = "User Registration";
             this.Load += new System.EventHandler(this.frmNewuser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

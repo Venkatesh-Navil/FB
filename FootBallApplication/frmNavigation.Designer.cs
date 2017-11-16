@@ -118,11 +118,11 @@
             this.dgNavigation.AllowUserToDeleteRows = false;
             this.dgNavigation.AllowUserToResizeRows = false;
             this.dgNavigation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgNavigation.BackgroundColor = System.Drawing.Color.Khaki;
+            this.dgNavigation.BackgroundColor = System.Drawing.Color.White;
             this.dgNavigation.ColumnHeadersVisible = false;
             this.dgNavigation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgNavigation.GridColor = System.Drawing.Color.Gray;
-            this.dgNavigation.Location = new System.Drawing.Point(323, 166);
+            this.dgNavigation.Location = new System.Drawing.Point(409, 166);
             this.dgNavigation.Name = "dgNavigation";
             this.dgNavigation.RowHeadersVisible = false;
             this.dgNavigation.RowHeadersWidth = 30;
@@ -132,6 +132,7 @@
             this.dgNavigation.TabIndex = 5;
             this.dgNavigation.Visible = false;
             this.dgNavigation.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgNavigation_CellClick);
+            this.dgNavigation.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgNavigation_CellContentClick);
             // 
             // button1
             // 
@@ -157,10 +158,10 @@
             // 
             // lstTour
             // 
-            this.lstTour.BackColor = System.Drawing.Color.Khaki;
+            this.lstTour.BackColor = System.Drawing.Color.White;
             this.lstTour.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lstTour.FormattingEnabled = true;
-            this.lstTour.Location = new System.Drawing.Point(146, 166);
+            this.lstTour.Location = new System.Drawing.Point(232, 166);
             this.lstTour.Name = "lstTour";
             this.lstTour.Size = new System.Drawing.Size(171, 264);
             this.lstTour.TabIndex = 9;
@@ -189,7 +190,7 @@
             this.toolsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(961, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1036, 24);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -236,12 +237,14 @@
             // 
             // goToTransactionToolStripMenuItem
             // 
+            this.goToTransactionToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.tran;
             this.goToTransactionToolStripMenuItem.Name = "goToTransactionToolStripMenuItem";
             this.goToTransactionToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.goToTransactionToolStripMenuItem.Text = "Go to Transaction";
             // 
             // goToMatchRegistrationToolStripMenuItem
             // 
+            this.goToMatchRegistrationToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.Iconshock_Soccer_Soccer_4;
             this.goToMatchRegistrationToolStripMenuItem.Name = "goToMatchRegistrationToolStripMenuItem";
             this.goToMatchRegistrationToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.goToMatchRegistrationToolStripMenuItem.Text = "Go to Match Registration";
@@ -257,6 +260,7 @@
             // 
             // viewReportsToolStripMenuItem
             // 
+            this.viewReportsToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.chart_search_icon;
             this.viewReportsToolStripMenuItem.Name = "viewReportsToolStripMenuItem";
             this.viewReportsToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.viewReportsToolStripMenuItem.Text = "View Reports";
@@ -264,6 +268,7 @@
             // 
             // exitToolStripMenuItem
             // 
+            this.exitToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.exit;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.exitToolStripMenuItem.Text = "Exit";
@@ -289,6 +294,7 @@
             // 
             // matchRegistrationToolStripMenuItem1
             // 
+            this.matchRegistrationToolStripMenuItem1.Image = global::FootBallApplication.Properties.Resources.Iconshock_Soccer_Soccer_4;
             this.matchRegistrationToolStripMenuItem1.Name = "matchRegistrationToolStripMenuItem1";
             this.matchRegistrationToolStripMenuItem1.Size = new System.Drawing.Size(162, 22);
             this.matchRegistrationToolStripMenuItem1.Text = "Edit Match";
@@ -312,8 +318,9 @@
             // 
             // reportsToolStripMenuItem
             // 
+            this.reportsToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.chart_search_icon;
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.reportsToolStripMenuItem.Text = "Reports";
             this.reportsToolStripMenuItem.Click += new System.EventHandler(this.reportsToolStripMenuItem_Click);
             // 
@@ -332,7 +339,7 @@
             // 
             this.calculatorToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.Wwalczyszyn_Android_Style_Honeycomb_Calculator;
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.calculatorToolStripMenuItem.Text = "Calculator";
             this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
             // 
@@ -340,7 +347,7 @@
             // 
             this.notesToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.faviconnotepad;
             this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.notesToolStripMenuItem.Text = "Notepad";
             this.notesToolStripMenuItem.Click += new System.EventHandler(this.notesToolStripMenuItem_Click);
             // 
@@ -348,7 +355,7 @@
             // 
             this.browserToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.favicon;
             this.browserToolStripMenuItem.Name = "browserToolStripMenuItem";
-            this.browserToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.browserToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.browserToolStripMenuItem.Text = "Google";
             this.browserToolStripMenuItem.Click += new System.EventHandler(this.browserToolStripMenuItem_Click);
             // 
@@ -356,7 +363,7 @@
             // 
             this.snippingToolToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.snip;
             this.snippingToolToolStripMenuItem.Name = "snippingToolToolStripMenuItem";
-            this.snippingToolToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.snippingToolToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.snippingToolToolStripMenuItem.Text = "Snipping Tool";
             this.snippingToolToolStripMenuItem.Click += new System.EventHandler(this.snippingToolToolStripMenuItem_Click);
             // 
@@ -369,9 +376,9 @@
             this.lblPrevious.ForeColor = System.Drawing.Color.Black;
             this.lblPrevious.Location = new System.Drawing.Point(59, 141);
             this.lblPrevious.Name = "lblPrevious";
-            this.lblPrevious.Size = new System.Drawing.Size(77, 20);
+            this.lblPrevious.Size = new System.Drawing.Size(129, 20);
             this.lblPrevious.TabIndex = 12;
-            this.lblPrevious.Text = "Previous";
+            this.lblPrevious.Text = "Finished Goals";
             this.lblPrevious.Click += new System.EventHandler(this.lblPrevious_Click);
             // 
             // lblCurrent
@@ -383,9 +390,9 @@
             this.lblCurrent.ForeColor = System.Drawing.Color.Black;
             this.lblCurrent.Location = new System.Drawing.Point(59, 218);
             this.lblCurrent.Name = "lblCurrent";
-            this.lblCurrent.Size = new System.Drawing.Size(69, 20);
+            this.lblCurrent.Size = new System.Drawing.Size(138, 20);
             this.lblCurrent.TabIndex = 12;
-            this.lblCurrent.Text = "Current";
+            this.lblCurrent.Text = "Goals You Start";
             this.lblCurrent.Click += new System.EventHandler(this.lblCurrent_Click);
             // 
             // lblExit
@@ -477,9 +484,9 @@
             this.lblreports.ForeColor = System.Drawing.Color.Black;
             this.lblreports.Location = new System.Drawing.Point(89, 367);
             this.lblreports.Name = "lblreports";
-            this.lblreports.Size = new System.Drawing.Size(109, 20);
+            this.lblreports.Size = new System.Drawing.Size(73, 20);
             this.lblreports.TabIndex = 12;
-            this.lblreports.Text = "View reports";
+            this.lblreports.Text = "Reports";
             this.lblreports.Click += new System.EventHandler(this.lblreports_Click);
             // 
             // lblmatch
@@ -555,7 +562,7 @@
             this.pnlball.BackColor = System.Drawing.Color.Transparent;
             this.pnlball.BackgroundImage = global::FootBallApplication.Properties.Resources.ven;
             this.pnlball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlball.Location = new System.Drawing.Point(773, 589);
+            this.pnlball.Location = new System.Drawing.Point(840, 586);
             this.pnlball.Name = "pnlball";
             this.pnlball.Size = new System.Drawing.Size(39, 36);
             this.pnlball.TabIndex = 14;
@@ -570,7 +577,7 @@
             this.lblstart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblstart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblstart.ForeColor = System.Drawing.Color.Black;
-            this.lblstart.Location = new System.Drawing.Point(815, 601);
+            this.lblstart.Location = new System.Drawing.Point(882, 598);
             this.lblstart.Name = "lblstart";
             this.lblstart.Size = new System.Drawing.Size(87, 15);
             this.lblstart.TabIndex = 15;
@@ -612,7 +619,7 @@
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.label2);
-            this.panel7.Location = new System.Drawing.Point(323, 143);
+            this.panel7.Location = new System.Drawing.Point(409, 143);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(612, 23);
             this.panel7.TabIndex = 18;
@@ -699,7 +706,7 @@
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.HotTrack;
             this.panel8.Controls.Add(this.label9);
-            this.panel8.Location = new System.Drawing.Point(146, 143);
+            this.panel8.Location = new System.Drawing.Point(232, 143);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(171, 23);
             this.panel8.TabIndex = 19;
@@ -710,7 +717,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(30, 6);
+            this.label9.Location = new System.Drawing.Point(36, 5);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 13);
             this.label9.TabIndex = 0;
@@ -731,9 +738,9 @@
             this.pnlregistration.Controls.Add(this.panel4);
             this.pnlregistration.Controls.Add(this.panel3);
             this.pnlregistration.Controls.Add(this.panel5);
-            this.pnlregistration.Location = new System.Drawing.Point(549, 120);
+            this.pnlregistration.Location = new System.Drawing.Point(635, 109);
             this.pnlregistration.Name = "pnlregistration";
-            this.pnlregistration.Size = new System.Drawing.Size(348, 394);
+            this.pnlregistration.Size = new System.Drawing.Size(348, 405);
             this.pnlregistration.TabIndex = 20;
             this.pnlregistration.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlregistration_Paint);
             // 
@@ -782,7 +789,7 @@
             this.lblviewnav.AutoSize = true;
             this.lblviewnav.BackColor = System.Drawing.Color.Transparent;
             this.lblviewnav.Font = new System.Drawing.Font("Calibri", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblviewnav.Location = new System.Drawing.Point(823, 120);
+            this.lblviewnav.Location = new System.Drawing.Point(911, 120);
             this.lblviewnav.Name = "lblviewnav";
             this.lblviewnav.Size = new System.Drawing.Size(110, 18);
             this.lblviewnav.TabIndex = 22;
@@ -796,7 +803,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FootBallApplication.Properties.Resources.fbback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(961, 634);
+            this.ClientSize = new System.Drawing.Size(1036, 634);
+            this.ControlBox = false;
             this.Controls.Add(this.pnlregistration);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel11);
@@ -821,12 +829,12 @@
             this.Controls.Add(this.lblviewnav);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(977, 673);
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(977, 673);
+            this.MaximumSize = new System.Drawing.Size(1052, 673);
+            this.MinimumSize = new System.Drawing.Size(1052, 673);
             this.Name = "frmNavigation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Navigation";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmNavigation_FormClosing);
             this.Load += new System.EventHandler(this.frmNavigation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgNavigation)).EndInit();
             this.menuStrip1.ResumeLayout(false);

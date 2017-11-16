@@ -84,7 +84,7 @@
             this.dgMatch.AllowUserToResizeRows = false;
             this.dgMatch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgMatch.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dgMatch.BackgroundColor = System.Drawing.Color.Khaki;
+            this.dgMatch.BackgroundColor = System.Drawing.Color.White;
             this.dgMatch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgMatch.ColumnHeadersVisible = false;
             this.dgMatch.GridColor = System.Drawing.SystemColors.ButtonHighlight;

@@ -109,6 +109,7 @@
             this.gvTour = new System.Windows.Forms.DataGridView();
             this.lblstart = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.pnlball = new System.Windows.Forms.Panel();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvTeam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgPlayerRegistration)).BeginInit();
@@ -530,8 +531,14 @@
             this.cmbPosition.FormattingEnabled = true;
             this.cmbPosition.Items.AddRange(new object[] {
             "Goalkeeper",
-            "Defender",
-            "Midfielder",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
             "Striker"});
             this.cmbPosition.Location = new System.Drawing.Point(723, 288);
             this.cmbPosition.Name = "cmbPosition";
@@ -1007,6 +1014,7 @@
             this.lblstart.Size = new System.Drawing.Size(117, 15);
             this.lblstart.TabIndex = 23;
             this.lblstart.Text = "Go To Navigation";
+            this.lblstart.Visible = false;
             this.lblstart.Click += new System.EventHandler(this.lblstart_Click);
             // 
             // panel17
@@ -1014,11 +1022,23 @@
             this.panel17.BackColor = System.Drawing.Color.Transparent;
             this.panel17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel17.BackgroundImage")));
             this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel17.Location = new System.Drawing.Point(836, 537);
+            this.panel17.Location = new System.Drawing.Point(653, 486);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(35, 38);
             this.panel17.TabIndex = 242;
+            this.panel17.Visible = false;
             this.panel17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel17_MouseDown);
+            // 
+            // pnlball
+            // 
+            this.pnlball.BackColor = System.Drawing.Color.Transparent;
+            this.pnlball.BackgroundImage = global::FootBallApplication.Properties.Resources.ven;
+            this.pnlball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlball.Location = new System.Drawing.Point(846, 542);
+            this.pnlball.Name = "pnlball";
+            this.pnlball.Size = new System.Drawing.Size(27, 27);
+            this.pnlball.TabIndex = 243;
+            this.pnlball.Visible = false;
             // 
             // Total__Registration
             // 
@@ -1027,6 +1047,7 @@
             this.BackgroundImage = global::FootBallApplication.Properties.Resources.fbback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1005, 572);
+            this.Controls.Add(this.pnlball);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.lblstart);
             this.Controls.Add(this.gvTour);
@@ -1197,6 +1218,6 @@
         private System.Windows.Forms.DataGridView gvTour;
         private System.Windows.Forms.Label lblstart;
         private System.Windows.Forms.Panel panel17;
-
+        private System.Windows.Forms.Panel pnlball;
     }
 }

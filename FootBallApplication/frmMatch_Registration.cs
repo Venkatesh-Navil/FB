@@ -174,9 +174,9 @@ namespace FootBallApplication
         private void button3_Click(object sender, EventArgs e)
         {
 
-            this.Hide();
-            frmNavigation objNavigation = new frmNavigation();
-            objNavigation.Show();
+            this.Close();
+           // frmNavigation objNavigation = new frmNavigation();
+           // objNavigation.Show();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

@@ -180,6 +180,7 @@
             this.lblstart.Size = new System.Drawing.Size(119, 15);
             this.lblstart.TabIndex = 289;
             this.lblstart.Text = "Continue  Kick off";
+            this.lblstart.Visible = false;
             this.lblstart.Click += new System.EventHandler(this.lblstart_Click);
             // 
             // btnSave
@@ -198,6 +199,17 @@
             // cmbpo1
             // 
             this.cmbpo1.FormattingEnabled = true;
+            this.cmbpo1.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo1.Location = new System.Drawing.Point(464, 185);
             this.cmbpo1.Name = "cmbpo1";
             this.cmbpo1.Size = new System.Drawing.Size(121, 21);
@@ -207,6 +219,17 @@
             // cmbpo2
             // 
             this.cmbpo2.FormattingEnabled = true;
+            this.cmbpo2.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo2.Location = new System.Drawing.Point(464, 222);
             this.cmbpo2.Name = "cmbpo2";
             this.cmbpo2.Size = new System.Drawing.Size(121, 21);
@@ -216,6 +239,17 @@
             // cmbpo3
             // 
             this.cmbpo3.FormattingEnabled = true;
+            this.cmbpo3.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo3.Location = new System.Drawing.Point(464, 260);
             this.cmbpo3.Name = "cmbpo3";
             this.cmbpo3.Size = new System.Drawing.Size(121, 21);
@@ -225,6 +259,17 @@
             // cmbpo4
             // 
             this.cmbpo4.FormattingEnabled = true;
+            this.cmbpo4.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo4.Location = new System.Drawing.Point(464, 296);
             this.cmbpo4.Name = "cmbpo4";
             this.cmbpo4.Size = new System.Drawing.Size(121, 21);
@@ -234,6 +279,17 @@
             // cmbpo5
             // 
             this.cmbpo5.FormattingEnabled = true;
+            this.cmbpo5.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo5.Location = new System.Drawing.Point(464, 332);
             this.cmbpo5.Name = "cmbpo5";
             this.cmbpo5.Size = new System.Drawing.Size(121, 21);
@@ -243,6 +299,17 @@
             // cmbpo6
             // 
             this.cmbpo6.FormattingEnabled = true;
+            this.cmbpo6.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo6.Location = new System.Drawing.Point(464, 368);
             this.cmbpo6.Name = "cmbpo6";
             this.cmbpo6.Size = new System.Drawing.Size(121, 21);
@@ -252,6 +319,17 @@
             // cmbpo7
             // 
             this.cmbpo7.FormattingEnabled = true;
+            this.cmbpo7.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo7.Location = new System.Drawing.Point(464, 400);
             this.cmbpo7.Name = "cmbpo7";
             this.cmbpo7.Size = new System.Drawing.Size(121, 21);
@@ -261,6 +339,17 @@
             // cmbpo8
             // 
             this.cmbpo8.FormattingEnabled = true;
+            this.cmbpo8.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo8.Location = new System.Drawing.Point(464, 434);
             this.cmbpo8.Name = "cmbpo8";
             this.cmbpo8.Size = new System.Drawing.Size(121, 21);
@@ -270,6 +359,17 @@
             // cmbpo9
             // 
             this.cmbpo9.FormattingEnabled = true;
+            this.cmbpo9.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo9.Location = new System.Drawing.Point(464, 470);
             this.cmbpo9.Name = "cmbpo9";
             this.cmbpo9.Size = new System.Drawing.Size(121, 21);
@@ -279,6 +379,17 @@
             // cmbpo10
             // 
             this.cmbpo10.FormattingEnabled = true;
+            this.cmbpo10.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo10.Location = new System.Drawing.Point(464, 507);
             this.cmbpo10.Name = "cmbpo10";
             this.cmbpo10.Size = new System.Drawing.Size(121, 21);
@@ -288,6 +399,17 @@
             // cmbpo11
             // 
             this.cmbpo11.FormattingEnabled = true;
+            this.cmbpo11.Items.AddRange(new object[] {
+            "Goalkeeper",
+            "Right Back",
+            "Center Back",
+            "Left Back",
+            "Defensive Midfield",
+            "Center Midfield",
+            "Attacking Midfield",
+            "Right Wing",
+            "Left Wing",
+            "Striker"});
             this.cmbpo11.Location = new System.Drawing.Point(464, 545);
             this.cmbpo11.Name = "cmbpo11";
             this.cmbpo11.Size = new System.Drawing.Size(121, 21);
@@ -764,30 +886,33 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(37, 37);
             this.panel7.TabIndex = 298;
+            this.panel7.Visible = false;
             // 
             // chkselectionA
             // 
             this.chkselectionA.AutoSize = true;
+            this.chkselectionA.BackColor = System.Drawing.Color.Transparent;
             this.chkselectionA.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkselectionA.ForeColor = System.Drawing.Color.Black;
             this.chkselectionA.Location = new System.Drawing.Point(638, 486);
             this.chkselectionA.Name = "chkselectionA";
-            this.chkselectionA.Size = new System.Drawing.Size(69, 22);
+            this.chkselectionA.Size = new System.Drawing.Size(147, 22);
             this.chkselectionA.TabIndex = 299;
-            this.chkselectionA.Text = "TeamA";
-            this.chkselectionA.UseVisualStyleBackColor = true;
+            this.chkselectionA.Text = "TeamA Registration";
+            this.chkselectionA.UseVisualStyleBackColor = false;
             // 
             // chkselectionB
             // 
             this.chkselectionB.AutoSize = true;
+            this.chkselectionB.BackColor = System.Drawing.Color.Transparent;
             this.chkselectionB.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkselectionB.ForeColor = System.Drawing.Color.Black;
             this.chkselectionB.Location = new System.Drawing.Point(638, 529);
             this.chkselectionB.Name = "chkselectionB";
-            this.chkselectionB.Size = new System.Drawing.Size(68, 22);
+            this.chkselectionB.Size = new System.Drawing.Size(146, 22);
             this.chkselectionB.TabIndex = 299;
-            this.chkselectionB.Text = "TeamB";
-            this.chkselectionB.UseVisualStyleBackColor = true;
+            this.chkselectionB.Text = "TeamB Registration";
+            this.chkselectionB.UseVisualStyleBackColor = false;
             // 
             // frmpositions
             // 

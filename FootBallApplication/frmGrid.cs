@@ -127,7 +127,7 @@ namespace FootBallApplication
                         string Country = dt.Rows[0][7].ToString();
                         string VideoPath = dt.Rows[0][10].ToString();
                         string Category = dt.Rows[0][11].ToString();
-
+//
                         Total__Registration tot = new Total__Registration(Id,Tour,Start,End,Country,VideoPath,Category);
                         tot.Show();
 
@@ -165,8 +165,8 @@ namespace FootBallApplication
                 }
                 else
                 {
-                    MessageBox.Show("There are no team");
-                    Total__Registration tot = new Total__Registration();
+                    //MessageBox.Show("There are no team");
+                   Total__Registration tot = new Total__Registration();
                     tot.Show();
                 }
             }

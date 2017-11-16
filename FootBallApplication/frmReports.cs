@@ -23,5 +23,12 @@ namespace FootBallApplication
             frmNavigation nv = new frmNavigation();
             nv.Show();
         }
+
+        private void btnbackk_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmNavigation nv = new frmNavigation();
+            nv.Show();
+        }
     }
 }

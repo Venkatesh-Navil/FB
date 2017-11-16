@@ -242,7 +242,7 @@ namespace FootBallApplication
             strMatchStatus = dgNavigation.Rows[dg1].Cells[6].Value.ToString();
             if (dgNavigation.Rows[dg1].Cells[5].Value.ToString() == "Incomplete" || dgNavigation.Rows[e.RowIndex].Cells[5].Value.ToString() == "Incompleted")
             {
-             lblstart.Text = "Lets Kick Off";
+                lblstart.Text = "Lets Kick Off";
             }
             else if (dgNavigation.Rows[dg1].Cells[5].Value.ToString() == "Complete" || dgNavigation.Rows[dg1].Cells[5].Value.ToString() == "Completed")
             {
@@ -253,8 +253,34 @@ namespace FootBallApplication
             {
                 lblstart.Text = "Continue Kick Off";
             }
-            lblstart.Visible = true;
-            pnlball.Visible = true;
+            
+            lblstart.Visible = false;
+            pnlball.Visible = false;
+
+
+            if (strMatchStatus != "" && strMatchStatus != null)
+            {
+                if (strMatchStatus == "InComplete" || strMatchStatus == "InCompleted")
+                {
+                    frmSquad_Registration objSquard = new frmSquad_Registration();
+                    objSquard.Show();
+                    this.Hide();
+                }
+                else
+                {
+
+                    frmTransaction objTran = new frmTransaction();
+                    objTran.Show();
+                   // this.Hide();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select Match");
+            }
+
+
+
         }
 
         private void btnstart_Click(object sender, EventArgs e)
@@ -344,35 +370,35 @@ namespace FootBallApplication
 
         private void lbltour_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             Total__Registration tot = new Total__Registration();
             tot.Show();
         }
 
         private void lblteam_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             Total__Registration tot = new Total__Registration();
             tot.Show();
         }
 
         private void lblplayer_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             Total__Registration tot = new Total__Registration();
             tot.Show();
         }
 
         private void lblmatch_Click(object sender, EventArgs e)
         {
-            this.Hide();
+           // this.Hide();
             frmMatch_Registration match = new frmMatch_Registration();
             match.Show();
         }
 
         private void lblreports_Click(object sender, EventArgs e)
         {
-            this.Hide();
+           // this.Hide();
             frmReports fr = new frmReports();
 
             fr.Show();
@@ -435,7 +461,7 @@ namespace FootBallApplication
 
         private void label2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             frmSquad_Registration squad = new frmSquad_Registration();
             squad.Show();
         }
@@ -600,6 +626,67 @@ namespace FootBallApplication
                 snippingToolProcess.StartInfo.FileName = "C:\\Windows\\system32\\SnippingTool.exe";
                 snippingToolProcess.Start();
             }
+        }
+
+        private void frmNavigation_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Do you want to Exit?", "FootBall!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+
+            }
+            
+        }
+
+        private void dgNavigation_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            //int dg1 = e.RowIndex;
+
+            //clsGlobalValues.mid = Convert.ToInt16(dgNavigation.Rows[dg1].Cells[0].Value.ToString());
+
+
+            //strMatchStatus = dgNavigation.Rows[dg1].Cells[6].Value.ToString();
+            //if (dgNavigation.Rows[dg1].Cells[5].Value.ToString() == "Incomplete" || dgNavigation.Rows[e.RowIndex].Cells[5].Value.ToString() == "Incompleted")
+            //{
+            //    lblstart.Text = "Lets Kick Off";
+            //}
+            //else if (dgNavigation.Rows[dg1].Cells[5].Value.ToString() == "Complete" || dgNavigation.Rows[dg1].Cells[5].Value.ToString() == "Completed")
+            //{
+
+            //    lblstart.Text = "View Reports";
+            //}
+            //else
+            //{
+            //    lblstart.Text = "Continue Kick Off";
+            //}
+
+            //lblstart.Visible = false;
+            //pnlball.Visible = false;
+
+
+            //if (strMatchStatus != "" && strMatchStatus != null)
+            //{
+            //    if (strMatchStatus == "InComplete" || strMatchStatus == "InCompleted")
+            //    {
+            //        frmSquad_Registration objSquard = new frmSquad_Registration();
+            //        objSquard.Show();
+            //        this.Hide();
+            //    }
+            //    else
+            //    {
+
+            //        frmTransaction objTran = new frmTransaction();
+            //        objTran.Show();
+            //        // this.Hide();
+            //    }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Select Match");
+            //}
+
+
         }
     }
 }

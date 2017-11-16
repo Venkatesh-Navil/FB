@@ -207,6 +207,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\frmReports1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmReports1.Designer.cs">
+      <DependentUpon>frmReports1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmReports2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmReports2.Designer.cs">
+      <DependentUpon>frmReports2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmReports3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmReports3.Designer.cs">
+      <DependentUpon>frmReports3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmReports4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmReports4.Designer.cs">
+      <DependentUpon>frmReports4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Total _Registration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,6 +289,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reports\frmReports1.resx">
+      <DependentUpon>frmReports1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmReports2.resx">
+      <DependentUpon>frmReports2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmReports3.resx">
+      <DependentUpon>frmReports3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmReports4.resx">
+      <DependentUpon>frmReports4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Total _Registration.resx">
       <DependentUpon>Total _Registration.cs</DependentUpon>
     </EmbeddedResource>
@@ -366,6 +402,10 @@
     <None Include="Resources\hfjdg6.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\substitution.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\tran.png" />
+    <None Include="Resources\Iconshock-Soccer-Soccer-4.ico" />
     <None Include="Resources\team.ico" />
     <None Include="Resources\tour.ico" />
     <None Include="Resources\player.ico" />
@@ -381,6 +421,10 @@
     <None Include="Resources\fbback.jpg" />
     <None Include="Resources\favicon.ico" />
     <None Include="Resources\faviconnotepad.ico" />
+    <None Include="Resources\chart-search-icon.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\3885-undo-arrow2.png" />
+    <None Include="Resources\clear.png" />
     <Content Include="Resources\Ground - Transaction page.jpg" />
     <None Include="Resources\Ground - Transaction page1.jpg" />
   </ItemGroup>

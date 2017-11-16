@@ -89,6 +89,8 @@
             this.pnlhide = new System.Windows.Forms.Panel();
             this.chkselectionA = new System.Windows.Forms.CheckBox();
             this.chkselectionB = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlhide.SuspendLayout();
             this.SuspendLayout();
@@ -117,7 +119,7 @@
             this.cmbUmpire2.FormattingEnabled = true;
             this.cmbUmpire2.Items.AddRange(new object[] {
             "Refree3"});
-            this.cmbUmpire2.Location = new System.Drawing.Point(688, 383);
+            this.cmbUmpire2.Location = new System.Drawing.Point(695, 281);
             this.cmbUmpire2.Name = "cmbUmpire2";
             this.cmbUmpire2.Size = new System.Drawing.Size(121, 21);
             this.cmbUmpire2.TabIndex = 39;
@@ -126,25 +128,27 @@
             // cmbCaptonB
             // 
             this.cmbCaptonB.FormattingEnabled = true;
-            this.cmbCaptonB.Location = new System.Drawing.Point(753, 478);
+            this.cmbCaptonB.Location = new System.Drawing.Point(760, 376);
             this.cmbCaptonB.Name = "cmbCaptonB";
             this.cmbCaptonB.Size = new System.Drawing.Size(121, 21);
             this.cmbCaptonB.TabIndex = 26;
+            this.cmbCaptonB.Visible = false;
             // 
             // cmbCaptonA
             // 
             this.cmbCaptonA.FormattingEnabled = true;
-            this.cmbCaptonA.Location = new System.Drawing.Point(753, 438);
+            this.cmbCaptonA.Location = new System.Drawing.Point(760, 336);
             this.cmbCaptonA.Name = "cmbCaptonA";
             this.cmbCaptonA.Size = new System.Drawing.Size(121, 21);
             this.cmbCaptonA.TabIndex = 25;
+            this.cmbCaptonA.Visible = false;
             // 
             // cmbRefree
             // 
             this.cmbRefree.FormattingEnabled = true;
             this.cmbRefree.Items.AddRange(new object[] {
             "Refree2"});
-            this.cmbRefree.Location = new System.Drawing.Point(688, 330);
+            this.cmbRefree.Location = new System.Drawing.Point(695, 228);
             this.cmbRefree.Name = "cmbRefree";
             this.cmbRefree.Size = new System.Drawing.Size(121, 21);
             this.cmbRefree.TabIndex = 31;
@@ -155,7 +159,7 @@
             this.cmbUmpire1.FormattingEnabled = true;
             this.cmbUmpire1.Items.AddRange(new object[] {
             "Refree"});
-            this.cmbUmpire1.Location = new System.Drawing.Point(688, 278);
+            this.cmbUmpire1.Location = new System.Drawing.Point(695, 176);
             this.cmbUmpire1.Name = "cmbUmpire1";
             this.cmbUmpire1.Size = new System.Drawing.Size(121, 21);
             this.cmbUmpire1.TabIndex = 30;
@@ -167,7 +171,7 @@
             this.cmbDecision.Items.AddRange(new object[] {
             "Kick",
             "Side"});
-            this.cmbDecision.Location = new System.Drawing.Point(688, 230);
+            this.cmbDecision.Location = new System.Drawing.Point(695, 128);
             this.cmbDecision.Name = "cmbDecision";
             this.cmbDecision.Size = new System.Drawing.Size(121, 21);
             this.cmbDecision.TabIndex = 29;
@@ -176,7 +180,7 @@
             // cmbTossWonTeam
             // 
             this.cmbTossWonTeam.FormattingEnabled = true;
-            this.cmbTossWonTeam.Location = new System.Drawing.Point(688, 186);
+            this.cmbTossWonTeam.Location = new System.Drawing.Point(695, 84);
             this.cmbTossWonTeam.Name = "cmbTossWonTeam";
             this.cmbTossWonTeam.Size = new System.Drawing.Size(121, 21);
             this.cmbTossWonTeam.TabIndex = 28;
@@ -228,7 +232,7 @@
             this.btnreset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.ForeColor = System.Drawing.Color.Khaki;
-            this.btnreset.Location = new System.Drawing.Point(684, 149);
+            this.btnreset.Location = new System.Drawing.Point(691, 47);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(10, 29);
             this.btnreset.TabIndex = 235;
@@ -256,7 +260,7 @@
             this.btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndelete.ForeColor = System.Drawing.Color.Khaki;
-            this.btndelete.Location = new System.Drawing.Point(652, 149);
+            this.btndelete.Location = new System.Drawing.Point(659, 47);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(10, 29);
             this.btndelete.TabIndex = 234;
@@ -291,7 +295,6 @@
             this.button1.TabIndex = 231;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblPrevious
@@ -312,7 +315,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(118, 124);
+            this.label3.Location = new System.Drawing.Point(46, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(178, 16);
             this.label3.TabIndex = 236;
@@ -325,7 +328,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(170, 92);
+            this.label4.Location = new System.Drawing.Point(285, 128);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(16, 16);
             this.label4.TabIndex = 236;
@@ -347,7 +350,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(560, 186);
+            this.label6.Location = new System.Drawing.Point(567, 84);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(122, 16);
             this.label6.TabIndex = 236;
@@ -360,7 +363,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(564, 231);
+            this.label1.Location = new System.Drawing.Point(571, 129);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 16);
             this.label1.TabIndex = 236;
@@ -373,7 +376,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(567, 283);
+            this.label2.Location = new System.Drawing.Point(574, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 16);
             this.label2.TabIndex = 236;
@@ -386,7 +389,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(568, 383);
+            this.label7.Location = new System.Drawing.Point(575, 281);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 16);
             this.label7.TabIndex = 236;
@@ -399,7 +402,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(568, 331);
+            this.label8.Location = new System.Drawing.Point(575, 229);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 16);
             this.label8.TabIndex = 236;
@@ -421,11 +424,12 @@
             this.lblcapB.BackColor = System.Drawing.Color.Transparent;
             this.lblcapB.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcapB.ForeColor = System.Drawing.Color.Black;
-            this.lblcapB.Location = new System.Drawing.Point(568, 490);
+            this.lblcapB.Location = new System.Drawing.Point(575, 388);
             this.lblcapB.Name = "lblcapB";
             this.lblcapB.Size = new System.Drawing.Size(63, 18);
             this.lblcapB.TabIndex = 236;
             this.lblcapB.Text = "CaptainB";
+            this.lblcapB.Visible = false;
             // 
             // lblcapA
             // 
@@ -433,11 +437,12 @@
             this.lblcapA.BackColor = System.Drawing.Color.Transparent;
             this.lblcapA.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcapA.ForeColor = System.Drawing.Color.Black;
-            this.lblcapA.Location = new System.Drawing.Point(570, 439);
+            this.lblcapA.Location = new System.Drawing.Point(577, 337);
             this.lblcapA.Name = "lblcapA";
             this.lblcapA.Size = new System.Drawing.Size(64, 18);
             this.lblcapA.TabIndex = 236;
             this.lblcapA.Text = "CaptainA";
+            this.lblcapA.Visible = false;
             // 
             // lblstart
             // 
@@ -451,6 +456,7 @@
             this.lblstart.Size = new System.Drawing.Size(119, 15);
             this.lblstart.TabIndex = 237;
             this.lblstart.Text = "Continue  Kick off";
+            this.lblstart.Visible = false;
             this.lblstart.Click += new System.EventHandler(this.lblstart_Click);
             // 
             // label11
@@ -471,7 +477,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(227, 546);
+            this.button2.Location = new System.Drawing.Point(343, 547);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 29);
             this.button2.TabIndex = 24;
@@ -489,6 +495,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(37, 37);
             this.panel7.TabIndex = 238;
+            this.panel7.Visible = false;
             // 
             // chkp2
             // 
@@ -804,7 +811,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(31, 92);
+            this.label12.Location = new System.Drawing.Point(146, 128);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(141, 16);
             this.label12.TabIndex = 236;
@@ -838,7 +845,7 @@
             this.pnlhide.Controls.Add(this.chkp12);
             this.pnlhide.Controls.Add(this.chkp11);
             this.pnlhide.Controls.Add(this.chkp2);
-            this.pnlhide.Location = new System.Drawing.Point(34, 149);
+            this.pnlhide.Location = new System.Drawing.Point(149, 149);
             this.pnlhide.Name = "pnlhide";
             this.pnlhide.Size = new System.Drawing.Size(520, 391);
             this.pnlhide.TabIndex = 319;
@@ -847,21 +854,49 @@
             // 
             this.chkselectionA.AutoSize = true;
             this.chkselectionA.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkselectionA.Location = new System.Drawing.Point(555, 442);
+            this.chkselectionA.Location = new System.Drawing.Point(679, 467);
             this.chkselectionA.Name = "chkselectionA";
             this.chkselectionA.Size = new System.Drawing.Size(15, 14);
             this.chkselectionA.TabIndex = 320;
             this.chkselectionA.UseVisualStyleBackColor = true;
+            this.chkselectionA.Visible = false;
             // 
             // chkselectionB
             // 
             this.chkselectionB.AutoSize = true;
             this.chkselectionB.ForeColor = System.Drawing.Color.DarkGreen;
-            this.chkselectionB.Location = new System.Drawing.Point(555, 493);
+            this.chkselectionB.Location = new System.Drawing.Point(679, 518);
             this.chkselectionB.Name = "chkselectionB";
             this.chkselectionB.Size = new System.Drawing.Size(15, 14);
             this.chkselectionB.TabIndex = 320;
             this.chkselectionB.UseVisualStyleBackColor = true;
+            this.chkselectionB.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(697, 463);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 18);
+            this.label9.TabIndex = 236;
+            this.label9.Text = "Team A Registration";
+            this.label9.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(700, 514);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(130, 18);
+            this.label10.TabIndex = 236;
+            this.label10.Text = "Team B Registration";
+            this.label10.Visible = false;
             // 
             // frmSquad_Registration
             // 
@@ -880,6 +915,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblcapA);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.lblcapB);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
@@ -908,7 +945,6 @@
             this.Controls.Add(this.cmbTeams);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(898, 627);
-            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(898, 627);
             this.Name = "frmSquad_Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -985,5 +1021,7 @@
         private System.Windows.Forms.Panel pnlhide;
         private System.Windows.Forms.CheckBox chkselectionA;
         private System.Windows.Forms.CheckBox chkselectionB;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

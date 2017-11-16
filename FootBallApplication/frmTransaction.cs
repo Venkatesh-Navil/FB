@@ -33,6 +33,7 @@ namespace FootBallApplication
             InitializeComponent();
         }
         clstransaction trans = new clstransaction();
+        string playernamehover = "";
         System.Drawing.Point p1, p2;
         Graphics g;
         int points=0;
@@ -61,86 +62,96 @@ namespace FootBallApplication
         string subteam = "";
         private void frmTransaction_Load(object sender, EventArgs e)
         {
-            btnpause.Text = "Pause";
-            pnlrecording.Visible = false;//load team
-          
-            lbltour.Text = clsGlobalValues.Tournament;
-            dt = new DataTable();
-            dt = trans.Loadteam(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text);
-            DataTable dt5 = trans.LoadDay(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text);
-            lbldate.Text = dt5.Rows[0][0].ToString();
-            if (dt.Rows.Count > 0)
-            {
-                lblteamA.Text = dt.Rows[0][0].ToString();
-                lblteamB.Text = dt.Rows[0][1].ToString();
-
-            }
             try
             {
-                general();
+
+
+                btnpause.Text = "Pause";
+                pnlrecording.Visible = false;//load team
+
+                lbltour.Text = clsGlobalValues.Tournament;
+                dt = new DataTable();
+                dt = trans.Loadteam(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text);
+                DataTable dt5 = trans.LoadDay(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text);
+                lbldate.Text = dt5.Rows[0][0].ToString();
+                if (dt.Rows.Count > 0)
+                {
+                    lblteamA.Text = dt.Rows[0][0].ToString();
+                    lblteamB.Text = dt.Rows[0][1].ToString();
+
+                }
+                try
+                {
+                    general();
+                }
+                catch
+
+                {
+                }
+                //load team a players
+                dt = new DataTable();
+                dt = trans.Loadplayer(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text);
+
+                if (dt.Rows.Count > 0)
+                {
+                    lblteamA.Text = dt.Rows[0][1].ToString();
+
+                    btntma1.Text = dt.Rows[0][0].ToString();
+                    btntma2.Text = dt.Rows[1][0].ToString();
+                    btntma3.Text = dt.Rows[2][0].ToString();
+                    btntma4.Text = dt.Rows[3][0].ToString();
+                    btntma5.Text = dt.Rows[4][0].ToString();
+                    btntma6.Text = dt.Rows[5][0].ToString();
+                    btntma7.Text = dt.Rows[6][0].ToString();
+                    btntma8.Text = dt.Rows[7][0].ToString();
+                    btntma9.Text = dt.Rows[8][0].ToString();
+                    btntma10.Text = dt.Rows[9][0].ToString();
+
+
+                }
+
+                //load team b players
+                dt = new DataTable();
+                dt = trans.Loadplayer(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamB.Text);
+
+                if (dt.Rows.Count > 0)
+                {
+                    lblteamB.Text = dt.Rows[0][1].ToString();
+
+                    btntmb1.Text = dt.Rows[0][0].ToString();
+                    btntmb1.Text = dt.Rows[1][0].ToString();
+                    btntmb1.Text = dt.Rows[2][0].ToString();
+                    btntmb1.Text = dt.Rows[3][0].ToString();
+                    btntmb1.Text = dt.Rows[4][0].ToString();
+                    btntmb1.Text = dt.Rows[5][0].ToString();
+                    btntmb1.Text = dt.Rows[6][0].ToString();
+                    btntmb1.Text = dt.Rows[7][0].ToString();
+                    btntmb1.Text = dt.Rows[8][0].ToString();
+                    btntmb1.Text = dt.Rows[9][0].ToString();
+
+
+                }
+
+                dt = new DataTable();
+                dt = trans.Loadgoalkeeper(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text);
+                if (dt.Rows.Count > 0)
+                {
+                    btngkA.Text = dt.Rows[0][0].ToString();
+                }
+
+
+                dt = new DataTable();
+                dt = trans.Loadgoalkeeper(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text);
+                if (dt.Rows.Count > 0)
+                {
+                    btngkB.Text = dt.Rows[0][0].ToString();
+                }
             }
             catch
-
             {
-            }
-            //load team a players
-            dt = new DataTable();
-            dt = trans.Loadplayer(clsGlobalValues.mid, clsGlobalValues.Tournament,lblteamA.Text);
-
-            if (dt.Rows.Count > 0)
-            {
-                lblteamA.Text = dt.Rows[0][1].ToString();
-
-                btntma1.Text = dt.Rows[0][0].ToString();
-                btntma2.Text = dt.Rows[1][0].ToString();
-                btntma3.Text = dt.Rows[2][0].ToString();
-                btntma4.Text = dt.Rows[3][0].ToString();
-                btntma5.Text = dt.Rows[4][0].ToString();
-                btntma6.Text = dt.Rows[5][0].ToString();
-                btntma7 .Text = dt.Rows[6][0].ToString();
-                btntma8.Text = dt.Rows[7][0].ToString();
-                btntma9.Text = dt.Rows[8][0].ToString();
-                btntma10.Text = dt.Rows[9][0].ToString();
-
-                
-            }
-
-            //load team b players
-            dt = new DataTable();
-            dt = trans.Loadplayer(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamB.Text);
-
-            if (dt.Rows.Count > 0)
-            {
-                lblteamB.Text = dt.Rows[0][1].ToString();
-
-                btntmb1.Text = dt.Rows[0][0].ToString();
-                btntmb1.Text = dt.Rows[1][0].ToString();
-                btntmb1.Text = dt.Rows[2][0].ToString();
-                btntmb1.Text = dt.Rows[3][0].ToString();
-                btntmb1.Text = dt.Rows[4][0].ToString();
-                btntmb1.Text = dt.Rows[5][0].ToString();
-                btntmb1.Text = dt.Rows[6][0].ToString();
-                btntmb1.Text = dt.Rows[7][0].ToString();
-                btntmb1.Text = dt.Rows[8][0].ToString();
-                btntmb1.Text = dt.Rows[9][0].ToString();
-
 
             }
-
-            dt = new DataTable();
-            dt = trans.Loadgoalkeeper(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text);
-            if (dt.Rows.Count > 0)
-            {
-                btngkA.Text = dt.Rows[0][0].ToString();
-            }
-
-
-            dt = new DataTable();
-            dt = trans.Loadgoalkeeper(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text);
-            if (dt.Rows.Count > 0)
-            {
-                btngkB.Text = dt.Rows[0][0].ToString();
-            }
+           
         }
         private void update()
         {
@@ -162,10 +173,14 @@ namespace FootBallApplication
             if (Shot != "")
             {
 
-                trans.InsertValues(clsGlobalValues.Tournament, clsGlobalValues.mid,team1,team2, player, Shot, Coordinates, points, toplayer);
+                trans.InsertValues(clsGlobalValues.Tournament, clsGlobalValues.mid,team1,team2, player, Shot, Coordinates, points, toplayer,team1);
                 alX.Clear();
                 general();
                 playerentry = btntma1.Text;
+
+
+
+
 
 
                 // p1 = new System.Drawing.Point();
@@ -251,10 +266,11 @@ namespace FootBallApplication
                     this.DrawLine();
                     p1 = p2;
                     p2 = System.Drawing.Point.Empty;
+                    p1= System.Drawing.Point.Empty;
 
-                   
-                   
-                   
+
+
+
                 }
             }
         }
@@ -1847,7 +1863,7 @@ namespace FootBallApplication
             Coordinates = string.Join(",", alX.ToArray());
             
                 points = 1;
-                trans.InsertValues(clsGlobalValues.Tournament, clsGlobalValues.mid, team1, team2, player,  Shot, Coordinates, points,toplayer);
+                trans.InsertValues(clsGlobalValues.Tournament, clsGlobalValues.mid, team1, team2, player,  Shot, Coordinates, points,toplayer,team1);
                 alX.Clear();
                 MessageBox.Show("Goal");
                 pnlpitch.BackgroundImage = Properties.Resources.Ground___Transaction_page;
@@ -2013,8 +2029,8 @@ namespace FootBallApplication
 
         private void lbllogout_Click(object sender, EventArgs e)
         {
-            frmNavigation nav = new frmNavigation();
-            nav.Show();
+           // frmNavigation nav = new frmNavigation();
+           // nav.Show();
             this.Close();
         }
 
@@ -2600,6 +2616,173 @@ namespace FootBallApplication
                 videoSourcePlayer1.Start();
                 btnpause.Text = "Pause";
             }
+        }
+
+        private void panel5_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (MessageBox.Show("Do you want to undo this transaction?", "FootBall!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                // DataTable dtmax = new DataTable();
+                string max = trans.undomax(clsGlobalValues.Tournament, clsGlobalValues.mid);
+                trans.undo(clsGlobalValues.Tournament, clsGlobalValues.mid, max);
+                general();
+            }
+        }
+
+        private void panel7_MouseDown(object sender, MouseEventArgs e)
+        {
+            pnlpitch.BackgroundImage = Properties.Resources.Ground___Transaction_page;
+        }
+
+        private void panel6_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (chkSub.Checked == false)
+            {
+                lstSubA.Visible = false;
+                lstSub.Visible = false;
+            }
+            else
+            {
+            }
+        }
+        private void showplayer(int playerjersy,string team)
+        {
+             playernamehover = trans.showplayer(clsGlobalValues.Tournament, clsGlobalValues.mid, playerjersy,team);
+
+
+
+        }
+        private void btngkA_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btngkA.Text),lblteamA.Text);
+            toolTip1.SetToolTip(btngkA, playernamehover);
+
+        }
+
+        private void btntma1_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma1.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma1, playernamehover);
+        }
+
+        private void btntma2_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma2.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma2, playernamehover);
+        }
+
+        private void btntma3_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma3.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma3, playernamehover);
+        }
+
+        private void btntma4_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma4.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma4, playernamehover);
+        }
+
+        private void btntma5_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma5.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma5, playernamehover);
+        }
+
+        private void btntma6_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma6.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma6, playernamehover);
+        }
+
+        private void btntma7_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma7.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma7, playernamehover);
+        }
+
+        private void btntma8_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma8.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma8, playernamehover);
+        }
+
+        private void btntma9_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma9.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma9, playernamehover);
+        }
+
+        private void btntma10_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma10.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma10, playernamehover);
+        }
+
+        private void btntmb1_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb1.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb1, playernamehover);
+        }
+
+        private void btntmb2_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb2.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb2, playernamehover);
+        }
+
+        private void btntmb3_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb3.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb3, playernamehover);
+        }
+
+        private void btntmb4_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb4.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb4, playernamehover);
+        }
+
+        private void btntmb5_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb5.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb5, playernamehover);
+        }
+
+        private void btntmb6_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb6.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb6, playernamehover);
+        }
+
+        private void btntmb7_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb7.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb7, playernamehover);
+        }
+
+        private void btntmb8_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb8.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb8, playernamehover);
+        }
+
+        private void btntmb9_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb9.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb9, playernamehover);
+        }
+
+        private void btntmb10_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb10.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btntmb10, playernamehover);
+        }
+
+        private void btngkB_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btngkB.Text), lblteamB.Text);
+            toolTip1.SetToolTip(btngkB, playernamehover);
         }
 
         void videoFileSoruce_NewFrame(object sender, NewFrameEventArgs eventArgs)

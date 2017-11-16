@@ -318,8 +318,11 @@ namespace FootBallApplication
 
                 }
             }
-            catch {
-                MessageBox.Show("Please Enter Details Properly");
+            catch(Exception e1)
+            {
+
+                MessageBox.Show(e1.Message);
+               // MessageBox.Show("Please Enter Details Properly");
             }
         }
 
@@ -469,7 +472,7 @@ namespace FootBallApplication
             if(comboBox1.Text!="")
             {
             int id = 3;
-            //this.Hide();
+            this.Hide();
             frmGrid frm = new frmGrid(comboBox1.Text,cmbTeam.Text,id);
             frm.Show();
             }
@@ -611,8 +614,8 @@ namespace FootBallApplication
         private void lblstart_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmNavigation nav = new frmNavigation();
-            nav.Show();
+           // frmNavigation nav = new frmNavigation();
+           // nav.Show();
         }
 
         private void panel17_MouseDown(object sender, MouseEventArgs e)
@@ -639,8 +642,8 @@ namespace FootBallApplication
         private void Total__Registration_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
-            frmNavigation nav = new frmNavigation();
-            nav.Show();
+            //frmNavigation nav = new frmNavigation();
+           // nav.Show();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

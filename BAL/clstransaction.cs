@@ -91,6 +91,28 @@ namespace BAL
             return max;
 
         }
+        public string showplayer(string strTour, int intMid,int jersy,string team)
+        {
+            string max = "";
+                try
+            {
+
+
+                DataTable dt5 = new DataTable();
+                Connection = clsAut.GetConnection();
+                //DELETE FROM MARKS WHERE ID = (SELECT MAX(id) FROM MARKS)
+                query = "select player_name from players where match_id=" + intMid + " and Tournament_name='" + strTour + "' and jersey_number='" + jersy + "' and player_team='"+team+"' ";
+                dt = new DataTable();
+                dt = sqlhelper.ExecuteDatatable(Connection, CommandType.Text, query);
+               max = dt.Rows[0][0].ToString();
+                
+            }
+            catch
+            {
+
+            }
+            return max;
+        }
         public void undo(string strTour, int intMid,string sno)
         {
             DataTable dt5 = new DataTable();
@@ -101,11 +123,11 @@ namespace BAL
             dt = sqlhelper.ExecuteDatatable(Connection, CommandType.Text, query);
             
         }
-        public void InsertValues(string strTour, int intMid, string teamA, string teamB, string strPlayer,string strshot,string strCordinates,int points,string toplayer)
+        public void InsertValues(string strTour, int intMid, string teamA, string teamB, string strPlayer,string strshot,string strCordinates,int points,string toplayer,string toTeam)
         {
            
             Connection = clsAut.GetConnection();
-            query = "insert into Transaction_Master([Tournament],[mid],[Playing_Team],[Opponent_Team],[Player],[shottype],[Coordinates],[points],[toplayer]) values('" + strTour + "'," + intMid + ",'" + teamA + "','" + teamB + "','" + strPlayer + "','" + strshot + "','" + strCordinates + "','" + points + "','" + toplayer + "')";
+            query = "insert into Transaction_Master([Tournament],[mid],[Playing_Team],[Opponent_Team],[Player],[shottype],[Coordinates],[points],[toplayer],[toteam]) values('" + strTour + "'," + intMid + ",'" + teamA + "','" + teamB + "','" + strPlayer + "','" + strshot + "','" + strCordinates + "','" + points + "','" + toplayer + "','" + toTeam + "')";
             sqlhelper.ExecuteNonQuery(Connection, CommandType.Text, query);
            
             query = "select * from Transaction_Master where Mid=" + intMid + " and Tournament='" + strTour + "' ";

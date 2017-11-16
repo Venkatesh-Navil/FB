@@ -588,7 +588,10 @@ namespace FootBallApplication
         }
         private void cmbTeams_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            chkselectionA.Visible = true;
+            chkselectionB.Visible = true;
+            label9.Visible = true;
+            label10.Visible = true;
             button2.Visible = true;
 
             chkp1.Visible = true;
@@ -649,7 +652,7 @@ namespace FootBallApplication
 
 
 
-            if (dataGridView1.Rows[0].Cells[1].Value != null)
+            if (dataGridView1.Rows[0].Cells[1].Value != null&& dataGridView1.Rows[0].Cells[2].Value != null)
             {
                 if (cmbTeams.SelectedItem.ToString() == dataGridView1.Rows[0].Cells[1].Value.ToString())
                 {
@@ -657,52 +660,60 @@ namespace FootBallApplication
                     TeamB = false;
                     finalteama = dataGridView1.Rows[0].Cells[1].Value.ToString();
                 }
-               
-
-            }
-            else
-            {
-                for (int i = 0; i < dtteams.Rows.Count; i++)
-                {
-
-                    if (cmbTeams.SelectedItem.ToString() == dtteams.Rows[i][0].ToString())
-                    {
-                        TeamA = true;
-                        TeamB = false;
-                        finalteama = dtteams.Rows[i][0].ToString();
-                        break;
-                    }
-                    
-
-                }
-            }
-            if (dataGridView1.Rows[0].Cells[2].Value != null)
-            {
-               
-                 if (cmbTeams.SelectedItem.ToString() == dataGridView1.Rows[0].Cells[2].Value.ToString())
+                else if (cmbTeams.SelectedItem.ToString() == dataGridView1.Rows[0].Cells[2].Value.ToString())
                 {
                     TeamB = true;
                     TeamA = false;
                     finalteamb = dataGridView1.Rows[0].Cells[2].Value.ToString();
                 }
+                //else
+                //{
+                //    for (int i = 0; i < dtteams.Rows.Count; i++)
+                //    {
+
+                //        if (cmbTeams.SelectedItem.ToString() == dtteams.Rows[i][0].ToString())
+                //        {
+                //            TeamA = true;
+                //            TeamB = false;
+                //            finalteama = dtteams.Rows[i][0].ToString();
+                //            break;
+                //        }
+
+
+                //    }
+                //}
+
 
             }
-            else
-            {
-                for (int i = 0; i < dtteams.Rows.Count; i++)
-                {
+           
+            // if (dataGridView1.Rows[0].Cells[2].Value != null)
+            //{
+               
+            //     if (cmbTeams.SelectedItem.ToString() == dataGridView1.Rows[0].Cells[2].Value.ToString())
+            //    {
+            //        TeamB = true;
+            //        TeamA = false;
+            //        finalteamb = dataGridView1.Rows[0].Cells[2].Value.ToString();
+            //    }
+            //    //else
+            //    //{
+            //    //    for (int i = 0; i < dtteams.Rows.Count; i++)
+            //    //    {
 
-                     if (cmbTeams.SelectedItem.ToString() == dtteams.Rows[i][1].ToString())
-                    {
-                        TeamB = true;
-                        TeamA = false;
-                        finalteamb = dtteams.Rows[i][1].ToString();
+            //    //        if (cmbTeams.SelectedItem.ToString() == dtteams.Rows[i][1].ToString())
+            //    //        {
+            //    //            TeamB = true;
+            //    //            TeamA = false;
+            //    //            finalteamb = dtteams.Rows[i][1].ToString();
 
-                        break;
-                    }
+            //    //            break;
+            //    //        }
 
-                }
-            }
+            //    //    }
+            //    //}
+
+            //}
+           
 
         }
             
@@ -1521,13 +1532,22 @@ namespace FootBallApplication
                     }
                     chkselectionA.Checked = true;
 
-                    if (chkselectionB.Checked == false)
+                    if (cmbTeams.Text==cmbTeams.Items[0].ToString())
                     {
 
 
                         cmbTeams.Text = cmbTeams.Items[1].ToString();
                     }
-                    
+                    else
+                    {
+                        cmbTeams.Text = cmbTeams.Items[0].ToString();
+
+                    }
+                    //else if (chkselectionA.Checked == false)
+                    //{
+                    //    cmbTeams.Text = cmbTeams.Items[0].ToString();
+                    //}
+
                     //team1 = new DataTable();
                     //team1.Columns.Add("Players", typeof(string));
                     //for (int l = 0; l < lstRight.Items.Count; l++)
@@ -1552,9 +1572,16 @@ namespace FootBallApplication
                     }
                     chkselectionB.Checked = true;
 
-                    if (chkselectionB.Checked == false)
+                    if (cmbTeams.Text == cmbTeams.Items[0].ToString())
+                    {
+
+
+                        cmbTeams.Text = cmbTeams.Items[1].ToString();
+                    }
+                    else
                     {
                         cmbTeams.Text = cmbTeams.Items[0].ToString();
+
                     }
                     //team2 = new DataTable();
                     //team2.Columns.Add("Players", typeof(string));
@@ -1571,6 +1598,22 @@ namespace FootBallApplication
                     //MessageBox.Show("Playing 11 is saved", "Raider", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+
+            if (chkselectionA.Checked == true && chkselectionB.Checked == true)
+            {
+
+
+                string raidteam = GetRaidTeam();
+                objSquard.Insert_player(team1, team2, sub1, sub2, clsGlobalValues.Tournament, clsGlobalValues.mid, finalteama, finalteamb, cmbTossWonTeam.Text, cmbDecision.Text, cmbCaptonA.Text, cmbCaptonB.Text, cmbUmpire1.Text, cmbUmpire2.Text, cmbRefree.Text, "", raidteam);
+                this.Close();
+                frmpositions frm = new frmpositions();
+                frm.Show();
+            }
+            else
+            {
+               // MessageBox.Show("Registration Failed !");
+            }
+
         }
 
         private void lblstart_Click(object sender, EventArgs e)
@@ -1638,8 +1681,8 @@ namespace FootBallApplication
                 cmbTeams.Items.Add(dt.Rows[i][0].ToString());
             }
             cmbTeams.Text = cmbTeams.Items[0].ToString();
-            lblcapA.Text = cmbTeams.Items[0].ToString()+" Captain";
-            lblcapB.Text = cmbTeams.Items[1].ToString()+" Captain";
+            lblcapA.Text = "TeamA Captain";
+            lblcapB.Text = "TeamB Captain";
             clsGlobalValues.Tournament = comboBox1.Text;
         }
     }

@@ -93,6 +93,16 @@ namespace FootBallApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3885_undo_arrow2 {
+            get {
+                object obj = ResourceManager.GetObject("3885-undo-arrow2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _as {
             get {
                 object obj = ResourceManager.GetObject("as", resourceCulture);
@@ -116,6 +126,36 @@ namespace FootBallApplication.Properties {
         internal static System.Drawing.Bitmap arrow_navigation {
             get {
                 object obj = ResourceManager.GetObject("arrow navigation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chart_search_icon {
+            get {
+                object obj = ResourceManager.GetObject("chart-search-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clear {
+            get {
+                object obj = ResourceManager.GetObject("clear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +286,16 @@ namespace FootBallApplication.Properties {
         internal static System.Drawing.Bitmap hfjdg6 {
             get {
                 object obj = ResourceManager.GetObject("hfjdg6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iconshock_Soccer_Soccer_4 {
+            get {
+                object obj = ResourceManager.GetObject("Iconshock-Soccer-Soccer-4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,6 +443,16 @@ namespace FootBallApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap substitution {
+            get {
+                object obj = ResourceManager.GetObject("substitution", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap team {
             get {
                 object obj = ResourceManager.GetObject("team", resourceCulture);
@@ -406,6 +466,26 @@ namespace FootBallApplication.Properties {
         internal static System.Drawing.Bitmap tour {
             get {
                 object obj = ResourceManager.GetObject("tour", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tran {
+            get {
+                object obj = ResourceManager.GetObject("tran", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Undo {
+            get {
+                object obj = ResourceManager.GetObject("Undo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

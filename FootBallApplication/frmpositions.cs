@@ -236,36 +236,36 @@ namespace FootBallApplication
 
 
 
-                dt = new DataTable();
-                dt = pos.LoadTeamsattribute(clsGlobalValues.mid, clsGlobalValues.Tournament);
+                //dt = new DataTable();
+                //dt = pos.LoadTeamsattribute(clsGlobalValues.mid, clsGlobalValues.Tournament);
 
 
-                cmbpo1.Items.Clear();
-                cmbpo2.Items.Clear();
-                cmbpo3.Items.Clear();
-                cmbpo4.Items.Clear();
-                cmbpo5.Items.Clear();
-                cmbpo6.Items.Clear();
-                cmbpo7.Items.Clear();
-                cmbpo8.Items.Clear();
-                cmbpo9.Items.Clear();
-                cmbpo10.Items.Clear();
-                cmbpo11.Items.Clear();
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    cmbpo1.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo2.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo3.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo4.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo5.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo6.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo7.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo8.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo9.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo10.Items.Add(dt.Rows[i][0].ToString());
-                    cmbpo11.Items.Add(dt.Rows[i][0].ToString());
+                //cmbpo1.Items.Clear();
+                //cmbpo2.Items.Clear();
+                //cmbpo3.Items.Clear();
+                //cmbpo4.Items.Clear();
+                //cmbpo5.Items.Clear();
+                //cmbpo6.Items.Clear();
+                //cmbpo7.Items.Clear();
+                //cmbpo8.Items.Clear();
+                //cmbpo9.Items.Clear();
+                //cmbpo10.Items.Clear();
+                //cmbpo11.Items.Clear();
+                //for (int i = 0; i < dt.Rows.Count; i++)
+                //{
+                //    cmbpo1.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo2.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo3.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo4.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo5.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo6.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo7.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo8.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo9.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo10.Items.Add(dt.Rows[i][0].ToString());
+                //    cmbpo11.Items.Add(dt.Rows[i][0].ToString());
 
-                }
+                //}
 
 
 
@@ -563,17 +563,17 @@ namespace FootBallApplication
                    
                     cmbteam.Text = cmbteam.Items[1].ToString();
                     chkselectionA.Checked = true;
-                    chkselectionA.Text = savedteam;
+                    //chkselectionA.Text = savedteam;
                 }
                else if (savedteam == cmbteam.Items[1].ToString())
                 {
                     cmbteam.Text = cmbteam.Items[0].ToString();
                     chkselectionB.Checked = true;
-                    chkselectionB.Text = savedteam;
+                   // chkselectionB.Text = savedteam;
 
                 }
                 //cmbteam.Text = savedteam;
-               // cmbteam.Text = "";
+                // cmbteam.Text = "";
 
                 //cmbpo1.Text = "";
                 //cmbpo2.Text = "";
@@ -584,6 +584,18 @@ namespace FootBallApplication
                 //cmbpo7.Text = "";
                 //cmbpo8.Text = "";
                 //cmbpo9.Text = ""; cmbpo11.Text = "";
+
+                if (chkselectionA.Checked == true && chkselectionB.Checked == true)
+                {
+
+                    frmTransaction tr = new frmTransaction();
+                    tr.Show();
+                    this.Close();
+                }
+                else
+                {
+                    // MessageBox.Show("Registration Failed !");
+                }
                 //cmbpo10.Text = "";
 
             }
