@@ -130,7 +130,30 @@ namespace BAL
             return max;
 
         }
-        public string showplayer(string strTour, int intMid,int jersy,string team)
+        public string showplayerhov(string strTour, int intMid, int jersy, string team)
+        {
+            string max = "";
+            try
+            {
+
+
+                DataTable dt5 = new DataTable();
+                Connection = clsAut.GetConnection();
+                //DELETE FROM MARKS WHERE ID = (SELECT MAX(id) FROM MARKS)
+                query = "select player_name from players where match_id=" + intMid + " and Tournament_name='" + strTour + "' and jersey_number='" + jersy + "' and player_team='" + team + "' ";
+                dt = new DataTable();
+                dt = sqlhelper.ExecuteDatatable(Connection, CommandType.Text, query);
+                max = dt.Rows[0][0].ToString();
+
+            }
+            catch
+            {
+
+            }
+            return max;
+        }
+
+        public string showplayer(string strTour, int intMid,string jersy,string team)
         {
             string max = "";
                 try
@@ -152,6 +175,31 @@ namespace BAL
             }
             return max;
         }
+
+        public string showSubplayer(string strTour, int intMid, string jersy, string team)
+        {
+            string max = "";
+            try
+            {
+
+
+                DataTable dt5 = new DataTable();
+                Connection = clsAut.GetConnection();
+                //DELETE FROM MARKS WHERE ID = (SELECT MAX(id) FROM MARKS)
+                query = "select Player_Name from Player_Registration where Tournament_name='" + strTour + "' and Jersey_No='" + jersy + "' and Player_Team='" + team + "' ";
+                dt = new DataTable();
+                dt = sqlhelper.ExecuteDatatable(Connection, CommandType.Text, query);
+                max = dt.Rows[0][0].ToString();
+
+            }
+            catch
+            {
+
+            }
+            return max;
+        }
+
+
         public void undo(string strTour, int intMid,string sno)
         {
             DataTable dt5 = new DataTable();
@@ -180,6 +228,15 @@ namespace BAL
             }
             
         }
+        public void Insertsub(string strTour, int intMid, string team, string Playername, string PJNo, string SubPlayerName, string SubPJNo, string time)
+        {
+
+            Connection = clsAut.GetConnection();
+            query = "insert into Substitutions([Tournament_Name],[Match_Id],[Team_Name],[Player_Name],[Player_JNo],[SubPlayer_Name],[SubPlayer_Jno],[Time]) values('" + strTour + "'," + intMid + ",'" + team + "','" + Playername + "','" + PJNo + "','" + SubPlayerName + "','" + SubPJNo + "','" + time + "')";
+            sqlhelper.ExecuteNonQuery(Connection, CommandType.Text, query);
+        }
+
+
         public void InsertValues1(int max,string strTour, int intMid, string fromteam, int fromplayer, string toteam, int toplayer, string kicktype, string coordinates, string x1, string y1, string x2, string y2)
         {
 

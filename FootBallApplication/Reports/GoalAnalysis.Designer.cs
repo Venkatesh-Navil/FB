@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.lblTeamB = new System.Windows.Forms.Label();
-            this.grdsubB = new System.Windows.Forms.DataGridView();
-            this.grdsubA = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTeamA = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,9 +55,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlTeamA = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.grdsubB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grdsubA)).BeginInit();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.grdsubA = new System.Windows.Forms.DataGridView();
+            this.grdsubB = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.grpshots.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdsubA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdsubB)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTeamB
@@ -73,26 +87,6 @@
             this.lblTeamB.Size = new System.Drawing.Size(76, 17);
             this.lblTeamB.TabIndex = 5;
             this.lblTeamB.Text = "Team Name";
-            // 
-            // grdsubB
-            // 
-            this.grdsubB.BackgroundColor = System.Drawing.Color.White;
-            this.grdsubB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdsubB.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.grdsubB.Location = new System.Drawing.Point(277, 0);
-            this.grdsubB.Name = "grdsubB";
-            this.grdsubB.Size = new System.Drawing.Size(287, 196);
-            this.grdsubB.TabIndex = 5;
-            // 
-            // grdsubA
-            // 
-            this.grdsubA.BackgroundColor = System.Drawing.Color.White;
-            this.grdsubA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdsubA.GridColor = System.Drawing.SystemColors.ActiveCaption;
-            this.grdsubA.Location = new System.Drawing.Point(0, 0);
-            this.grdsubA.Name = "grdsubA";
-            this.grdsubA.Size = new System.Drawing.Size(281, 196);
-            this.grdsubA.TabIndex = 5;
             // 
             // label3
             // 
@@ -229,8 +223,8 @@
             // grpshots
             // 
             this.grpshots.BackColor = System.Drawing.Color.Transparent;
+            this.grpshots.Controls.Add(this.panel1);
             this.grpshots.Controls.Add(this.grdsubB);
-            this.grpshots.Controls.Add(this.grdsubA);
             this.grpshots.Controls.Add(this.label4);
             this.grpshots.Controls.Add(this.totshotsB);
             this.grpshots.Controls.Add(this.totshotsA);
@@ -323,6 +317,7 @@
             // 
             // btsSub
             // 
+            this.btsSub.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btsSub.Location = new System.Drawing.Point(403, 238);
             this.btsSub.Name = "btsSub";
             this.btsSub.Size = new System.Drawing.Size(290, 42);
@@ -333,6 +328,7 @@
             // 
             // btnshot
             // 
+            this.btnshot.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnshot.Location = new System.Drawing.Point(126, 238);
             this.btnshot.Name = "btnshot";
             this.btnshot.Size = new System.Drawing.Size(281, 42);
@@ -401,6 +397,184 @@
             this.pnlTeamA.Size = new System.Drawing.Size(82, 84);
             this.pnlTeamA.TabIndex = 14;
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel7.Controls.Add(this.label8);
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.Controls.Add(this.label12);
+            this.panel7.Controls.Add(this.label13);
+            this.panel7.Location = new System.Drawing.Point(127, 276);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(279, 23);
+            this.panel7.TabIndex = 21;
+            this.panel7.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(520, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Match Status";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(417, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(73, 13);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Match Date";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(335, 6);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Venue";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(139, 7);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(137, 13);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "SubPlayer_Name (JNo)";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Location = new System.Drawing.Point(7, 6);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(111, 13);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Player_Name(JNo)";
+            // 
+            // grdsubA
+            // 
+            this.grdsubA.AllowUserToAddRows = false;
+            this.grdsubA.AllowUserToDeleteRows = false;
+            this.grdsubA.AllowUserToResizeRows = false;
+            this.grdsubA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdsubA.BackgroundColor = System.Drawing.Color.White;
+            this.grdsubA.ColumnHeadersVisible = false;
+            this.grdsubA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grdsubA.GridColor = System.Drawing.Color.Gray;
+            this.grdsubA.Location = new System.Drawing.Point(127, 298);
+            this.grdsubA.Name = "grdsubA";
+            this.grdsubA.RowHeadersVisible = false;
+            this.grdsubA.RowHeadersWidth = 30;
+            this.grdsubA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.grdsubA.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdsubA.Size = new System.Drawing.Size(280, 171);
+            this.grdsubA.TabIndex = 20;
+            this.grdsubA.Visible = false;
+            // 
+            // grdsubB
+            // 
+            this.grdsubB.AllowUserToAddRows = false;
+            this.grdsubB.AllowUserToDeleteRows = false;
+            this.grdsubB.AllowUserToResizeRows = false;
+            this.grdsubB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grdsubB.BackgroundColor = System.Drawing.Color.White;
+            this.grdsubB.ColumnHeadersVisible = false;
+            this.grdsubB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grdsubB.GridColor = System.Drawing.Color.Gray;
+            this.grdsubB.Location = new System.Drawing.Point(278, 25);
+            this.grdsubB.Name = "grdsubB";
+            this.grdsubB.RowHeadersVisible = false;
+            this.grdsubB.RowHeadersWidth = 30;
+            this.grdsubB.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.grdsubB.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdsubB.Size = new System.Drawing.Size(286, 171);
+            this.grdsubB.TabIndex = 20;
+            this.grdsubB.Visible = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Location = new System.Drawing.Point(277, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(287, 23);
+            this.panel1.TabIndex = 21;
+            this.panel1.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(520, 5);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Match Status";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Location = new System.Drawing.Point(417, 6);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(73, 13);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Match Date";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(335, 6);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(43, 13);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Venue";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.Location = new System.Drawing.Point(150, 7);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(137, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "SubPlayer_Name (JNo)";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.Location = new System.Drawing.Point(9, 5);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(111, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Player_Name(JNo)";
+            // 
             // GoalAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,6 +582,8 @@
             this.BackgroundImage = global::FootBallApplication.Properties.Resources.FbGoalReport;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(819, 514);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.grdsubA);
             this.Controls.Add(this.lblTeamB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTeamA);
@@ -428,10 +604,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Summary ";
             this.Load += new System.EventHandler(this.GoalAnalysis_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grdsubB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grdsubA)).EndInit();
             this.grpshots.ResumeLayout(false);
             this.grpshots.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdsubA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdsubB)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -440,8 +620,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblTeamB;
-        private System.Windows.Forms.DataGridView grdsubB;
-        private System.Windows.Forms.DataGridView grdsubA;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTeamA;
         private System.Windows.Forms.Label label4;
@@ -468,5 +646,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlTeamA;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DataGridView grdsubB;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridView grdsubA;
     }
 }

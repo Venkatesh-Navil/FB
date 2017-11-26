@@ -62,11 +62,13 @@ namespace FootBallApplication.Reports
 
         private void cmbMatch_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            btsSub.BackColor = Color.White;
             btnshot.BackColor = Color.Aqua;
             grpshots.Visible = true;
             grdsubA.Visible = false;
             grdsubB.Visible = false;
+            panel1.Visible = false;
+            panel7.Visible = false;
             try
             {
                 lblmatchno.Text = "Match No " + cmbMatch.Text;
@@ -132,24 +134,56 @@ namespace FootBallApplication.Reports
             grpshots.Visible = true;
             grdsubA.Visible = false;
             grdsubB.Visible = false;
+            panel1.Visible = false;
+            panel7.Visible = false;
         }
 
         private void btsSub_Click(object sender, EventArgs e)
         {
             int matchid = Convert.ToInt32(cmbMatch.SelectedItem.ToString());
             DataTable dtsub = new DataTable();
-            dtsub = objGolAnalysis.LoadRedA(cmbTour.SelectedItem.ToString(), matchid, TeamA);
-            totRedA.Text = dtsub.Rows[0][0].ToString();
-            dtsub = objGolAnalysis.LoadRedB(cmbTour.SelectedItem.ToString(), matchid, TeamB);
-            totRedB.Text = dtsub.Rows[0][0].ToString();
+            dtsub = objGolAnalysis.LoadSubA(cmbTour.SelectedItem.ToString(), matchid, TeamA);
+            grdsubA.DataSource = dtsub;
+            DataTable dtdes = new DataTable();
+            dtdes.Columns.Add("Player_Name (J.NO)",typeof(string));
+            dtdes.Columns.Add("SubPlayer_Name (J.NO)", typeof(string));
+            for (int i = 0; i < dtsub.Rows.Count; i++)
+            {
+                dtdes.Rows.Add(dtsub.Rows[i][0].ToString() + "(" + dtsub.Rows[i][2].ToString() + ")",dtsub.Rows[i][1].ToString() + " (" + dtsub.Rows[i][3].ToString()+")");
+            }
+            grdsubA.DataSource = dtdes;
 
-
+            //totRedA.Text = dtsub.Rows[0][0].ToString();
+            dtsub = objGolAnalysis.LoadSubB(cmbTour.SelectedItem.ToString(), matchid, TeamB);
+           
+            dtdes = new DataTable();
+            dtdes.Columns.Add("Player_Name (J.NO)", typeof(string));
+            dtdes.Columns.Add("SubPlayer_Name (J.NO)", typeof(string));
+            for (int i = 0; i < dtsub.Rows.Count; i++)
+            {
+                dtdes.Rows.Add(dtsub.Rows[i][0].ToString() + "(" + dtsub.Rows[i][2].ToString() + ")", dtsub.Rows[i][1].ToString() + " (" + dtsub.Rows[i][3].ToString() + ")");
+            }
+            grdsubB.DataSource = dtdes; 
+            
+            //totRedB.Text = dtsub.Rows[0][0].ToString();
 
             btnshot.BackColor = Color.White;
             btsSub.BackColor = Color.Aqua;
-            grpshots.Visible = false;
+            //grpshots.Visible = false;
             grdsubA.Visible = true;
             grdsubB.Visible = true;
+
+            grdsubA.Columns[0].Width = 140;
+            grdsubA.Columns[1].Width = 138;
+            grdsubB.Columns[0].Width = 140;
+            grdsubB.Columns[1].Width = 138;
+            panel1.Visible = true;
+            panel7.Visible = true;
+
+            grdsubA.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            grdsubA.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            grdsubB.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            grdsubB.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
     }
 }

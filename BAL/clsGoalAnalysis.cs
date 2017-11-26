@@ -142,7 +142,15 @@ namespace BAL
         {
             FootballConnection = clsAut.GetConnection();
             dt = new DataTable();
-            query = "select Count(kicktype) from TransactionDetails where matchid='" + mid + "' and Tournamentname='" + tour + "' and FromBallTeam='" + TeamB + "' and kicktype='RED CARD'";
+            query = "select Player_Name,SubPlayer_Name,Player_JNo,SubPlayer_Jno from Substitutions where Match_Id='" + mid + "' and Tournament_Name='" + tour + "' and Team_Name='" + TeamB + "'";
+            dt = sqlhelper.ExecuteDatatable(FootballConnection, CommandType.Text, query);
+            return dt;
+        }
+        public DataTable LoadSubA(string tour, int mid, string TeamA)
+        {
+            FootballConnection = clsAut.GetConnection();
+            dt = new DataTable();
+            query = "select Player_Name,SubPlayer_Name,Player_JNo,SubPlayer_Jno from Substitutions where Match_Id='" + mid + "' and Tournament_Name='" + tour + "' and Team_Name='" + TeamA + "'";
             dt = sqlhelper.ExecuteDatatable(FootballConnection, CommandType.Text, query);
             return dt;
         }

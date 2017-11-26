@@ -395,7 +395,9 @@ namespace FootBallApplication
         private void btntma1_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
-
+            player = btntma1.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntma1.Text;
@@ -487,6 +489,9 @@ namespace FootBallApplication
         private void btntma2_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
+            player = btntma2.Text;
             if (chkSub.Checked == false)
             {
                 team1 = lblteamA.Text;
@@ -573,6 +578,9 @@ namespace FootBallApplication
         private void btntma3_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
+            player = btntma3.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntma3.Text;
@@ -656,7 +664,9 @@ namespace FootBallApplication
         private void btntma4_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
-
+            player = btntma4.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntma4.Text;
@@ -742,6 +752,9 @@ namespace FootBallApplication
         private void btntma5_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
+            player = btntma5.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntma5.Text;
@@ -829,6 +842,9 @@ namespace FootBallApplication
         {
 
             subteam = lblteamA.Text;
+            player = btntma6.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntma6.Text;
@@ -914,6 +930,9 @@ namespace FootBallApplication
         private void btntma7_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
+            player = btntma7.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntma7.Text;
@@ -999,6 +1018,9 @@ namespace FootBallApplication
         private void btntma8_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
+            player = btntma8.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntma8.Text;
@@ -1085,6 +1107,9 @@ namespace FootBallApplication
         private void btntma9_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
+            player = btntma9.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntma9.Text;
@@ -1208,6 +1233,9 @@ namespace FootBallApplication
         private void btntma10_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
+            player = btntma10.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntma10.Text;
@@ -1293,6 +1321,9 @@ namespace FootBallApplication
         private void btntmb1_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
+            player = btntmb1.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntmb1.Text;
@@ -1380,6 +1411,9 @@ namespace FootBallApplication
         private void btntmb2_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
+            player = btntmb2.Text;
             if (chkSub.Checked == false)
             {
                 team2 = lblteamA.Text;
@@ -1464,7 +1498,9 @@ namespace FootBallApplication
         private void btntmb3_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
-
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
+            player = btntmb3.Text;
             if (chkSub.Checked == false)
             {
                 team2 = lblteamA.Text;
@@ -1552,6 +1588,9 @@ namespace FootBallApplication
         private void btntmb4_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
+            player = btntmb4.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntmb4.Text;
@@ -1637,6 +1676,10 @@ namespace FootBallApplication
         private void btntmb5_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
+
+            player = btntmb5.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntmb5.Text;
@@ -1723,6 +1766,9 @@ namespace FootBallApplication
         private void btntmb6_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
+            player = btntmb6.Text;
             if (chkSub.Checked == false)
             {
                 team2 = lblteamA.Text;
@@ -1807,6 +1853,9 @@ namespace FootBallApplication
         private void btntmb7_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
+            player = btntmb7.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntmb7.Text;
@@ -1891,6 +1940,9 @@ namespace FootBallApplication
         private void btntmb8_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
+            player = btntmb8.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntmb8.Text;
@@ -1974,6 +2026,9 @@ namespace FootBallApplication
         private void btntmb9_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
+            player = btntmb9.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btntmb9.Text;
@@ -2057,6 +2112,9 @@ namespace FootBallApplication
         private void btntmb10_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
+            player = btntmb10.Text;
             if (chkSub.Checked == false)
             {
                 team2 = lblteamA.Text;
@@ -2431,7 +2489,9 @@ namespace FootBallApplication
         private void btngkA_Click(object sender, EventArgs e)
         {
             subteam = lblteamA.Text;
-               
+            player = btngkA.Text;
+            team1 = lblteamA.Text;
+            team2 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btngkA.Text;
@@ -2520,7 +2580,9 @@ namespace FootBallApplication
         private void btngkB_Click(object sender, EventArgs e)
         {
             subteam = lblteamB.Text;
-
+            player = btngkB.Text;
+            team2 = lblteamA.Text;
+            team1 = lblteamB.Text;
             if (chkSub.Checked == false)
             {
                 player = btngkB.Text;
@@ -2593,10 +2655,17 @@ namespace FootBallApplication
             //player = lstSub.SelectedItem.ToString();
 
         }
-
+        string subplayerchange = "";
+        string playername = "";
+        string Subplayername = "";
         private void lstSub_Click(object sender, EventArgs e)
         {
-           
+            subplayerchange= lstSub.SelectedItem.ToString();
+            playername = trans.showplayer(clsGlobalValues.Tournament, clsGlobalValues.mid, player, lblteamB.Text);
+            
+            Subplayername = trans.showSubplayer(clsGlobalValues.Tournament, clsGlobalValues.mid, subplayerchange, lblteamB.Text);
+            trans.Insertsub(clsGlobalValues.Tournament, clsGlobalValues.mid, lblteamB.Text, playername, player, Subplayername, subplayerchange, "0:0");
+
             if (player == btntmb1.Text)
             {
                 btntmb1.Text = lstSub.SelectedItem.ToString();
@@ -2642,10 +2711,15 @@ namespace FootBallApplication
                 btngkB.Text = lstSub.SelectedItem.ToString();
             }
             lstSub.Visible = false;
-        }
 
+        }
+       
         private void lstSubA_Click(object sender, EventArgs e)
         {
+            subplayerchange = lstSubA.SelectedItem.ToString();
+            playername = trans.showplayer(clsGlobalValues.Tournament, clsGlobalValues.mid, player, lblteamA.Text);
+            Subplayername = trans.showSubplayer(clsGlobalValues.Tournament, clsGlobalValues.mid, subplayerchange, lblteamA.Text);
+            trans.Insertsub(clsGlobalValues.Tournament, clsGlobalValues.mid, lblteamA.Text, playername, player, Subplayername, subplayerchange, "0:0");
             if (player == btngkA.Text)
             {
                 btngkA.Text = lstSubA.SelectedItem.ToString();
@@ -2691,6 +2765,7 @@ namespace FootBallApplication
                 btntma10.Text = lstSubA.SelectedItem.ToString();
             }
             lstSubA.Visible = false;
+
         }
         private void getCamList()
         {
@@ -2987,7 +3062,7 @@ namespace FootBallApplication
         }
         private void showplayer(int playerjersy,string team)
         {
-             playernamehover = trans.showplayer(clsGlobalValues.Tournament, clsGlobalValues.mid, playerjersy,team);
+             playernamehover = trans.showplayerhov(clsGlobalValues.Tournament, clsGlobalValues.mid, playerjersy,team);
 
 
 
