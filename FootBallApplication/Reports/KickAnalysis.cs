@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FootBallApplication.Reports
 {
-    public partial class frmReports4 : Form
+    public partial class KickAnalysis : Form
     {
-        public frmReports4()
+        public KickAnalysis()
         {
             InitializeComponent();
         }

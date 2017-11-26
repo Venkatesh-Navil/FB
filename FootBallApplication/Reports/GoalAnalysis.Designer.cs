@@ -1,6 +1,6 @@
 ﻿namespace FootBallApplication.Reports
 {
-    partial class frmReports2
+    partial class GoalAnalysis
     {
         /// <summary>
         /// Required designer variable.
@@ -30,19 +30,17 @@
         {
             this.SuspendLayout();
             // 
-            // frmReports2
+            // GoalAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FootBallApplication.Properties.Resources.fbback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(822, 529);
+            this.ClientSize = new System.Drawing.Size(819, 514);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(838, 568);
-            this.MinimumSize = new System.Drawing.Size(838, 568);
-            this.Name = "frmReports2";
+            this.Name = "GoalAnalysis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmReports2";
+            this.Text = "GoalAnalysis";
             this.ResumeLayout(false);
 
         }

@@ -26,7 +26,7 @@ namespace DAL
         public string GetConnection()
         {
 
-            string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=FBDB;Integrated Security=True";//ConfigurationManager.ConnectionStrings["FootBallMasterConnection"].ConnectionString;
+            string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=DBFB;Integrated Security=True";//ConfigurationManager.ConnectionStrings["FootBallMasterConnection"].ConnectionString;
             return connectionString;
         }
         public string GetMasterConnection()

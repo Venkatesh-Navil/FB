@@ -32,7 +32,7 @@
             this.btnback = new System.Windows.Forms.Button();
             this.btnbackk = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbltour = new System.Windows.Forms.Label();
+            this.lblgoalanalysis = new System.Windows.Forms.Label();
             this.lblteam = new System.Windows.Forms.Label();
             this.lblmatch = new System.Windows.Forms.Label();
             this.lblplayer = new System.Windows.Forms.Label();
@@ -76,18 +76,19 @@
             this.panel2.Size = new System.Drawing.Size(27, 23);
             this.panel2.TabIndex = 300;
             // 
-            // lbltour
+            // lblgoalanalysis
             // 
-            this.lbltour.AutoSize = true;
-            this.lbltour.BackColor = System.Drawing.Color.Transparent;
-            this.lbltour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbltour.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltour.ForeColor = System.Drawing.Color.Black;
-            this.lbltour.Location = new System.Drawing.Point(63, 119);
-            this.lbltour.Name = "lbltour";
-            this.lbltour.Size = new System.Drawing.Size(64, 19);
-            this.lbltour.TabIndex = 296;
-            this.lbltour.Text = "Report1";
+            this.lblgoalanalysis.AutoSize = true;
+            this.lblgoalanalysis.BackColor = System.Drawing.Color.Transparent;
+            this.lblgoalanalysis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblgoalanalysis.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblgoalanalysis.ForeColor = System.Drawing.Color.Black;
+            this.lblgoalanalysis.Location = new System.Drawing.Point(63, 119);
+            this.lblgoalanalysis.Name = "lblgoalanalysis";
+            this.lblgoalanalysis.Size = new System.Drawing.Size(99, 19);
+            this.lblgoalanalysis.TabIndex = 296;
+            this.lblgoalanalysis.Text = "Goal Analysis";
+            this.lblgoalanalysis.Click += new System.EventHandler(this.lblgoalanalysis_Click);
             // 
             // lblteam
             // 
@@ -166,7 +167,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(961, 661);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.lbltour);
+            this.Controls.Add(this.lblgoalanalysis);
             this.Controls.Add(this.lblteam);
             this.Controls.Add(this.lblmatch);
             this.Controls.Add(this.lblplayer);
@@ -191,7 +192,7 @@
         private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Button btnbackk;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbltour;
+        private System.Windows.Forms.Label lblgoalanalysis;
         private System.Windows.Forms.Label lblteam;
         private System.Windows.Forms.Label lblmatch;
         private System.Windows.Forms.Label lblplayer;

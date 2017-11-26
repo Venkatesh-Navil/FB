@@ -133,6 +133,16 @@ namespace FootBallApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BPI {
+            get {
+                object obj = ResourceManager.GetObject("BPI", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chart_search_icon {
             get {
                 object obj = ResourceManager.GetObject("chart-search-icon", resourceCulture);

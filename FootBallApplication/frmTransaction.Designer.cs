@@ -168,11 +168,34 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.dgNavigation = new System.Windows.Forms.DataGridView();
-            this.label26 = new System.Windows.Forms.Label();
+            this.dgtransaction = new System.Windows.Forms.DataGridView();
+            this.pnlgka = new System.Windows.Forms.Panel();
+            this.pnlpl1 = new System.Windows.Forms.Panel();
+            this.pnlpl2 = new System.Windows.Forms.Panel();
+            this.pnlpl3 = new System.Windows.Forms.Panel();
+            this.pnlpl4 = new System.Windows.Forms.Panel();
+            this.pnlpl5 = new System.Windows.Forms.Panel();
+            this.pnlpl6 = new System.Windows.Forms.Panel();
+            this.pnlpl7 = new System.Windows.Forms.Panel();
+            this.pnlpl8 = new System.Windows.Forms.Panel();
+            this.pnlpl9 = new System.Windows.Forms.Panel();
+            this.pnlpl10 = new System.Windows.Forms.Panel();
+            this.pnlgkb = new System.Windows.Forms.Panel();
+            this.pnlplb1 = new System.Windows.Forms.Panel();
+            this.pnlplb2 = new System.Windows.Forms.Panel();
+            this.pnlplb3 = new System.Windows.Forms.Panel();
+            this.pnlplb4 = new System.Windows.Forms.Panel();
+            this.pnlplb5 = new System.Windows.Forms.Panel();
+            this.pnlplb6 = new System.Windows.Forms.Panel();
+            this.pnlplb7 = new System.Windows.Forms.Panel();
+            this.pnlplb8 = new System.Windows.Forms.Panel();
+            this.pnlplb9 = new System.Windows.Forms.Panel();
+            this.pnlplb10 = new System.Windows.Forms.Panel();
             this.panel23.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -180,14 +203,14 @@
             this.panel22.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgNavigation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtransaction)).BeginInit();
             this.SuspendLayout();
             // 
             // btngkA
             // 
             this.btngkA.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btngkA.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btngkA.Location = new System.Drawing.Point(365, 336);
+            this.btngkA.Location = new System.Drawing.Point(365, 313);
             this.btngkA.Name = "btngkA";
             this.btngkA.Size = new System.Drawing.Size(48, 23);
             this.btngkA.TabIndex = 14;
@@ -200,9 +223,9 @@
             // 
             this.btngkB.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btngkB.ForeColor = System.Drawing.Color.OrangeRed;
-            this.btngkB.Location = new System.Drawing.Point(809, 650);
+            this.btngkB.Location = new System.Drawing.Point(809, 663);
             this.btngkB.Name = "btngkB";
-            this.btngkB.Size = new System.Drawing.Size(55, 23);
+            this.btngkB.Size = new System.Drawing.Size(48, 23);
             this.btngkB.TabIndex = 14;
             this.btngkB.Text = "0";
             this.btngkB.UseVisualStyleBackColor = true;
@@ -952,7 +975,7 @@
             this.btntma1.BackColor = System.Drawing.Color.White;
             this.btntma1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma1.ForeColor = System.Drawing.Color.Black;
-            this.btntma1.Location = new System.Drawing.Point(419, 336);
+            this.btntma1.Location = new System.Drawing.Point(419, 313);
             this.btntma1.Name = "btntma1";
             this.btntma1.Size = new System.Drawing.Size(38, 23);
             this.btntma1.TabIndex = 14;
@@ -966,7 +989,7 @@
             this.btntma2.BackColor = System.Drawing.Color.White;
             this.btntma2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma2.ForeColor = System.Drawing.Color.Black;
-            this.btntma2.Location = new System.Drawing.Point(463, 336);
+            this.btntma2.Location = new System.Drawing.Point(463, 313);
             this.btntma2.Name = "btntma2";
             this.btntma2.Size = new System.Drawing.Size(38, 23);
             this.btntma2.TabIndex = 14;
@@ -980,7 +1003,7 @@
             this.btntma3.BackColor = System.Drawing.Color.White;
             this.btntma3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma3.ForeColor = System.Drawing.Color.Black;
-            this.btntma3.Location = new System.Drawing.Point(507, 336);
+            this.btntma3.Location = new System.Drawing.Point(507, 313);
             this.btntma3.Name = "btntma3";
             this.btntma3.Size = new System.Drawing.Size(38, 23);
             this.btntma3.TabIndex = 14;
@@ -994,7 +1017,7 @@
             this.btntma4.BackColor = System.Drawing.Color.White;
             this.btntma4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma4.ForeColor = System.Drawing.Color.Black;
-            this.btntma4.Location = new System.Drawing.Point(551, 336);
+            this.btntma4.Location = new System.Drawing.Point(551, 313);
             this.btntma4.Name = "btntma4";
             this.btntma4.Size = new System.Drawing.Size(38, 23);
             this.btntma4.TabIndex = 14;
@@ -1008,7 +1031,7 @@
             this.btntma7.BackColor = System.Drawing.Color.White;
             this.btntma7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma7.ForeColor = System.Drawing.Color.Black;
-            this.btntma7.Location = new System.Drawing.Point(683, 336);
+            this.btntma7.Location = new System.Drawing.Point(683, 313);
             this.btntma7.Name = "btntma7";
             this.btntma7.Size = new System.Drawing.Size(38, 23);
             this.btntma7.TabIndex = 14;
@@ -1022,7 +1045,7 @@
             this.btntma6.BackColor = System.Drawing.Color.White;
             this.btntma6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma6.ForeColor = System.Drawing.Color.Black;
-            this.btntma6.Location = new System.Drawing.Point(639, 336);
+            this.btntma6.Location = new System.Drawing.Point(639, 313);
             this.btntma6.Name = "btntma6";
             this.btntma6.Size = new System.Drawing.Size(38, 23);
             this.btntma6.TabIndex = 14;
@@ -1036,7 +1059,7 @@
             this.btntma8.BackColor = System.Drawing.Color.White;
             this.btntma8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma8.ForeColor = System.Drawing.Color.Black;
-            this.btntma8.Location = new System.Drawing.Point(727, 336);
+            this.btntma8.Location = new System.Drawing.Point(727, 313);
             this.btntma8.Name = "btntma8";
             this.btntma8.Size = new System.Drawing.Size(38, 23);
             this.btntma8.TabIndex = 14;
@@ -1050,7 +1073,7 @@
             this.btntma9.BackColor = System.Drawing.Color.White;
             this.btntma9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma9.ForeColor = System.Drawing.Color.Black;
-            this.btntma9.Location = new System.Drawing.Point(771, 336);
+            this.btntma9.Location = new System.Drawing.Point(771, 313);
             this.btntma9.Name = "btntma9";
             this.btntma9.Size = new System.Drawing.Size(38, 23);
             this.btntma9.TabIndex = 14;
@@ -1064,7 +1087,7 @@
             this.btntma10.BackColor = System.Drawing.Color.White;
             this.btntma10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma10.ForeColor = System.Drawing.Color.Black;
-            this.btntma10.Location = new System.Drawing.Point(819, 336);
+            this.btntma10.Location = new System.Drawing.Point(819, 313);
             this.btntma10.Name = "btntma10";
             this.btntma10.Size = new System.Drawing.Size(38, 23);
             this.btntma10.TabIndex = 14;
@@ -1078,7 +1101,7 @@
             this.btntmb1.BackColor = System.Drawing.Color.White;
             this.btntmb1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb1.ForeColor = System.Drawing.Color.Black;
-            this.btntmb1.Location = new System.Drawing.Point(365, 650);
+            this.btntmb1.Location = new System.Drawing.Point(365, 663);
             this.btntmb1.Name = "btntmb1";
             this.btntmb1.Size = new System.Drawing.Size(38, 23);
             this.btntmb1.TabIndex = 14;
@@ -1092,7 +1115,7 @@
             this.btntmb2.BackColor = System.Drawing.Color.White;
             this.btntmb2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb2.ForeColor = System.Drawing.Color.Black;
-            this.btntmb2.Location = new System.Drawing.Point(409, 650);
+            this.btntmb2.Location = new System.Drawing.Point(409, 663);
             this.btntmb2.Name = "btntmb2";
             this.btntmb2.Size = new System.Drawing.Size(38, 23);
             this.btntmb2.TabIndex = 14;
@@ -1106,7 +1129,7 @@
             this.btntmb3.BackColor = System.Drawing.Color.White;
             this.btntmb3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb3.ForeColor = System.Drawing.Color.Black;
-            this.btntmb3.Location = new System.Drawing.Point(453, 650);
+            this.btntmb3.Location = new System.Drawing.Point(453, 663);
             this.btntmb3.Name = "btntmb3";
             this.btntmb3.Size = new System.Drawing.Size(38, 23);
             this.btntmb3.TabIndex = 14;
@@ -1120,7 +1143,7 @@
             this.btntmb4.BackColor = System.Drawing.Color.White;
             this.btntmb4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb4.ForeColor = System.Drawing.Color.Black;
-            this.btntmb4.Location = new System.Drawing.Point(497, 650);
+            this.btntmb4.Location = new System.Drawing.Point(497, 663);
             this.btntmb4.Name = "btntmb4";
             this.btntmb4.Size = new System.Drawing.Size(38, 23);
             this.btntmb4.TabIndex = 14;
@@ -1134,7 +1157,7 @@
             this.btntmb7.BackColor = System.Drawing.Color.White;
             this.btntmb7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb7.ForeColor = System.Drawing.Color.Black;
-            this.btntmb7.Location = new System.Drawing.Point(629, 650);
+            this.btntmb7.Location = new System.Drawing.Point(629, 663);
             this.btntmb7.Name = "btntmb7";
             this.btntmb7.Size = new System.Drawing.Size(38, 23);
             this.btntmb7.TabIndex = 14;
@@ -1148,7 +1171,7 @@
             this.btntmb8.BackColor = System.Drawing.Color.White;
             this.btntmb8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb8.ForeColor = System.Drawing.Color.Black;
-            this.btntmb8.Location = new System.Drawing.Point(673, 650);
+            this.btntmb8.Location = new System.Drawing.Point(673, 663);
             this.btntmb8.Name = "btntmb8";
             this.btntmb8.Size = new System.Drawing.Size(38, 23);
             this.btntmb8.TabIndex = 14;
@@ -1162,7 +1185,7 @@
             this.btntmb9.BackColor = System.Drawing.Color.White;
             this.btntmb9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb9.ForeColor = System.Drawing.Color.Black;
-            this.btntmb9.Location = new System.Drawing.Point(717, 650);
+            this.btntmb9.Location = new System.Drawing.Point(717, 663);
             this.btntmb9.Name = "btntmb9";
             this.btntmb9.Size = new System.Drawing.Size(38, 23);
             this.btntmb9.TabIndex = 14;
@@ -1176,7 +1199,7 @@
             this.btntmb10.BackColor = System.Drawing.Color.White;
             this.btntmb10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb10.ForeColor = System.Drawing.Color.Black;
-            this.btntmb10.Location = new System.Drawing.Point(765, 650);
+            this.btntmb10.Location = new System.Drawing.Point(765, 663);
             this.btntmb10.Name = "btntmb10";
             this.btntmb10.Size = new System.Drawing.Size(38, 23);
             this.btntmb10.TabIndex = 14;
@@ -1190,7 +1213,7 @@
             this.btntmb6.BackColor = System.Drawing.Color.White;
             this.btntmb6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb6.ForeColor = System.Drawing.Color.Black;
-            this.btntmb6.Location = new System.Drawing.Point(585, 650);
+            this.btntmb6.Location = new System.Drawing.Point(585, 663);
             this.btntmb6.Name = "btntmb6";
             this.btntmb6.Size = new System.Drawing.Size(38, 23);
             this.btntmb6.TabIndex = 14;
@@ -1204,7 +1227,7 @@
             this.btntma5.BackColor = System.Drawing.Color.White;
             this.btntma5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntma5.ForeColor = System.Drawing.Color.Black;
-            this.btntma5.Location = new System.Drawing.Point(595, 336);
+            this.btntma5.Location = new System.Drawing.Point(595, 313);
             this.btntma5.Name = "btntma5";
             this.btntma5.Size = new System.Drawing.Size(38, 23);
             this.btntma5.TabIndex = 14;
@@ -1218,7 +1241,7 @@
             this.btntmb5.BackColor = System.Drawing.Color.White;
             this.btntmb5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btntmb5.ForeColor = System.Drawing.Color.Black;
-            this.btntmb5.Location = new System.Drawing.Point(541, 650);
+            this.btntmb5.Location = new System.Drawing.Point(541, 663);
             this.btntmb5.Name = "btntmb5";
             this.btntmb5.Size = new System.Drawing.Size(38, 23);
             this.btntmb5.TabIndex = 14;
@@ -1271,6 +1294,7 @@
             this.lbllogout.Size = new System.Drawing.Size(55, 18);
             this.lbllogout.TabIndex = 18;
             this.lbllogout.Text = "Log Out";
+            this.lbllogout.Visible = false;
             this.lbllogout.Click += new System.EventHandler(this.lbllogout_Click);
             // 
             // chkSub
@@ -1293,7 +1317,7 @@
             this.lstSubA.FormattingEnabled = true;
             this.lstSubA.Location = new System.Drawing.Point(977, 235);
             this.lstSubA.Name = "lstSubA";
-            this.lstSubA.Size = new System.Drawing.Size(120, 121);
+            this.lstSubA.Size = new System.Drawing.Size(39, 121);
             this.lstSubA.TabIndex = 20;
             this.lstSubA.Visible = false;
             this.lstSubA.Click += new System.EventHandler(this.lstSubA_Click);
@@ -1322,9 +1346,9 @@
             this.panel3.Controls.Add(this.cmbDevice);
             this.panel3.Controls.Add(this.btnDevice);
             this.panel3.Controls.Add(this.btnrecord);
-            this.panel3.Location = new System.Drawing.Point(360, 11);
+            this.panel3.Location = new System.Drawing.Point(360, 1);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(529, 319);
+            this.panel3.Size = new System.Drawing.Size(529, 309);
             this.panel3.TabIndex = 22;
             // 
             // videoSourcePlayer1
@@ -1332,7 +1356,7 @@
             this.videoSourcePlayer1.BackColor = System.Drawing.Color.Black;
             this.videoSourcePlayer1.Location = new System.Drawing.Point(3, 0);
             this.videoSourcePlayer1.Name = "videoSourcePlayer1";
-            this.videoSourcePlayer1.Size = new System.Drawing.Size(527, 291);
+            this.videoSourcePlayer1.Size = new System.Drawing.Size(527, 286);
             this.videoSourcePlayer1.TabIndex = 0;
             this.videoSourcePlayer1.Text = "videoSourcePlayer1";
             this.videoSourcePlayer1.VideoSource = null;
@@ -1340,7 +1364,7 @@
             // btnpause
             // 
             this.btnpause.ForeColor = System.Drawing.Color.Black;
-            this.btnpause.Location = new System.Drawing.Point(151, 294);
+            this.btnpause.Location = new System.Drawing.Point(151, 285);
             this.btnpause.Name = "btnpause";
             this.btnpause.Size = new System.Drawing.Size(75, 23);
             this.btnpause.TabIndex = 24;
@@ -1352,7 +1376,7 @@
             // 
             this.pnlrecording.BackgroundImage = global::FootBallApplication.Properties.Resources.record;
             this.pnlrecording.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlrecording.Location = new System.Drawing.Point(36, 301);
+            this.pnlrecording.Location = new System.Drawing.Point(36, 292);
             this.pnlrecording.Name = "pnlrecording";
             this.pnlrecording.Size = new System.Drawing.Size(10, 10);
             this.pnlrecording.TabIndex = 23;
@@ -1360,7 +1384,7 @@
             // btnpath
             // 
             this.btnpath.ForeColor = System.Drawing.Color.Black;
-            this.btnpath.Location = new System.Drawing.Point(232, 295);
+            this.btnpath.Location = new System.Drawing.Point(232, 286);
             this.btnpath.Name = "btnpath";
             this.btnpath.Size = new System.Drawing.Size(75, 23);
             this.btnpath.TabIndex = 3;
@@ -1371,7 +1395,7 @@
             // cmbDevice
             // 
             this.cmbDevice.FormattingEnabled = true;
-            this.cmbDevice.Location = new System.Drawing.Point(397, 296);
+            this.cmbDevice.Location = new System.Drawing.Point(397, 287);
             this.cmbDevice.Name = "cmbDevice";
             this.cmbDevice.Size = new System.Drawing.Size(121, 21);
             this.cmbDevice.TabIndex = 2;
@@ -1380,7 +1404,7 @@
             // btnDevice
             // 
             this.btnDevice.ForeColor = System.Drawing.Color.Black;
-            this.btnDevice.Location = new System.Drawing.Point(313, 294);
+            this.btnDevice.Location = new System.Drawing.Point(313, 285);
             this.btnDevice.Name = "btnDevice";
             this.btnDevice.Size = new System.Drawing.Size(75, 23);
             this.btnDevice.TabIndex = 1;
@@ -1391,7 +1415,7 @@
             // btnrecord
             // 
             this.btnrecord.ForeColor = System.Drawing.Color.Black;
-            this.btnrecord.Location = new System.Drawing.Point(30, 294);
+            this.btnrecord.Location = new System.Drawing.Point(30, 285);
             this.btnrecord.Name = "btnrecord";
             this.btnrecord.Size = new System.Drawing.Size(75, 23);
             this.btnrecord.TabIndex = 1;
@@ -1406,9 +1430,9 @@
             this.pnlpitch.Controls.Add(this.lstSub);
             this.pnlpitch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlpitch.ForeColor = System.Drawing.Color.Aquamarine;
-            this.pnlpitch.Location = new System.Drawing.Point(365, 365);
+            this.pnlpitch.Location = new System.Drawing.Point(365, 363);
             this.pnlpitch.Name = "pnlpitch";
-            this.pnlpitch.Size = new System.Drawing.Size(505, 280);
+            this.pnlpitch.Size = new System.Drawing.Size(505, 271);
             this.pnlpitch.TabIndex = 0;
             this.pnlpitch.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlpitch_Paint);
             this.pnlpitch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlpitch_MouseClick);
@@ -1418,9 +1442,9 @@
             // lstSub
             // 
             this.lstSub.FormattingEnabled = true;
-            this.lstSub.Location = new System.Drawing.Point(-3, 160);
+            this.lstSub.Location = new System.Drawing.Point(-3, 157);
             this.lstSub.Name = "lstSub";
-            this.lstSub.Size = new System.Drawing.Size(120, 121);
+            this.lstSub.Size = new System.Drawing.Size(51, 121);
             this.lstSub.TabIndex = 20;
             this.lstSub.Visible = false;
             this.lstSub.Click += new System.EventHandler(this.lstSub_Click);
@@ -1674,9 +1698,10 @@
             this.toolsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1204, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1223, 24);
             this.menuStrip1.TabIndex = 27;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -1794,7 +1819,7 @@
             // 
             this.reportsToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.chart_search_icon;
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.reportsToolStripMenuItem.Text = "Reports";
             // 
             // toolsToolStripMenuItem
@@ -1812,28 +1837,28 @@
             // 
             this.calculatorToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.Wwalczyszyn_Android_Style_Honeycomb_Calculator;
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.calculatorToolStripMenuItem.Text = "Calculator";
             // 
             // notesToolStripMenuItem
             // 
             this.notesToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.faviconnotepad;
             this.notesToolStripMenuItem.Name = "notesToolStripMenuItem";
-            this.notesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.notesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.notesToolStripMenuItem.Text = "Notepad";
             // 
             // browserToolStripMenuItem
             // 
             this.browserToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.favicon;
             this.browserToolStripMenuItem.Name = "browserToolStripMenuItem";
-            this.browserToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.browserToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.browserToolStripMenuItem.Text = "Google";
             // 
             // snippingToolToolStripMenuItem
             // 
             this.snippingToolToolStripMenuItem.Image = global::FootBallApplication.Properties.Resources.snip;
             this.snippingToolToolStripMenuItem.Name = "snippingToolToolStripMenuItem";
-            this.snippingToolToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.snippingToolToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.snippingToolToolStripMenuItem.Text = "Snipping Tool";
             // 
             // panel8
@@ -1846,10 +1871,11 @@
             this.panel8.Controls.Add(this.label26);
             this.panel8.Controls.Add(this.label13);
             this.panel8.Controls.Add(this.label23);
+            this.panel8.Controls.Add(this.label29);
             this.panel8.Controls.Add(this.label25);
             this.panel8.Location = new System.Drawing.Point(897, 12);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(304, 23);
+            this.panel8.Size = new System.Drawing.Size(326, 23);
             this.panel8.TabIndex = 29;
             // 
             // label9
@@ -1890,18 +1916,29 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(238, 6);
+            this.label12.Location = new System.Drawing.Point(260, 6);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(35, 13);
+            this.label12.Size = new System.Drawing.Size(64, 13);
             this.label12.TabIndex = 0;
-            this.label12.Text = "Type";
+            this.label12.Text = "Kick Type";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label26.Location = new System.Drawing.Point(201, 5);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(36, 13);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Jersy";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(111, 5);
+            this.label13.Location = new System.Drawing.Point(154, 5);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(38, 13);
             this.label13.TabIndex = 0;
@@ -1912,52 +1949,292 @@
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label23.Location = new System.Drawing.Point(55, 5);
+            this.label23.Location = new System.Drawing.Point(96, 5);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(36, 13);
             this.label23.TabIndex = 0;
             this.label23.Text = "Jersy";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label29.Location = new System.Drawing.Point(3, 5);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(29, 13);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "Sno";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label25.Location = new System.Drawing.Point(4, 5);
+            this.label25.Location = new System.Drawing.Point(54, 5);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(38, 13);
             this.label25.TabIndex = 0;
             this.label25.Text = "Team";
             // 
-            // dgNavigation
+            // dgtransaction
             // 
-            this.dgNavigation.AllowUserToAddRows = false;
-            this.dgNavigation.AllowUserToDeleteRows = false;
-            this.dgNavigation.AllowUserToResizeRows = false;
-            this.dgNavigation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgNavigation.BackgroundColor = System.Drawing.Color.White;
-            this.dgNavigation.ColumnHeadersVisible = false;
-            this.dgNavigation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dgNavigation.GridColor = System.Drawing.Color.Gray;
-            this.dgNavigation.Location = new System.Drawing.Point(897, 34);
-            this.dgNavigation.Name = "dgNavigation";
-            this.dgNavigation.RowHeadersVisible = false;
-            this.dgNavigation.RowHeadersWidth = 30;
-            this.dgNavigation.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgNavigation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgNavigation.Size = new System.Drawing.Size(304, 296);
-            this.dgNavigation.TabIndex = 28;
+            this.dgtransaction.AllowUserToAddRows = false;
+            this.dgtransaction.AllowUserToDeleteRows = false;
+            this.dgtransaction.AllowUserToResizeRows = false;
+            this.dgtransaction.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgtransaction.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dgtransaction.BackgroundColor = System.Drawing.Color.White;
+            this.dgtransaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgtransaction.ColumnHeadersVisible = false;
+            this.dgtransaction.GridColor = System.Drawing.Color.Black;
+            this.dgtransaction.Location = new System.Drawing.Point(897, 34);
+            this.dgtransaction.Name = "dgtransaction";
+            this.dgtransaction.RowHeadersVisible = false;
+            this.dgtransaction.Size = new System.Drawing.Size(326, 276);
+            this.dgtransaction.TabIndex = 37;
             // 
-            // label26
+            // pnlgka
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label26.Location = new System.Drawing.Point(160, 5);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(36, 13);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Jersy";
+            this.pnlgka.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlgka.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlgka.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlgka.Location = new System.Drawing.Point(365, 335);
+            this.pnlgka.Name = "pnlgka";
+            this.pnlgka.Size = new System.Drawing.Size(48, 25);
+            this.pnlgka.TabIndex = 38;
+            this.pnlgka.MouseHover += new System.EventHandler(this.pnlgka_MouseHover);
+            // 
+            // pnlpl1
+            // 
+            this.pnlpl1.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl1.Location = new System.Drawing.Point(419, 335);
+            this.pnlpl1.Name = "pnlpl1";
+            this.pnlpl1.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl1.TabIndex = 38;
+            this.pnlpl1.MouseHover += new System.EventHandler(this.pnlpl1_MouseHover);
+            // 
+            // pnlpl2
+            // 
+            this.pnlpl2.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl2.Location = new System.Drawing.Point(463, 335);
+            this.pnlpl2.Name = "pnlpl2";
+            this.pnlpl2.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl2.TabIndex = 38;
+            this.pnlpl2.MouseHover += new System.EventHandler(this.pnlpl2_MouseHover);
+            // 
+            // pnlpl3
+            // 
+            this.pnlpl3.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl3.Location = new System.Drawing.Point(507, 335);
+            this.pnlpl3.Name = "pnlpl3";
+            this.pnlpl3.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl3.TabIndex = 38;
+            this.pnlpl3.MouseHover += new System.EventHandler(this.pnlpl3_MouseHover);
+            // 
+            // pnlpl4
+            // 
+            this.pnlpl4.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl4.Location = new System.Drawing.Point(551, 335);
+            this.pnlpl4.Name = "pnlpl4";
+            this.pnlpl4.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl4.TabIndex = 38;
+            this.pnlpl4.MouseHover += new System.EventHandler(this.pnlpl4_MouseHover);
+            // 
+            // pnlpl5
+            // 
+            this.pnlpl5.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl5.Location = new System.Drawing.Point(595, 335);
+            this.pnlpl5.Name = "pnlpl5";
+            this.pnlpl5.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl5.TabIndex = 38;
+            this.pnlpl5.MouseHover += new System.EventHandler(this.pnlpl5_MouseHover);
+            // 
+            // pnlpl6
+            // 
+            this.pnlpl6.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl6.Location = new System.Drawing.Point(639, 335);
+            this.pnlpl6.Name = "pnlpl6";
+            this.pnlpl6.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl6.TabIndex = 38;
+            this.pnlpl6.MouseHover += new System.EventHandler(this.pnlpl6_MouseHover);
+            // 
+            // pnlpl7
+            // 
+            this.pnlpl7.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl7.Location = new System.Drawing.Point(683, 335);
+            this.pnlpl7.Name = "pnlpl7";
+            this.pnlpl7.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl7.TabIndex = 38;
+            this.pnlpl7.MouseHover += new System.EventHandler(this.pnlpl7_MouseHover);
+            // 
+            // pnlpl8
+            // 
+            this.pnlpl8.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl8.Location = new System.Drawing.Point(727, 335);
+            this.pnlpl8.Name = "pnlpl8";
+            this.pnlpl8.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl8.TabIndex = 38;
+            this.pnlpl8.MouseHover += new System.EventHandler(this.pnlpl8_MouseHover);
+            // 
+            // pnlpl9
+            // 
+            this.pnlpl9.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl9.Location = new System.Drawing.Point(771, 335);
+            this.pnlpl9.Name = "pnlpl9";
+            this.pnlpl9.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl9.TabIndex = 38;
+            this.pnlpl9.MouseHover += new System.EventHandler(this.pnlpl9_MouseHover);
+            // 
+            // pnlpl10
+            // 
+            this.pnlpl10.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlpl10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlpl10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlpl10.Location = new System.Drawing.Point(819, 335);
+            this.pnlpl10.Name = "pnlpl10";
+            this.pnlpl10.Size = new System.Drawing.Size(38, 25);
+            this.pnlpl10.TabIndex = 38;
+            this.pnlpl10.MouseHover += new System.EventHandler(this.pnlpl10_MouseHover);
+            // 
+            // pnlgkb
+            // 
+            this.pnlgkb.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlgkb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlgkb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlgkb.Location = new System.Drawing.Point(809, 638);
+            this.pnlgkb.Name = "pnlgkb";
+            this.pnlgkb.Size = new System.Drawing.Size(48, 25);
+            this.pnlgkb.TabIndex = 38;
+            this.pnlgkb.MouseHover += new System.EventHandler(this.pnlgkb_MouseHover);
+            // 
+            // pnlplb1
+            // 
+            this.pnlplb1.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb1.Location = new System.Drawing.Point(365, 638);
+            this.pnlplb1.Name = "pnlplb1";
+            this.pnlplb1.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb1.TabIndex = 38;
+            this.pnlplb1.MouseHover += new System.EventHandler(this.pnlplb1_MouseHover);
+            // 
+            // pnlplb2
+            // 
+            this.pnlplb2.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb2.Location = new System.Drawing.Point(409, 638);
+            this.pnlplb2.Name = "pnlplb2";
+            this.pnlplb2.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb2.TabIndex = 38;
+            this.pnlplb2.MouseHover += new System.EventHandler(this.pnlplb2_MouseHover);
+            // 
+            // pnlplb3
+            // 
+            this.pnlplb3.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb3.Location = new System.Drawing.Point(453, 638);
+            this.pnlplb3.Name = "pnlplb3";
+            this.pnlplb3.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb3.TabIndex = 38;
+            this.pnlplb3.MouseHover += new System.EventHandler(this.pnlplb3_MouseHover);
+            // 
+            // pnlplb4
+            // 
+            this.pnlplb4.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb4.Location = new System.Drawing.Point(497, 638);
+            this.pnlplb4.Name = "pnlplb4";
+            this.pnlplb4.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb4.TabIndex = 38;
+            this.pnlplb4.MouseHover += new System.EventHandler(this.pnlplb4_MouseHover);
+            // 
+            // pnlplb5
+            // 
+            this.pnlplb5.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb5.Location = new System.Drawing.Point(541, 638);
+            this.pnlplb5.Name = "pnlplb5";
+            this.pnlplb5.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb5.TabIndex = 38;
+            this.pnlplb5.MouseHover += new System.EventHandler(this.pnlplb5_MouseHover);
+            // 
+            // pnlplb6
+            // 
+            this.pnlplb6.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb6.Location = new System.Drawing.Point(585, 638);
+            this.pnlplb6.Name = "pnlplb6";
+            this.pnlplb6.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb6.TabIndex = 38;
+            this.pnlplb6.MouseHover += new System.EventHandler(this.pnlplb6_MouseHover);
+            // 
+            // pnlplb7
+            // 
+            this.pnlplb7.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb7.Location = new System.Drawing.Point(629, 638);
+            this.pnlplb7.Name = "pnlplb7";
+            this.pnlplb7.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb7.TabIndex = 38;
+            this.pnlplb7.MouseHover += new System.EventHandler(this.pnlplb7_MouseHover);
+            // 
+            // pnlplb8
+            // 
+            this.pnlplb8.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb8.Location = new System.Drawing.Point(673, 638);
+            this.pnlplb8.Name = "pnlplb8";
+            this.pnlplb8.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb8.TabIndex = 38;
+            this.pnlplb8.MouseHover += new System.EventHandler(this.pnlplb8_MouseHover);
+            // 
+            // pnlplb9
+            // 
+            this.pnlplb9.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb9.Location = new System.Drawing.Point(717, 638);
+            this.pnlplb9.Name = "pnlplb9";
+            this.pnlplb9.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb9.TabIndex = 38;
+            this.pnlplb9.MouseHover += new System.EventHandler(this.pnlplb9_MouseHover);
+            // 
+            // pnlplb10
+            // 
+            this.pnlplb10.BackgroundImage = global::FootBallApplication.Properties.Resources.BPI;
+            this.pnlplb10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlplb10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlplb10.Location = new System.Drawing.Point(765, 638);
+            this.pnlplb10.Name = "pnlplb10";
+            this.pnlplb10.Size = new System.Drawing.Size(38, 25);
+            this.pnlplb10.TabIndex = 38;
+            this.pnlplb10.MouseHover += new System.EventHandler(this.pnlplb10_MouseHover);
             // 
             // frmTransaction
             // 
@@ -1966,9 +2243,31 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::FootBallApplication.Properties.Resources.fbback;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1204, 680);
+            this.ClientSize = new System.Drawing.Size(1223, 687);
+            this.Controls.Add(this.pnlgkb);
+            this.Controls.Add(this.pnlplb10);
+            this.Controls.Add(this.pnlpl10);
+            this.Controls.Add(this.pnlplb9);
+            this.Controls.Add(this.pnlpl9);
+            this.Controls.Add(this.pnlplb8);
+            this.Controls.Add(this.pnlpl8);
+            this.Controls.Add(this.pnlplb7);
+            this.Controls.Add(this.pnlpl7);
+            this.Controls.Add(this.pnlplb6);
+            this.Controls.Add(this.pnlpl6);
+            this.Controls.Add(this.pnlplb5);
+            this.Controls.Add(this.pnlpl5);
+            this.Controls.Add(this.pnlplb4);
+            this.Controls.Add(this.pnlpl4);
+            this.Controls.Add(this.pnlplb3);
+            this.Controls.Add(this.pnlpl3);
+            this.Controls.Add(this.pnlplb2);
+            this.Controls.Add(this.pnlpl2);
+            this.Controls.Add(this.pnlplb1);
+            this.Controls.Add(this.pnlpl1);
+            this.Controls.Add(this.pnlgka);
+            this.Controls.Add(this.dgtransaction);
             this.Controls.Add(this.panel8);
-            this.Controls.Add(this.dgNavigation);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -2039,7 +2338,7 @@
             this.menuStrip1.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgNavigation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgtransaction)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2190,7 +2489,30 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.DataGridView dgNavigation;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.DataGridView dgtransaction;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Panel pnlgka;
+        private System.Windows.Forms.Panel pnlpl1;
+        private System.Windows.Forms.Panel pnlpl2;
+        private System.Windows.Forms.Panel pnlpl3;
+        private System.Windows.Forms.Panel pnlpl4;
+        private System.Windows.Forms.Panel pnlpl5;
+        private System.Windows.Forms.Panel pnlpl6;
+        private System.Windows.Forms.Panel pnlpl7;
+        private System.Windows.Forms.Panel pnlpl8;
+        private System.Windows.Forms.Panel pnlpl9;
+        private System.Windows.Forms.Panel pnlpl10;
+        private System.Windows.Forms.Panel pnlgkb;
+        private System.Windows.Forms.Panel pnlplb1;
+        private System.Windows.Forms.Panel pnlplb2;
+        private System.Windows.Forms.Panel pnlplb3;
+        private System.Windows.Forms.Panel pnlplb4;
+        private System.Windows.Forms.Panel pnlplb5;
+        private System.Windows.Forms.Panel pnlplb6;
+        private System.Windows.Forms.Panel pnlplb7;
+        private System.Windows.Forms.Panel pnlplb8;
+        private System.Windows.Forms.Panel pnlplb9;
+        private System.Windows.Forms.Panel pnlplb10;
     }
 }

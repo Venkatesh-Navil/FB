@@ -207,29 +207,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reports\frmReports1.cs">
+    <Compile Include="Reports\GoalAnalysis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\frmReports1.Designer.cs">
-      <DependentUpon>frmReports1.cs</DependentUpon>
+    <Compile Include="Reports\GoalAnalysis.Designer.cs">
+      <DependentUpon>GoalAnalysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\frmReports2.cs">
+    <Compile Include="Reports\KickAnalysis.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\frmReports2.Designer.cs">
-      <DependentUpon>frmReports2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\frmReports3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\frmReports3.Designer.cs">
-      <DependentUpon>frmReports3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\frmReports4.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\frmReports4.Designer.cs">
-      <DependentUpon>frmReports4.cs</DependentUpon>
+    <Compile Include="Reports\KickAnalysis.Designer.cs">
+      <DependentUpon>KickAnalysis.cs</DependentUpon>
     </Compile>
     <Compile Include="Total _Registration.cs">
       <SubType>Form</SubType>
@@ -289,17 +277,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Reports\frmReports1.resx">
-      <DependentUpon>frmReports1.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\GoalAnalysis.resx">
+      <DependentUpon>GoalAnalysis.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\frmReports2.resx">
-      <DependentUpon>frmReports2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\frmReports3.resx">
-      <DependentUpon>frmReports3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\frmReports4.resx">
-      <DependentUpon>frmReports4.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\KickAnalysis.resx">
+      <DependentUpon>KickAnalysis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Total _Registration.resx">
       <DependentUpon>Total _Registration.cs</DependentUpon>
@@ -425,6 +407,7 @@
     <None Include="Resources\exit.png" />
     <None Include="Resources\3885-undo-arrow2.png" />
     <None Include="Resources\clear.png" />
+    <None Include="Resources\BPI1.png" />
     <Content Include="Resources\Ground - Transaction page.jpg" />
     <None Include="Resources\Ground - Transaction page1.jpg" />
   </ItemGroup>
@@ -440,6 +423,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

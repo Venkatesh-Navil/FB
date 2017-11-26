@@ -32,6 +32,10 @@ namespace FootBallApplication
         {
             InitializeComponent();
         }
+        string fromballteam, toballteam;
+        int fromballplayer, toballplayer;
+        int firstclick = 0;
+        int maxsno = 0;
         clstransaction trans = new clstransaction();
         string playernamehover = "";
         System.Drawing.Point p1, p2;
@@ -146,6 +150,8 @@ namespace FootBallApplication
                 {
                     btngkB.Text = dt.Rows[0][0].ToString();
                 }
+
+                loadtransactions();
             }
             catch
             {
@@ -163,21 +169,47 @@ namespace FootBallApplication
                 trans.update(clsGlobalValues.mid, clsGlobalValues.Tournament, lblteamA.Text,max,toplayer);
             }
         }
+        private void getmaxsno()
+        {
+            dt = new DataTable();
+            maxsno= trans.GetMaxnumber(clsGlobalValues.mid, clsGlobalValues.Tournament);
+           // maxsno = Convert.ToInt32(dt.Rows[0][0].ToString());
+        }
         private void insert()
         {
+            string x1="";
+            string y1 ="";
+            string x2 ="";
+            string y2 ="";
+
             if (alX.Count >= 1)
-            {
-                Coordinates = string.Join(",", alX.ToArray());
+                 {
+                      Coordinates = string.Join(",", alX.ToArray());
+
+                string[] pl = Coordinates.Split(',');
+                 x1 = pl[0];
+                 y1 = pl[1];
+                x2 = pl[2];
+                 y2 = pl[3];
+
+
             }
 
             if (Shot != "")
             {
+                getmaxsno();
 
-                trans.InsertValues(clsGlobalValues.Tournament, clsGlobalValues.mid,team1,team2, player, Shot, Coordinates, points, toplayer,team1);
+                //trans.InsertValues(clsGlobalValues.Tournament, clsGlobalValues.mid,team1,team2, player, Shot, Coordinates, points, toplayer,team1);
+                trans.InsertValues1(maxsno,clsGlobalValues.Tournament, clsGlobalValues.mid, fromballteam, fromballplayer, toballteam, toballplayer, Shot, Coordinates,x1,y1,x2,y2);
                 alX.Clear();
                 general();
+                fromballteam = "";
+                toballteam = "";
+                fromballplayer = 0;
+                toballplayer = 0;
+                firstclick = 0;
                 playerentry = btntma1.Text;
-
+                loadtransactions();
 
 
 
@@ -185,6 +217,24 @@ namespace FootBallApplication
 
                 // p1 = new System.Drawing.Point();
             }
+        }
+        private void loadtransactions()
+        {
+             dt = new DataTable();
+            dt = trans.Loadtransactions(clsGlobalValues.mid, clsGlobalValues.Tournament);
+
+            Cursor.Current = Cursors.WaitCursor;
+            dgtransaction.DataSource = dt;
+            dgtransaction.DefaultCellStyle.Font = new Font("BankGothic Lt BT", 11F, GraphicsUnit.Pixel);
+            dgtransaction.DefaultCellStyle.BackColor = Color.FromArgb(30, 30, 30);
+            dgtransaction.DefaultCellStyle.ForeColor = Color.White;
+            dgtransaction.GridColor = Color.FromArgb(30, 30, 30);
+            dgtransaction.DefaultCellStyle.SelectionBackColor = Color.White;
+            dgtransaction.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+
+            
+
         }
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -352,6 +402,20 @@ namespace FootBallApplication
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
 
+                if(firstclick==0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma1.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer= Convert.ToInt32(btntma1.Text);
+                }
+                fromballteam = lblteamA.Text;
+                toballteam = lblteamB.Text;
+
                 btntma1.BackColor = Color.Gold;
                 btntma1.ForeColor = Color.Black;
                 toplayer = btntma1.Text;
@@ -429,6 +493,18 @@ namespace FootBallApplication
                 team2 = lblteamB.Text;
                 player = btntma2.Text;
 
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma2.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btntma2.Text);
+                }
+
                 btntma2.BackColor = Color.Gold;
                 btntma2.ForeColor = Color.Black;
                
@@ -503,6 +579,19 @@ namespace FootBallApplication
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
 
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma3.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btntma3.Text);
+                }
+
+
                 btntma3.BackColor = Color.Gold;
                 btntma3.ForeColor = Color.Black;
                 toplayer = btntma3.Text;
@@ -574,6 +663,20 @@ namespace FootBallApplication
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
 
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma4.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btntma4.Text);
+                }
+
+
                 lstSubA.Visible = false;
                 lstSub.Visible = false;
 
@@ -644,6 +747,20 @@ namespace FootBallApplication
                 player = btntma5.Text;
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
+
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma5.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btntma5.Text);
+                }
+
 
                 btntma2.BackColor = Color.Silver;
                 btntma2.ForeColor = Color.Black;
@@ -718,6 +835,20 @@ namespace FootBallApplication
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
 
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma6.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btntma6.Text);
+                }
+
+
                 btntma2.BackColor = Color.Silver;
                 btntma2.ForeColor = Color.Black;
 
@@ -788,6 +919,20 @@ namespace FootBallApplication
                 player = btntma7.Text;
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma7.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btntma7.Text);
+                }
+
+
                 btntma2.BackColor = Color.Silver;
                 btntma2.ForeColor = Color.Black;
 
@@ -860,6 +1005,20 @@ namespace FootBallApplication
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
 
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma8.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btntma8.Text);
+                }
+
+
                 btntma2.BackColor = Color.Silver;
                 btntma2.ForeColor = Color.Black;
 
@@ -931,6 +1090,20 @@ namespace FootBallApplication
                 player = btntma9.Text;
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
+
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma9.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btntma9.Text);
+                }
+
 
                 btntma2.BackColor = Color.Silver;
                 btntma2.ForeColor = Color.Black;
@@ -1041,6 +1214,20 @@ namespace FootBallApplication
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
 
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntma10.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btntma10.Text);
+                }
+
+
                 btntma2.BackColor = Color.Silver;
                 btntma2.ForeColor = Color.Black;
 
@@ -1111,6 +1298,22 @@ namespace FootBallApplication
                 player = btntmb1.Text;
                 team2 = lblteamA.Text;
                 team1 = lblteamB.Text;
+
+
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb1.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb1.Text);
+                }
+
+
                 btntmb2.BackColor = Color.Silver;
                 btntmb2.ForeColor = Color.Black;
 
@@ -1182,6 +1385,19 @@ namespace FootBallApplication
                 team2 = lblteamA.Text;
                 team1 = lblteamB.Text;
                 player = btntmb2.Text;
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb2.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb2.Text);
+                }
+
 
                 btntmb2.BackColor = Color.Gold;
                 btntmb2.ForeColor = Color.Black;
@@ -1255,6 +1471,20 @@ namespace FootBallApplication
                 team1 = lblteamB.Text;
                 player = btntmb3.Text;
 
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb3.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb3.Text);
+                }
+
+
                 btntmb2.BackColor = Color.Silver;
                 btntmb2.ForeColor = Color.Black;
 
@@ -1327,6 +1557,20 @@ namespace FootBallApplication
                 player = btntmb4.Text;
                 team2 = lblteamA.Text;
                 team1 = lblteamB.Text;
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb4.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb4.Text);
+                }
+
+
                 btntmb2.BackColor = Color.Silver;
                 btntmb2.ForeColor = Color.Black;
 
@@ -1399,6 +1643,20 @@ namespace FootBallApplication
                 team2 = lblteamA.Text;
                 team1 = lblteamB.Text;
 
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb5.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb5.Text);
+                }
+
+
                 btntmb2.BackColor = Color.Silver;
                 btntmb2.ForeColor = Color.Black;
 
@@ -1470,6 +1728,20 @@ namespace FootBallApplication
                 team2 = lblteamA.Text;
                 team1 = lblteamB.Text;
                 player = btntmb6.Text;
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb6.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb6.Text);
+                }
+
+
                 btntmb2.BackColor = Color.Silver;
                 btntmb2.ForeColor = Color.Black;
 
@@ -1540,6 +1812,20 @@ namespace FootBallApplication
                 player = btntmb7.Text;
                 team2 = lblteamA.Text;
                 team1 = lblteamB.Text;
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb7.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb7.Text);
+                }
+
+
                 btntmb2.BackColor = Color.Silver;
                 btntmb2.ForeColor = Color.Black;
 
@@ -1610,6 +1896,20 @@ namespace FootBallApplication
                 player = btntmb8.Text;
                 team2 = lblteamA.Text;
                 team1 = lblteamB.Text;
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb8.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb8.Text);
+                }
+
+
                 btntmb2.BackColor = Color.Silver;
                 btntmb2.ForeColor = Color.Black;
 
@@ -1679,6 +1979,20 @@ namespace FootBallApplication
                 player = btntmb9.Text;
                 team2 = lblteamA.Text;
                 team1 = lblteamB.Text;
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb9.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb9.Text);
+                }
+
+
                 btntmb2.BackColor = Color.Silver;
                 btntmb2.ForeColor = Color.Black;
 
@@ -1748,6 +2062,20 @@ namespace FootBallApplication
                 team2 = lblteamA.Text;
                 team1 = lblteamB.Text;
                 player = btntmb10.Text;
+
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamB.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btntmb10.Text);
+                }
+                else
+                {
+                    toballteam = lblteamB.Text;
+                    toballplayer = Convert.ToInt32(btntmb10.Text);
+                }
+
 
                 btntmb2.BackColor = Color.Silver;
                 btntmb2.ForeColor = Color.Black;
@@ -2109,6 +2437,18 @@ namespace FootBallApplication
                 player = btngkA.Text;
                 team1 = lblteamA.Text;
                 team2 = lblteamB.Text;
+
+                if (firstclick == 0)
+                {
+                    fromballteam = lblteamA.Text;
+                    firstclick = 1;
+                    fromballplayer = Convert.ToInt32(btngkA.Text);
+                }
+                else
+                {
+                    toballteam = lblteamA.Text;
+                    toballplayer = Convert.ToInt32(btngkA.Text);
+                }
 
 
                 toplayer = btngkA.Text;
@@ -2771,6 +3111,144 @@ namespace FootBallApplication
         {
             showplayer(Convert.ToInt32(btntmb9.Text), lblteamB.Text);
             toolTip1.SetToolTip(btntmb9, playernamehover);
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pnlgka_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btngkA.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlgka, playernamehover);
+        }
+
+        private void pnlpl1_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma1.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlpl1, playernamehover);
+        }
+
+        private void pnlpl2_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma2.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlpl2, playernamehover);
+        }
+
+        private void pnlpl3_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma3.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlpl3, playernamehover);
+        }
+
+        private void pnlpl4_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma4.Text), lblteamA.Text);
+            toolTip1.SetToolTip(btntma4, playernamehover);
+        }
+
+        private void pnlpl5_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma5.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlpl5, playernamehover);
+        }
+
+        private void pnlpl6_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma6.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlpl6, playernamehover);
+        }
+
+        private void pnlpl7_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma7.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlpl7, playernamehover);
+        }
+
+        private void pnlpl8_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma8.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlpl8, playernamehover);
+        }
+
+        private void pnlpl9_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma9.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlpl9, playernamehover);
+        }
+
+        private void pnlpl10_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntma10.Text), lblteamA.Text);
+            toolTip1.SetToolTip(pnlpl10, playernamehover);
+        }
+
+        private void pnlgkb_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btngkB.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlgkb, playernamehover);
+        }
+
+        private void pnlplb10_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb10.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb10, playernamehover);
+        }
+
+        private void pnlplb9_MouseHover(object sender, EventArgs e)
+        {
+
+            showplayer(Convert.ToInt32(btntmb9.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb9, playernamehover);
+        }
+
+        private void pnlplb8_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb8.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb8, playernamehover);
+        }
+
+        private void pnlplb7_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb7.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb7, playernamehover);
+        }
+
+        private void pnlplb6_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb6.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb6, playernamehover);
+        }
+
+        private void pnlplb5_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb5.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb5, playernamehover);
+        }
+
+        private void pnlplb4_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb4.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb4, playernamehover);
+        }
+
+        private void pnlplb3_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb3.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb3, playernamehover);
+        }
+
+        private void pnlplb2_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb2.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb2, playernamehover);
+        }
+
+        private void pnlplb1_MouseHover(object sender, EventArgs e)
+        {
+            showplayer(Convert.ToInt32(btntmb1.Text), lblteamB.Text);
+            toolTip1.SetToolTip(pnlplb1, playernamehover);
         }
 
         private void btntmb10_MouseHover(object sender, EventArgs e)

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using System.Data;
+using System.Data.SqlClient;
 namespace BAL
 {
    public  class clstransaction
@@ -58,6 +59,44 @@ namespace BAL
         {
             Connection = clsAut.GetConnection();
             query = "select * from transaction_master where Mid=" + intMid + " and Tournament='" + strTour + "' ";
+            dt = new DataTable();
+            dt = sqlhelper.ExecuteDatatable(Connection, CommandType.Text, query);
+            return dt;
+        }
+        public int GetMaxnumber(int mid,string tournament)
+        {
+            int id = 0;
+            string strQry = string.Empty;
+            try
+            {
+                strQry = "select isnull(max(sno),0)+1 as sno  from transactiondetails where tournamentname='"+tournament+"' and matchid='"+mid+"'";
+                string connection = clsAut.GetConnection();
+                using (SqlDataReader rdr = sqlhelper.ExecuteReader(connection, CommandType.Text, strQry))
+                {
+                    if (rdr.HasRows)
+                    {
+                        while (rdr.Read())
+                        {
+                            id = Convert.ToInt16(rdr[0]);
+
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+
+            }
+            return id;
+        }
+        public DataTable Loadtransactions(int intMid, string strTour)
+        {
+            Connection = clsAut.GetConnection();
+            query = "select sno, [FromBallTeam],[FromBallPlayer],[ToBallTeam],[ToBallPlayer],[KickType] from transactiondetails where Matchid=" + intMid + " and Tournamentname='" + strTour + "' ";
             dt = new DataTable();
             dt = sqlhelper.ExecuteDatatable(Connection, CommandType.Text, query);
             return dt;
@@ -140,6 +179,24 @@ namespace BAL
                 sqlhelper.ExecuteNonQuery(Connection, CommandType.Text, query);
             }
             
+        }
+        public void InsertValues1(int max,string strTour, int intMid, string fromteam, int fromplayer, string toteam, int toplayer, string kicktype, string coordinates, string x1, string y1, string x2, string y2)
+        {
+
+            Connection = clsAut.GetConnection();
+            query = "insert into TransactionDetails([sno],[TournamentName],[MatchID],[FromBallTeam],[FromBallPlayer],[ToBallTeam],[ToBallPlayer],[KickType],[Coordinates],[x1],[y1],[x2],[y2]) values('" + max + "','" + strTour + "'," + intMid + ",'" + fromteam + "','" + fromplayer + "','" + toteam + "','" + toplayer + "','" + kicktype + "','" + coordinates + "','" + x1 + "','" + y1 + "','" + x2 + "','" + y2 + "')";
+            sqlhelper.ExecuteNonQuery(Connection, CommandType.Text, query);
+
+            query = "select * from Transaction_Master where Mid=" + intMid + " and Tournament='" + strTour + "' ";
+            dt = new DataTable();
+            dt = sqlhelper.ExecuteDatatable(Connection, CommandType.Text, query);
+
+            if (dt.Rows.Count == 1)
+            {
+                query = "update Match_Registration set Match_Status='Match Pending' where Match_Id=" + intMid + " and Tournament_Name='" + strTour + "' ";
+                sqlhelper.ExecuteNonQuery(Connection, CommandType.Text, query);
+            }
+
         }
         public DataTable path(string strTour, int intMid)
         {

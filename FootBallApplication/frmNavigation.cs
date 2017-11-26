@@ -264,7 +264,7 @@ namespace FootBallApplication
                 {
                     frmSquad_Registration objSquard = new frmSquad_Registration();
                     objSquard.Show();
-                    this.Hide();
+                   // this.Hide();
                 }
                 else
                 {
@@ -291,14 +291,14 @@ namespace FootBallApplication
                 {
                     frmSquad_Registration objSquard = new frmSquad_Registration();
                     objSquard.Show();
-                    this.Hide();
+                   // this.Hide();
                 }
                 else
                 {
 
                     frmTransaction objTran = new frmTransaction();
                     objTran.Show();
-                    this.Hide();
+                   // this.Hide();
                 }
             }
             else
@@ -364,7 +364,7 @@ namespace FootBallApplication
         private void lblHelp_Click(object sender, EventArgs e)
         {
             
-           MessageBox.Show("GET SOON");
+           MessageBox.Show("HELP");
            
         }
 
@@ -489,35 +489,35 @@ namespace FootBallApplication
 
         private void matchRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+           // this.Close();
             Total__Registration tot = new Total__Registration();
             tot.Show();
         }
 
         private void goToTournamentRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+           // this.Close();
             Total__Registration tot = new Total__Registration();
             tot.Show();
         }
 
         private void goToTeamRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+           // this.Close();
             Total__Registration tot = new Total__Registration();
             tot.Show();
         }
 
         private void goToPlayerRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+           // this.Close();
             Total__Registration tot = new Total__Registration();
             tot.Show();
         }
 
         private void viewReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
             frmReports rep = new frmReports();
             rep.Show();
         }
@@ -529,7 +529,7 @@ namespace FootBallApplication
 
         private void goToMatchRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+           // this.Close();
             frmMatch_Registration mat = new frmMatch_Registration();
             mat.Show();
 
@@ -537,28 +537,28 @@ namespace FootBallApplication
 
         private void goToSquadRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+           // this.Close();
             frmSquad_Registration squ = new frmSquad_Registration();
             squ.Show();
         }
 
         private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+           // this.Close();
             frmReports rep = new frmReports();
             rep.Show();
         }
 
         private void matchRegistrationToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            this.Close();
+           // this.Close();
             frmMatch_Registration tot = new frmMatch_Registration();
             tot.Show();
         }
 
         private void tournamentRegistrationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
             Total__Registration tot = new Total__Registration();
             tot.Show();
         }
