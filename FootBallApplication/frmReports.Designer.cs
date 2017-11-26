@@ -85,9 +85,9 @@
             this.lblgoalanalysis.ForeColor = System.Drawing.Color.Black;
             this.lblgoalanalysis.Location = new System.Drawing.Point(63, 119);
             this.lblgoalanalysis.Name = "lblgoalanalysis";
-            this.lblgoalanalysis.Size = new System.Drawing.Size(99, 19);
+            this.lblgoalanalysis.Size = new System.Drawing.Size(74, 19);
             this.lblgoalanalysis.TabIndex = 296;
-            this.lblgoalanalysis.Text = "Goal Analysis";
+            this.lblgoalanalysis.Text = "Summary";
             this.lblgoalanalysis.Click += new System.EventHandler(this.lblgoalanalysis_Click);
             // 
             // lblteam

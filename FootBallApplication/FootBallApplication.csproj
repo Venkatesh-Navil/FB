@@ -408,6 +408,7 @@
     <None Include="Resources\3885-undo-arrow2.png" />
     <None Include="Resources\clear.png" />
     <None Include="Resources\BPI1.png" />
+    <None Include="Resources\FbGoalReport.jpg" />
     <Content Include="Resources\Ground - Transaction page.jpg" />
     <None Include="Resources\Ground - Transaction page1.jpg" />
   </ItemGroup>

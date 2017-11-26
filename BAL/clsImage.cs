@@ -20,7 +20,7 @@ namespace BAL
         Authentication clsAut = new Authentication();
         public void TwoTeamFlagsDisplay(string db, string l1, string l2, Panel p1, Panel p2)
         {
-            connection = clsAut.GetCurrentDBConnection(db);
+            connection = clsAut.GetConnection();
             query = "select Team_Flag from Team_Registration where Team_Name='" + l1 + "'";
 
 
@@ -38,8 +38,12 @@ namespace BAL
                     p2.BackgroundImage = Image.FromStream(mm);
                 }
             }
-            catch
-            { }
+            catch(Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+
+
+            }
 
         }
     }

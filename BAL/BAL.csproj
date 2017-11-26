@@ -47,6 +47,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="clsCommon.cs" />
     <Compile Include="clsGlobalValues.cs" />
+    <Compile Include="clsGoalAnalysis.cs" />
     <Compile Include="clsgrid.cs" />
     <Compile Include="clsImage.cs" />
     <Compile Include="clsLogin.cs" />
